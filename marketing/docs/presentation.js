@@ -1,5 +1,6 @@
   $(window).load(function() {
     $('#orbitDemo').orbit({
-         animation: 'horizontal-push'
+         animation: 'horizontal-push',
+         advanceSpeed: 4000
      });
-     });
+  });
