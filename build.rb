@@ -9,17 +9,17 @@ end
 
 `rm -rf public marketing/files/foundation-download.zip`
 `jammit`
-`mkdir public/src public/src/javascripts public/src/stylesheets`
+`mkdir public/src public/src/js public/src/css`
 `cp -R humans.txt images index.html robots.txt public/src`
-`cp public/assets/foundation.js public/src/javascripts`
-`cp stylesheets/ie.css public/src/stylesheets/ie.css`
-`cp stylesheets/app.css public/src/stylesheets/app.css`
-`cp javascripts/app.js public/src/javascripts/app.js`
-`cp javascripts/modernizr.foundation.js public/src/javascripts/modernizr.foundation.js`
-`cp javascripts/jquery.min.js public/src/javascripts/jquery.min.js`
+`cp public/assets/foundation.js public/src/js`
+`cp css/ie.css public/src/css/ie.css`
+`cp css/app.css public/src/css/app.css`
+`cp js/app.js public/src/js/app.js`
+`cp js/modernizr.foundation.js public/src/js/modernizr.foundation.js`
+`cp js/jquery.min.js public/src/js/jquery.min.js`
 
-File.open('public/src/stylesheets/foundation.css', "w") do |file|  
-  %w{stylesheets/globals.css stylesheets/typography.css stylesheets/grid.css stylesheets/ui.css stylesheets/forms.css stylesheets/orbit.css stylesheets/reveal.css stylesheets/mobile.css}.each do |stylesheet|
+File.open('public/src/css/foundation.css', "w") do |file|  
+  %w{css/globals.css css/typography.css css/grid.css css/ui.css css/forms.css css/orbit.css css/reveal.css css/mobile.css}.each do |stylesheet|
     file.puts File.read(stylesheet)
   end
 end
@@ -27,14 +27,14 @@ end
 file_name = 'public/src/index.html'
 
 text = File.read(file_name)
-text.gsub!(/<!-- Combine and Compress These CSS Files -->.+<!-- End Combine and Compress These CSS Files -->/m, "<link rel=\"stylesheet\" href=\"stylesheets/foundation.css\">")
-text.gsub!(/<!-- Combine and Compress These JS Files -->.+<!-- End Combine and Compress These JS Files -->/m, "<script src=\"javascripts/foundation.js\"></script>")
+text.gsub!(/<!-- Combine and Compress These CSS Files -->.+<!-- End Combine and Compress These CSS Files -->/m, "<link rel=\"stylesheet\" href=\"css/foundation.css\">")
+text.gsub!(/<!-- Combine and Compress These JS Files -->.+<!-- End Combine and Compress These JS Files -->/m, "<script src=\"js/foundation.js\"></script>")
 
 File.open(file_name, "w") do |file|  
   file.puts text
 end
 
-%w{public/src/javascripts/app.js public/src/javascripts/foundation.js public/src/stylesheets/app.css public/src/stylesheets/foundation.css public/src/stylesheets/ie.css}.each do |file_name|
+%w{public/src/js/app.js public/src/js/foundation.js public/src/css/app.css public/src/css/foundation.css public/src/css/ie.css}.each do |file_name|
   prepend_text(file_name, "/* Foundation v#{VERSION_STRING} http://foundation.zurb.com */")
 end
 

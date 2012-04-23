@@ -19,20 +19,20 @@
 	<link rel="icon" type="image/ico" href="favicon.ico">
   
 	<!-- Included CSS Files -->
-	<link rel="stylesheet" href="../stylesheets/normalize.css">
-	<link rel="stylesheet" href="../stylesheets/globals.css">
-	<link rel="stylesheet" href="../stylesheets/typography.css">
-	<link rel="stylesheet" href="../stylesheets/grid.css">
-	<link rel="stylesheet" href="../stylesheets/ui.css">
-	<link rel="stylesheet" href="../stylesheets/forms.css">
-	<link rel="stylesheet" href="../stylesheets/orbit.css">
-	<link rel="stylesheet" href="../stylesheets/reveal.css">
-	<link rel="stylesheet" href="../stylesheets/app.css">
-	<link rel="stylesheet" href="../stylesheets/mobile.css">
+	<link rel="stylesheet" href="../css/normalize.css">
+	<link rel="stylesheet" href="../css/globals.css">
+	<link rel="stylesheet" href="../css/typography.css">
+	<link rel="stylesheet" href="../css/grid.css">
+	<link rel="stylesheet" href="../css/ui.css">
+	<link rel="stylesheet" href="../css/forms.css">
+	<link rel="stylesheet" href="../css/orbit.css">
+	<link rel="stylesheet" href="../css/reveal.css">
+	<link rel="stylesheet" href="../css/app.css">
+	<link rel="stylesheet" href="../css/mobile.css">
 	<link rel="stylesheet" href="presentation.css">
 	
 	<!--[if lt IE 9]>
-		<link rel="stylesheet" href="../stylesheets/ie.css">
+		<link rel="stylesheet" href="../css/ie.css">
 	<![endif]-->
 	
 	<!-- IE Fix for HTML5 Tags -->
