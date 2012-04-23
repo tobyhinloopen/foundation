@@ -434,53 +434,49 @@ that IE7/8 do not support :nth-child.
 
 /* line 137, ../scss/grid.scss */
 .block-grid.two-up {
-  margin-left: -4%;
+  margin: 0 -15px;
 }
 
 /* line 138, ../scss/grid.scss */
 .block-grid.two-up > li {
-  margin-left: 4%;
-  width: 46%;
-  margin-bottom: 4%;
+  width: 50%;
+  padding: 0 15px 15px;
 }
 
 /* 	.block-grid.two-up>li:nth-child(2n+1) {clear: left;} */
 /* line 141, ../scss/grid.scss */
 .block-grid.three-up {
-  margin-left: -2%;
+  margin: 0 -12px;
 }
 
 /* line 142, ../scss/grid.scss */
 .block-grid.three-up > li {
-  margin-left: 2%;
-  width: 31.2%;
-  margin-bottom: 2%;
+  width: 33.33%;
+  padding: 0 12px 12px;
 }
 
 /* 	.block-grid.three-up>li:nth-child(3n+1) {clear: left;} */
 /* line 145, ../scss/grid.scss */
 .block-grid.four-up {
-  margin-left: -2%;
+  margin: 0 -10px;
 }
 
 /* line 146, ../scss/grid.scss */
 .block-grid.four-up > li {
-  margin-left: 2%;
-  width: 23%;
-  margin-bottom: 2%;
+  width: 25%;
+  padding: 0 10px 10px;
 }
 
 /* 	.block-grid.four-up>li:nth-child(4n+1) {clear: left;} */
 /* line 149, ../scss/grid.scss */
 .block-grid.five-up {
-  margin-left: -1.5%;
+  margin: 0 -8px;
 }
 
 /* line 150, ../scss/grid.scss */
 .block-grid.five-up > li {
-  margin-left: 1.5%;
-  width: 18.5%;
-  margin-bottom: 1.5%;
+  width: 20%;
+  padding: 0 8px 8px;
 }
 
 /* 	.block-grid.five-up>li:nth-child(5n+1) {clear: left;} */

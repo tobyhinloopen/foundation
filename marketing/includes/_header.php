@@ -24,6 +24,7 @@
 	<link rel="stylesheet" href="../css/typography.css">
 	<link rel="stylesheet" href="../css/grid.css">
 	<link rel="stylesheet" href="../css/ui.css">
+	<link rel="stylesheet" href="../css/buttons.css">
 	<link rel="stylesheet" href="../css/forms.css">
 	<link rel="stylesheet" href="../css/orbit.css">
 	<link rel="stylesheet" href="../css/reveal.css">
