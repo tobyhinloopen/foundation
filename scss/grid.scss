@@ -7,12 +7,13 @@
     boxsizing.htc for IE7 support
 */
 
-  .container { /* No longer required due to box-sizing */ }
+  $row_width: 1000px;
+  $column_gutter: 30px;
   
-  .row { width: 1000px; max-width: 100%; min-width: 768px; margin: 0 auto; }
-  .row .row { width: auto; max-width: none; min-width: 0; margin: 0 -15px; }
+  .row { width: $row_width; max-width: 100%; min-width: 768px; margin: 0 auto; }
+  .row .row { width: auto; max-width: none; min-width: 0; margin: 0 -($column_gutter/2); }
   
-  .column, .columns { float: left; min-height: 1px; padding: 0 15px; position: relative; }
+  .column, .columns { float: left; min-height: 1px; padding: 0 ($column_gutter/2); position: relative; }
   [class*="column"] + [class*="column"]:last-child { float: right; }
   [class*="column"] + [class*="column"].end { float: left; }
   
