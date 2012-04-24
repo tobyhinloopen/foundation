@@ -131,7 +131,7 @@ lines below to support arbitrary height, but know
 that IE7/8 do not support :nth-child.
 -------------------------------------------------- */
 
-  .block-grid { display: block; overflow: hidden; }
+  .block-grid { display: block; overflow: hidden; padding: 0; }
   .block-grid>li { display: block; height: auto; float: left; }
   
   .block-grid.two-up { margin: 0 -15px; }
