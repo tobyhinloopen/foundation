@@ -3,8 +3,8 @@ gzip_assets: off
 
 javascripts:
   foundation:
-    - javascripts/jquery.reveal.js
-    - javascripts/jquery.orbit-1.4.0.js
-    - javascripts/jquery.customforms.js
-    - javascripts/jquery.placeholder.min.js
-    - javascripts/jquery.tooltips.js
+    - js/jquery.reveal.js
+    - js/jquery.orbit-1.4.0.js
+    - js/jquery.customforms.js
+    - js/jquery.placeholder.min.js
+    - js/jquery.tooltips.js

@@ -21,6 +21,7 @@
 	<link rel="icon" type="image/ico" href="favicon.ico">
   
 	<!-- Included CSS Files -->
+<<<<<<< HEAD
 	<link rel="stylesheet" href="../stylesheets/globals.css">
 	<link rel="stylesheet" href="../stylesheets/typography.css">
 	<link rel="stylesheet" href="../stylesheets/grid.css">
@@ -32,10 +33,24 @@
 	<link rel="stylesheet" href="../stylesheets/mobile.css">
 	<link rel="stylesheet" href="http://www.zurb.com/assets/foundation.top-bar.css">
   <link rel="stylesheet" href="http://www.zurb.com/assets/zurb.mega-drop.css">
+=======
+	<link rel="stylesheet" href="../css/normalize.css">
+	<link rel="stylesheet" href="../css/globals.css">
+	<link rel="stylesheet" href="../css/typography.css">
+	<link rel="stylesheet" href="../css/grid.css">
+	<link rel="stylesheet" href="../css/ui.css">
+	<link rel="stylesheet" href="../css/buttons.css">
+	<link rel="stylesheet" href="../css/tabs.css">
+	<link rel="stylesheet" href="../css/forms.css">
+	<link rel="stylesheet" href="../css/orbit.css">
+	<link rel="stylesheet" href="../css/reveal.css">
+	<link rel="stylesheet" href="../css/app.css">
+	<link rel="stylesheet" href="../css/mobile.css">
+>>>>>>> 3.0-scss
 	<link rel="stylesheet" href="presentation.css">
 	
 	<!--[if lt IE 9]>
-		<link rel="stylesheet" href="../stylesheets/ie.css">
+		<link rel="stylesheet" href="../css/ie.css">
 	<![endif]-->
 	
 	<!-- IE Fix for HTML5 Tags -->

@@ -118,7 +118,7 @@
 				</div>
 				<div class="row display">
 					<div class="five columns">
-						.five				
+						.five.columns
 					</div>
 					<div class="seven columns">
 						.seven.columns				
@@ -351,7 +351,7 @@
 				</div>
 				<div class="row display">
 					<div class="five columns push-seven">
-						.five				
+						.five.columns	
 					</div>
 					<div class="seven columns pull-five">
 						.seven.columns (last)			
