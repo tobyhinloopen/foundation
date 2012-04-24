@@ -1,0 +1,39 @@
+/* 
+  Foundation 3, artfully masterminded by ZURB
+  Core
+  navbar.css - Relatively simple nav bars with single level dropdowns
+  
+  Requires: 
+    globals.css
+*/
+
+  @import "base";
+	
+  .nav-bar { height: 45px; background: #fff; margin-top: 20px; padding: 0; border: 1px solid #ddd; 
+  
+    &>li { float: left; display: block; position: relative; padding: 0; margin: 0; border-right: 1px solid #ddd; line-height: 45px;
+      ul { margin-bottom: 0; }
+      li { line-height: 1.3; 
+        .flyout { display: none; }
+      }
+      
+      &.has-flyout {
+        &>a.main { padding-right: 36px; }
+        &>a.flyout-toggle { position: absolute; right: 0; top: 0; padding: 22px; z-index: 2; display: block;
+          span { content: ""; width: 0; height: 0; border-left: 4px solid transparent;border-right: 4px solid transparent; border-top: 4px solid #2a85e8; display: block; }
+        }
+      }
+    }
+    &>li>a.main { position: relative; padding: 0 20px; display: block; text-decoration: none; font-size: 15px; font-size: 1.5rem; }
+    &>li>input { margin: 0 16px; }
+  
+  }
+  
+  .flyout { background: #fff; margin: 0; padding: 20px; border: 1px solid #ddd; position: absolute; top: 45px; left: -1px; width: 400px; z-index: 40; 
+  
+    &.small { width: 200px; }
+    &.large { width: 600px; }
+    &.right { left: auto; right: 0; }
+    p:last-child { margin-bottom: 0; }
+  
+  }

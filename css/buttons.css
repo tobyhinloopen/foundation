@@ -35,20 +35,24 @@
 }
 .button.tiny {
   font-size: 10px;
+  font-size: 1rem;
   padding: 6px 14px 8px;
   width: auto;
 }
 .button.small {
   font-size: 11px;
+  font-size: 1.1rem;
   padding: 8px 20px 10px;
   width: auto;
 }
 .button.medium {
   font-size: 13px;
+  font-size: 1.3rem;
   width: auto;
 }
 .button.large {
   font-size: 18px;
+  font-size: 1.8rem;
   padding: 11px 48px 13px;
   width: auto;
 }
@@ -130,13 +134,17 @@
   box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.15);
 }
 .button.radius {
-  -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
   border-radius: 3px;
 }
 .button.round {
-  -moz-border-radius: 1000px;
   -webkit-border-radius: 1000px;
+  -moz-border-radius: 1000px;
+  -ms-border-radius: 1000px;
+  -o-border-radius: 1000px;
   border-radius: 1000px;
 }
 .button.full-width {
@@ -159,15 +167,10 @@ input[type=submit].button, button.button {
   -webkit-appearance: none;
 }
 
-/* Hide inner focus effect in Firefox */
-button::-moz-focus-inner, input[type="reset"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, input[type="file"] > input[type="button"]::-moz-focus-inner {
-  border: none;
-}
-
 /* Correct FF button padding */
 @-moz-document url-prefix("http://") {
-  input[type=submit].button::-moz-focus-inner, button.button::-moz-focus-inner {
-    border: 0;
+  button::-moz-focus-inner, input[type="reset"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, input[type="file"] > input[type="button"]::-moz-focus-inner {
+    border: none;
     padding: 0;
   }
 
