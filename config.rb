@@ -1,6 +1,6 @@
-require 'ZURB-foundation'
 # Require any additional compass plugins here.
-
+$:.unshift File.dirname(__FILE__)
+require 'convert-number-to-word'
 
 # Set this to the root of your project when deployed:
 http_path = "/"
