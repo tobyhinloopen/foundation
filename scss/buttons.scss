@@ -7,9 +7,7 @@
     globals.css
 */
 
-  @mixin radius($rad) {
-    -moz-border-radius: $rad; -webkit-border-radius: $rad; border-radius: $rad;
-  }
+  @import "base";
 
   /*	-------------------------------------------------
 	Buttons
@@ -21,10 +19,10 @@
 		&:hover { color: #fff; }
     
     /* Sizes ---------- */
-  	&.tiny			{ font-size: 10px; padding: 6px 14px 8px; width: auto; }
-  	&.small 		{ font-size: 11px; padding: 8px 20px 10px; width: auto; }
-  	&.medium 		{ font-size: 13px; width: auto; }
-  	&.large 		{ font-size: 18px; padding: 11px 48px 13px; width: auto; }
+  	&.tiny			{ font-size: 10px; font-size: 1rem; padding: 6px 14px 8px; width: auto; }
+  	&.small 		{ font-size: 11px; font-size: 1.1rem; padding: 8px 20px 10px; width: auto; }
+  	&.medium 		{ font-size: 13px; font-size: 1.3rem; width: auto; }
+  	&.large 		{ font-size: 18px; font-size: 1.8rem; padding: 11px 48px 13px; width: auto; }
   	
   	/* Colors ---------- */
     &.blue {
@@ -76,8 +74,8 @@
     	}
     }
     
-    &.radius { @include radius(3px); }
-    &.round { @include radius(1000px); }
+    &.radius { @include border-radius(3px); }
+    &.round { @include border-radius(1000px); }
     
     &.full-width { width: 100%; text-align: center; padding-left: 0 !important; padding-right: !important; }
     &.left-align { text-align: left; text-indent: 12px; }
@@ -90,17 +88,11 @@
   /* Don't use native buttons on iOS */
 	input[type=submit].button, button.button { -webkit-appearance: none; }
 	
-	/* Hide inner focus effect in Firefox */
-	button::-moz-focus-inner, input[type="reset"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, input[type="file"] > input[type="button"]::-moz-focus-inner {
-		border: none;
-	}	
-	
-	
-	/* Correct FF button padding */
-	@-moz-document url-prefix("http://") {
-		input[type=submit].button::-moz-focus-inner, button.button::-moz-focus-inner { border: 0; padding: 0; }
-		input[type=submit].tiny.button		{ padding: 5px 14px 7px; }
-		input[type=submit].small.button		{ padding: 7px 20px 8px; }
-		input[type=submit].medium.button	{ padding: 8px 34px 9px; }
-		input[type=submit].large.button		{ padding: 9px 48px 10px; }
-	}
+  /* Correct FF button padding */
+  @-moz-document url-prefix("http://") {
+    button::-moz-focus-inner, input[type="reset"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, input[type="file"] > input[type="button"]::-moz-focus-inner { border: none; padding: 0;  }	
+    input[type=submit].tiny.button		{ padding: 5px 14px 7px; }
+    input[type=submit].small.button		{ padding: 7px 20px 8px; }
+    input[type=submit].medium.button	{ padding: 8px 34px 9px; }
+    input[type=submit].large.button		{ padding: 9px 48px 10px; }
+  }

@@ -19,7 +19,7 @@ end
 `cp js/jquery.min.js public/src/js/jquery.min.js`
 
 File.open('public/src/css/foundation.css', "w") do |file|  
-  %w{css/globals.css css/typography.css css/grid.css css/ui.css css/buttons.css css/tabs.css css/forms.css css/orbit.css css/reveal.css css/mobile.css}.each do |stylesheet|
+  %w{css/globals.css css/typography.css css/grid.css css/ui.css css/buttons.css css/tabs.css css/navbar.css css/forms.css css/orbit.css css/reveal.css css/mobile.css}.each do |stylesheet|
     file.puts File.read(stylesheet)
   end
 end
