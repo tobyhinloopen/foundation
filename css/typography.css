@@ -1,18 +1,4 @@
 /* Artfully Masterminded by ZURB */
-body {
-  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(5%, rgba(255, 0, 0, 0.3)), color-stop(5%, rgba(255, 0, 0, 0)));
-  background-image: -webkit-linear-gradient(bottom, rgba(255, 0, 0, 0.3) 5%, rgba(255, 0, 0, 0) 5%);
-  background-image: -moz-linear-gradient(bottom, rgba(255, 0, 0, 0.3) 5%, rgba(255, 0, 0, 0) 5%);
-  background-image: -o-linear-gradient(bottom, rgba(255, 0, 0, 0.3) 5%, rgba(255, 0, 0, 0) 5%);
-  background-image: -ms-linear-gradient(bottom, rgba(255, 0, 0, 0.3) 5%, rgba(255, 0, 0, 0) 5%);
-  background-image: linear-gradient(bottom, rgba(255, 0, 0, 0.3) 5%, rgba(255, 0, 0, 0) 5%);
-  -webkit-background-size: 100% 25px;
-  -moz-background-size: 100% 25px;
-  -o-background-size: 100% 25px;
-  background-size: 100% 25px;
-  background-position: left top;
-}
-
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, p, blockquote, th, td {
   margin: 0;
   padding: 0;
@@ -46,10 +32,8 @@ p.sidenote {
   font-style: italic;
   padding-top: 4px;
 }
-
-h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
-  font-size: 60%;
-  color: #888;
+p img.left {
+  margin: 25px 25px 25px 0px;
 }
 
 h1 {
@@ -57,17 +41,17 @@ h1 {
   font-size: 4.6rem;
   line-height: 50px;
   line-height: 5.0rem;
-  margin-bottom: 3px;
-  margin-top: 15px;
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 h2 {
   font-size: 36px;
   font-size: 3.6rem;
-  line-height: 36px;
-  line-height: 3.6rem;
-  margin-bottom: 20px;
-  margin-top: 10px;
+  line-height: 40px;
+  line-height: 4.0rem;
+  margin-bottom: 10px;
+  margin-top: 0px;
 }
 
 h3 {
@@ -75,17 +59,17 @@ h3 {
   font-size: 2.8rem;
   line-height: 25px;
   line-height: 2.5rem;
-  margin-bottom: 23px;
-  margin-top: 20px;
+  margin-bottom: 14px;
+  margin-top: 11px;
 }
 
 h4 {
   font-size: 23px;
   font-size: 2.3rem;
-  line-height: 25px;
-  line-height: 2.5rem;
-  margin-bottom: 23px;
-  margin-top: 20px;
+  line-height: 40px;
+  line-height: 4.0rem;
+  margin-bottom: 10px;
+  margin-top: 25px;
 }
 
 h5 {
@@ -94,7 +78,7 @@ h5 {
   line-height: 25px;
   line-height: 2.5rem;
   margin-bottom: 15px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 h6 {
@@ -103,7 +87,13 @@ h6 {
   line-height: 25px;
   line-height: 2.5rem;
   margin-bottom: 15px;
-  margin-top: 5px;
+  margin-top: 10px;
+}
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+  font-size: 60%;
+  color: #888;
+  line-height: 0;
 }
 
 ul {
