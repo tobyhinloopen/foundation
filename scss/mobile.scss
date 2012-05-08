@@ -1,3 +1,19 @@
+/* 
+  Foundation 3, artfully masterminded by ZURB
+  Core
+  mobile.css - Styles for mobile devices
+  
+  Requires: 
+    buttons.css
+    forms.css
+    grid.css
+    tabs.css
+    typography.css
+    ui.css
+*/
+
+  @import "base";
+
 /* --------------------------------------------------
 	:: Typography
 	-------------------------------------------------- */
@@ -107,7 +123,7 @@
 	
 		.nice.tabs.mobile { border-bottom: solid 1px #ccc; height: auto; }
 		.nice.tabs.mobile dd a { padding: 18px 20px; border: none; border-left: none; border-right: none; border-top: 1px solid #ccc; background: #fff; }
-		.nice.tabs.mobile dd a.active { border: none; background: #00a6fc; color: #fff; margin: 0; position: static; top: 0; height: auto; }
+		.nice.tabs.mobile dd a.active { border: none; background: $mainColor; color: #fff; margin: 0; position: static; top: 0; height: auto; }
 		.nice.tabs.mobile dd:first-child a.active { margin: 0; }
 		
 		dl.contained.mobile, dl.nice.contained.mobile { margin-bottom: 0; }

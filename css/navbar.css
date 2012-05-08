@@ -6,7 +6,7 @@
   Requires: 
     globals.css
 */
-/* line 12, ../scss/navbar.scss */
+/* Colors */
 .nav-bar {
   height: 45px;
   background: #fff;
@@ -14,7 +14,6 @@
   padding: 0;
   border: 1px solid #ddd;
 }
-/* line 14, ../scss/navbar.scss */
 .nav-bar > li {
   float: left;
   display: block;
@@ -24,23 +23,18 @@
   border-right: 1px solid #ddd;
   line-height: 45px;
 }
-/* line 15, ../scss/navbar.scss */
 .nav-bar > li ul {
   margin-bottom: 0;
 }
-/* line 16, ../scss/navbar.scss */
 .nav-bar > li li {
   line-height: 1.3;
 }
-/* line 17, ../scss/navbar.scss */
 .nav-bar > li li .flyout {
   display: none;
 }
-/* line 21, ../scss/navbar.scss */
 .nav-bar > li.has-flyout > a.main {
   padding-right: 36px;
 }
-/* line 22, ../scss/navbar.scss */
 .nav-bar > li.has-flyout > a.flyout-toggle {
   position: absolute;
   right: 0;
@@ -49,7 +43,6 @@
   z-index: 2;
   display: block;
 }
-/* line 23, ../scss/navbar.scss */
 .nav-bar > li.has-flyout > a.flyout-toggle span {
   content: "";
   width: 0;
@@ -59,7 +52,6 @@
   border-top: 4px solid #2a85e8;
   display: block;
 }
-/* line 27, ../scss/navbar.scss */
 .nav-bar > li > a.main {
   position: relative;
   padding: 0 20px;
@@ -68,12 +60,10 @@
   font-size: 15px;
   font-size: 1.5rem;
 }
-/* line 28, ../scss/navbar.scss */
 .nav-bar > li > input {
   margin: 0 16px;
 }
 
-/* line 32, ../scss/navbar.scss */
 .flyout {
   background: #fff;
   margin: 0;
@@ -85,20 +75,16 @@
   width: 400px;
   z-index: 40;
 }
-/* line 34, ../scss/navbar.scss */
 .flyout.small {
   width: 200px;
 }
-/* line 35, ../scss/navbar.scss */
 .flyout.large {
   width: 600px;
 }
-/* line 36, ../scss/navbar.scss */
 .flyout.right {
   left: auto;
   right: 0;
 }
-/* line 37, ../scss/navbar.scss */
 .flyout p:last-child {
   margin-bottom: 0;
 }

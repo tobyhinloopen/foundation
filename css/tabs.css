@@ -7,10 +7,10 @@
     globals.css
     app.js
 */
+/* Colors */
 /*--------------------------------------------------
   Tabs
   -------------------------------------------------- */
-/* line 17, ../scss/tabs.scss */
 dl.tabs {
   display: block;
   margin: 0 0 20px 0;
@@ -18,7 +18,6 @@ dl.tabs {
   height: 30px;
   border-bottom: solid 1px #ddd;
 }
-/* line 19, ../scss/tabs.scss */
 dl.tabs dt {
   display: block;
   width: auto;
@@ -31,11 +30,9 @@ dl.tabs dt {
   text-transform: uppercase;
   cursor: default;
 }
-/* line 20, ../scss/tabs.scss */
 dl.tabs dt:first-child {
   padding: 0 9px 0 0;
 }
-/* line 22, ../scss/tabs.scss */
 dl.tabs dd {
   display: block;
   width: auto;
@@ -44,7 +41,6 @@ dl.tabs dd {
   float: left;
   margin-left: 0;
 }
-/* line 23, ../scss/tabs.scss */
 dl.tabs dd a {
   display: block;
   width: auto;
@@ -56,22 +52,18 @@ dl.tabs dd a {
   color: #555;
   background: #eee;
 }
-/* line 24, ../scss/tabs.scss */
 dl.tabs dd a.active {
   background: #fff;
   border-width: 1px 1px 0 1px;
   height: 30px;
 }
-/* line 28, ../scss/tabs.scss */
 dl.tabs.vertical {
   height: auto;
 }
-/* line 30, ../scss/tabs.scss */
 dl.tabs.vertical dt, dl.tabs.vertical dd, dl.tabs.vertical.nice dt, dl.tabs.vertical.nice dd {
   float: none;
   height: auto;
 }
-/* line 31, ../scss/tabs.scss */
 dl.tabs.vertical dd a {
   display: block;
   width: auto;
@@ -86,20 +78,17 @@ dl.tabs.vertical dd a {
   font-size: 15px;
   font-size: 1.5rem;
 }
-/* line 32, ../scss/tabs.scss */
 dl.tabs.vertical dd a.active {
   height: auto;
   margin: 0;
   border-width: 1px 0 0;
   background: #fff;
 }
-/* line 36, ../scss/tabs.scss */
 dl.tabs.nice {
   border-bottom: solid 1px #eee;
   margin: 0 0 30px 0;
   height: 43px;
 }
-/* line 37, ../scss/tabs.scss */
 dl.tabs.nice dd a {
   padding: 7px 18px 9px;
   font-size: 15px;
@@ -108,7 +97,6 @@ dl.tabs.nice dd a {
   background: none;
   border: none;
 }
-/* line 38, ../scss/tabs.scss */
 dl.tabs.nice dd a.active {
   font-weight: bold;
   color: #333;
@@ -120,16 +108,13 @@ dl.tabs.nice dd a.active {
   position: relative;
   top: -5px;
 }
-/* line 40, ../scss/tabs.scss */
 dl.tabs.nice dd:first-child a.active {
   margin-left: 0;
 }
-/* line 42, ../scss/tabs.scss */
 dl.tabs.nice.vertical {
   border-bottom: solid 1px #eee;
   height: auto;
 }
-/* line 43, ../scss/tabs.scss */
 dl.tabs.nice.vertical dd a {
   padding: 15px 20px;
   border: none;
@@ -138,7 +123,6 @@ dl.tabs.nice.vertical dd a {
   border-top: 1px solid #eee;
   background: #fff;
 }
-/* line 44, ../scss/tabs.scss */
 dl.tabs.nice.vertical dd a.active {
   border: none;
   background: #00a6fc;
@@ -148,57 +132,45 @@ dl.tabs.nice.vertical dd a.active {
   top: 0;
   height: auto;
 }
-/* line 46, ../scss/tabs.scss */
 dl.tabs.nice.vertical dd:first-child a.active {
   margin: 0;
 }
-/* line 50, ../scss/tabs.scss */
 dl.tabs.contained, dl.tabs.nice.contained {
   margin-bottom: 0;
 }
-/* line 51, ../scss/tabs.scss */
 dl.tabs.contained dd a {
   padding: 0 14px;
 }
-/* line 52, ../scss/tabs.scss */
 dl.tabs.contained.nice dd a {
   padding: 7px 18px 9px;
 }
 
-/* line 55, ../scss/tabs.scss */
 ul.tabs-content {
   margin: 0;
   padding: 0;
   display: block;
 }
-/* line 56, ../scss/tabs.scss */
 ul.tabs-content > li {
   display: none;
 }
-/* line 57, ../scss/tabs.scss */
 ul.tabs-content > li.active {
   display: block;
 }
-/* line 59, ../scss/tabs.scss */
 ul.tabs-content.contained {
   padding: 0;
 }
-/* line 60, ../scss/tabs.scss */
 ul.tabs-content.contained > li {
   padding: 20px;
   border: solid 0 #ddd;
   border-width: 0 1px 1px 1px;
 }
-/* line 61, ../scss/tabs.scss */
 ul.tabs-content.contained.vertical > li {
   border-width: 1px 1px 1px 1px;
 }
-/* line 62, ../scss/tabs.scss */
 ul.tabs-content.contained.nice > li {
   border-collapse: #eee;
 }
 
-/* line 66, ../scss/tabs.scss */
 .no-js ul.tabs-content > li {
   display: block;
 }
