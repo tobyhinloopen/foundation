@@ -29,7 +29,7 @@
 .nav-bar > li li {
   line-height: 1.3;
 }
-.nav-bar > li li .flyout {
+.nav-bar > li .flyout {
   display: none;
 }
 .nav-bar > li.has-flyout > a.main {

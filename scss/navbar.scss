@@ -13,9 +13,8 @@
   
     &>li { float: left; display: block; position: relative; padding: 0; margin: 0; border-right: 1px solid #ddd; line-height: 45px;
       ul { margin-bottom: 0; }
-      li { line-height: 1.3; 
-        .flyout { display: none; }
-      }
+      li { line-height: 1.3; }
+      .flyout { display: none; }
       
       &.has-flyout {
         &>a.main { padding-right: 36px; }
