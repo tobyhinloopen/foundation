@@ -1,179 +1,68 @@
-/* Artfully Masterminded by ZURB */
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, p, blockquote, th, td {
-  margin: 0;
-  padding: 0;
-}
+/*
+Syntax error: Invalid CSS after "...st-font-size-to": expected "{", was "(50px);"
+        on line 21 of /Users/chris/Sites/foundation/scss/typography.scss
 
-hr {
-  border: solid #ddd;
-  border-width: 1px 0 0;
-  clear: both;
-  margin: 24px 0 24px;
-  height: 0;
-}
-
-p {
-  font-size: 16px;
-  font-size: 1.6rem;
-  line-height: 25px;
-  line-height: 2.5rem;
-  margin-bottom: 25px;
-}
-p.lead {
-  font-size: 18px;
-  font-size: 1.8rem;
-  line-height: 25px;
-}
-p.sidenote {
-  font-size: 14px;
-  font-size: 1.4rem;
-  line-height: 20px;
-  line-height: 2.0rem;
-  font-style: italic;
-  padding-top: 4px;
-}
-p img.left {
-  margin: 25px 25px 25px 0px;
-}
-
-h1 {
-  font-size: 46px;
-  font-size: 4.6rem;
-  line-height: 50px;
-  line-height: 5.0rem;
-  margin-bottom: 25px;
-  margin-top: 25px;
-}
-
-h2 {
-  font-size: 36px;
-  font-size: 3.6rem;
-  line-height: 40px;
-  line-height: 4.0rem;
-  margin-bottom: 10px;
-  margin-top: 0px;
-}
-
-h3 {
-  font-size: 28px;
-  font-size: 2.8rem;
-  line-height: 25px;
-  line-height: 2.5rem;
-  margin-bottom: 14px;
-  margin-top: 11px;
-}
-
-h4 {
-  font-size: 23px;
-  font-size: 2.3rem;
-  line-height: 40px;
-  line-height: 4.0rem;
-  margin-bottom: 10px;
-  margin-top: 25px;
-}
-
-h5 {
-  font-size: 20px;
-  font-size: 2.0rem;
-  line-height: 25px;
-  line-height: 2.5rem;
-  margin-bottom: 15px;
-  margin-top: 10px;
-}
-
-h6 {
-  font-size: 16px;
-  font-size: 1.6rem;
-  line-height: 25px;
-  line-height: 2.5rem;
-  margin-bottom: 15px;
-  margin-top: 10px;
-}
-
-h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
-  font-size: 60%;
-  color: #888;
-  line-height: 0;
-}
-
-ul {
-  font-size: 16px;
-  font-size: 1.6rem;
-  line-height: 25px;
-  line-height: 2.5rem;
-  margin-bottom: 25px;
-}
-
-	/**
- 	 * Print styles.
-	 *
-	 * Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
-	 * Credit to Paul Irish and HTML5 Boilerplate (html5boilerplate.com)
-	 */
-.print-only {
-  display: none !important;
-}
-
-@media print {
-  * {
-    background: transparent !important;
-    color: black !important;
-    text-shadow: none !important;
-    filter: none !important;
-    -ms-filter: none !important;
-  }
-
-  /* Black prints faster: sanbeiji.com/archives/953 */
-  p a, p a:visited {
-    color: #444 !important;
-    text-decoration: underline;
-  }
-
-  p a[href]:after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
-    content: "";
-  }
-
-  /* Don't show links for images, or javascript/internal links */
-  pre, blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  thead {
-    display: table-header-group;
-  }
-
-  /* css-discuss.incutio.com/wiki/Printing_Tables */
-  tr, img {
-    page-break-inside: avoid;
-  }
-
-  @page {
-    margin: 0.5cm;
-}
-
-  p, h2, h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2, h3 {
-    page-break-after: avoid;
-  }
-
-  .hide-on-print {
-    display: none !important;
-  }
-
-  .print-only {
-    display: block !important;
-  }
-}
+Backtrace:
+/Users/chris/Sites/foundation/scss/typography.scss:21
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/scss/parser.rb:928:in `expected'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/scss/parser.rb:874:in `expected'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/scss/parser.rb:869:in `tok!'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/scss/parser.rb:378:in `block'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/scss/parser.rb:373:in `ruleset'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/scss/parser.rb:435:in `block in declaration_or_ruleset'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/scss/parser.rb:912:in `call'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/scss/parser.rb:912:in `rethrow'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/scss/parser.rb:436:in `declaration_or_ruleset'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/scss/parser.rb:398:in `block_child'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/scss/parser.rb:387:in `block_contents'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/scss/parser.rb:379:in `block'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/scss/parser.rb:373:in `ruleset'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/scss/parser.rb:397:in `block_child'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/scss/parser.rb:390:in `block_contents'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/scss/parser.rb:58:in `stylesheet'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/scss/parser.rb:27:in `parse'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/engine.rb:326:in `_to_tree'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/engine.rb:299:in `_render'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/engine.rb:246:in `render'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.1/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.1/lib/compass/compiler.rb:126:in `timed'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.1/lib/compass/compiler.rb:139:in `block in compile'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.1/lib/compass/logger.rb:45:in `red'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.1/lib/compass/compiler.rb:138:in `compile'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.1/lib/compass/compiler.rb:118:in `compile_if_required'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.1/lib/compass/compiler.rb:103:in `block (2 levels) in run'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.1/lib/compass/compiler.rb:101:in `each'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.1/lib/compass/compiler.rb:101:in `block in run'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.1/lib/compass/compiler.rb:126:in `timed'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.1/lib/compass/compiler.rb:100:in `run'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.1/lib/compass/commands/watch_project.rb:147:in `recompile'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `call'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:35:in `update'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:39:in `block in modified'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `each'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `modified'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:18:in `refresh'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `each'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `block in run'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `loop'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `run'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/monitor.rb:26:in `run'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm.rb:70:in `monitor'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.1/lib/compass/commands/watch_project.rb:87:in `perform'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.1/lib/compass/commands/base.rb:18:in `execute'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.1/lib/compass/commands/project_base.rb:19:in `execute'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.1/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.1/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.1/bin/compass:29:in `block in <top (required)>'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.1/bin/compass:43:in `call'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.1/bin/compass:43:in `<top (required)>'
+/Users/chris/.rbenv/versions/1.9.3-p125/bin/compass:19:in `load'
+/Users/chris/.rbenv/versions/1.9.3-p125/bin/compass:19:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"...st-font-size-to\": expected \"{\", was \"(50px);\"\A         on line 21 of /Users/chris/Sites/foundation/scss/typography.scss"; }
