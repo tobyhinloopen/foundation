@@ -1,39 +1,48 @@
 /* This is for all IE specfific style less than IE9. We hate IE. */
+/* line 3, ../scss/ie.scss */
 .lt-ie8 .row {
   max-width: 1000px;
 }
 
+/* line 5, ../scss/ie.scss */
 div.panel {
   border: 1px solid #ccc;
 }
 
+/* line 6, ../scss/ie.scss */
 .lt-ie8 .nav-bar li.has-flyout a {
   padding-right: 20px;
 }
 
+/* line 7, ../scss/ie.scss */
 .lt-ie8 .nav-bar li.has-flyout a:after {
   border-top: none;
 }
 
 /* Correct IE7 button padding */
+/* line 10, ../scss/ie.scss */
 .lt-ie8 input[type=submit].nice.button {
   filter: chroma(color=black);
   position: relative;
   top: -2px;
 }
 
+/* line 11, ../scss/ie.scss */
 .lt-ie8 input[type=submit].tiny.button {
   padding: 5px 5px 7px;
 }
 
+/* line 12, ../scss/ie.scss */
 .lt-ie8 input[type=submit].small.button {
   padding: 8px 7px 9px;
 }
 
+/* line 13, ../scss/ie.scss */
 .lt-ie8 input[type=submit].medium.button {
   padding: 9px 13px 9px;
 }
 
+/* line 14, ../scss/ie.scss */
 .lt-ie8 input[type=submit].large.button {
   padding: 9px 18px 10px;
 }

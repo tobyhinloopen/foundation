@@ -2,40 +2,47 @@
 /*	--------------------------------------------------
     :: Typography
 	-------------------------------------------------- */
+/* line 6, ../scss/typography.scss */
 h1, h2, h3, h4, h5, h6 {
   color: #181818;
   font-weight: bold;
   line-height: 1.25;
 }
 
+/* line 7, ../scss/typography.scss */
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   font-weight: inherit;
 }
 
+/* line 8, ../scss/typography.scss */
 h1 {
   font-size: 46px;
   font-size: 4.6rem;
   margin-bottom: 12px;
 }
 
+/* line 9, ../scss/typography.scss */
 h2 {
   font-size: 35px;
   font-size: 3.5rem;
   margin-bottom: 9px;
 }
 
+/* line 10, ../scss/typography.scss */
 h3 {
   font-size: 28px;
   font-size: 2.8rem;
   margin-bottom: 9px;
 }
 
+/* line 11, ../scss/typography.scss */
 h4 {
   font-size: 21px;
   font-size: 2.1rem;
   margin-bottom: 3px;
 }
 
+/* line 12, ../scss/typography.scss */
 h5 {
   font-size: 18px;
   font-size: 1.8rem;
@@ -43,18 +50,21 @@ h5 {
   margin-bottom: 3px;
 }
 
+/* line 13, ../scss/typography.scss */
 h6 {
   font-size: 15px;
   font-size: 1.5rem;
   font-weight: normal;
 }
 
+/* line 15, ../scss/typography.scss */
 .subheader {
   color: #777;
   font-weight: 300;
   margin-bottom: 24px;
 }
 
+/* line 17, ../scss/typography.scss */
 p {
   font-size: 13px;
   font-size: 1.3rem;
@@ -62,47 +72,56 @@ p {
   margin: 0 0 18px;
 }
 
+/* line 18, ../scss/typography.scss */
 p img {
   margin: 0;
 }
 
+/* line 19, ../scss/typography.scss */
 p.lead {
   font-size: 18px;
   font-size: 1.8rem;
   line-height: 1.5;
 }
 
+/* line 21, ../scss/typography.scss */
 em, i {
   font-style: italic;
   line-height: inherit;
 }
 
+/* line 22, ../scss/typography.scss */
 strong, b {
   font-weight: bold;
   line-height: inherit;
 }
 
+/* line 23, ../scss/typography.scss */
 small {
   font-size: 60%;
   line-height: inherit;
 }
 
+/* line 25, ../scss/typography.scss */
 h1 small, h2 small, h3 small, h4 small, h5 small {
   color: #777;
 }
 
 /*	Blockquotes  */
+/* line 28, ../scss/typography.scss */
 blockquote, blockquote p {
   line-height: 20px;
   color: #777;
 }
 
+/* line 29, ../scss/typography.scss */
 blockquote {
   margin: 0 0 18px;
   padding: 9px 20px 0 19px;
   border-left: 1px solid #ddd;
 }
 
+/* line 30, ../scss/typography.scss */
 blockquote cite {
   display: block;
   font-size: 12px;
@@ -110,14 +129,17 @@ blockquote cite {
   color: #555;
 }
 
+/* line 31, ../scss/typography.scss */
 blockquote cite:before {
   content: "\2014 \0020";
 }
 
+/* line 32, ../scss/typography.scss */
 blockquote cite a, blockquote cite a:visited {
   color: #555;
 }
 
+/* line 34, ../scss/typography.scss */
 hr {
   border: solid #ddd;
   border-width: 1px 0 0;
@@ -126,6 +148,7 @@ hr {
   height: 0;
 }
 
+/* line 36, ../scss/typography.scss */
 abbr, acronym {
   text-transform: uppercase;
   font-size: 90%;
@@ -134,6 +157,7 @@ abbr, acronym {
   cursor: help;
 }
 
+/* line 37, ../scss/typography.scss */
 abbr {
   text-transform: none;
 }
@@ -144,11 +168,13 @@ abbr {
 	 * Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
 	 * Credit to Paul Irish and HTML5 Boilerplate (html5boilerplate.com)
 	 */
+/* line 45, ../scss/typography.scss */
 .print-only {
   display: none !important;
 }
 
 @media print {
+  /* line 47, ../scss/typography.scss */
   * {
     background: transparent !important;
     color: black !important;
@@ -158,34 +184,41 @@ abbr {
   }
 
   /* Black prints faster: sanbeiji.com/archives/953 */
+  /* line 49, ../scss/typography.scss */
   p a, p a:visited {
     color: #444 !important;
     text-decoration: underline;
   }
 
+  /* line 50, ../scss/typography.scss */
   p a[href]:after {
     content: " (" attr(href) ")";
   }
 
+  /* line 51, ../scss/typography.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
+  /* line 52, ../scss/typography.scss */
   .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
     content: "";
   }
 
   /* Don't show links for images, or javascript/internal links */
+  /* line 53, ../scss/typography.scss */
   pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
+  /* line 54, ../scss/typography.scss */
   thead {
     display: table-header-group;
   }
 
   /* css-discuss.incutio.com/wiki/Printing_Tables */
+  /* line 55, ../scss/typography.scss */
   tr, img {
     page-break-inside: avoid;
   }
@@ -194,19 +227,23 @@ abbr {
     margin: 0.5cm;
 }
 
+  /* line 57, ../scss/typography.scss */
   p, h2, h3 {
     orphans: 3;
     widows: 3;
   }
 
+  /* line 58, ../scss/typography.scss */
   h2, h3 {
     page-break-after: avoid;
   }
 
+  /* line 59, ../scss/typography.scss */
   .hide-on-print {
     display: none !important;
   }
 
+  /* line 60, ../scss/typography.scss */
   .print-only {
     display: block !important;
   }

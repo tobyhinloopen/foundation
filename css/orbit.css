@@ -7,12 +7,14 @@
  
 /* CONTAINER
    ================================================== */
+/* line 11, ../scss/orbit.scss */
 div.orbit-wrapper {
   width: 1px;
   height: 1px;
   position: relative;
 }
 
+/* line 16, ../scss/orbit.scss */
 div.orbit {
   width: 1px;
   height: 1px;
@@ -20,10 +22,12 @@ div.orbit {
   overflow: hidden;
 }
 
+/* line 22, ../scss/orbit.scss */
 div.orbit.with-bullets {
   margin-bottom: 40px;
 }
 
+/* line 25, ../scss/orbit.scss */
 div.orbit .orbit-slide {
   max-width: 100%;
   position: absolute;
@@ -31,12 +35,14 @@ div.orbit .orbit-slide {
   left: 0;
 }
 
+/* line 31, ../scss/orbit.scss */
 div.orbit a.orbit-slide {
   border: none;
   line-height: 0;
   display: none;
 }
 
+/* line 36, ../scss/orbit.scss */
 div.orbit div.orbit-slide {
   width: 100%;
   height: 100%;
@@ -45,6 +51,7 @@ div.orbit div.orbit-slide {
 /* Note: If your slider only uses content or anchors, you're going to want to put the width and height declarations on the ".orbit>div" and "div.orbit>a" tags in addition to just the .orbit-wrapper */
 /* TIMER
    ================================================== */
+/* line 46, ../scss/orbit.scss */
 div.orbit-wrapper div.timer {
   width: 40px;
   height: 40px;
@@ -57,6 +64,7 @@ div.orbit-wrapper div.timer {
   z-index: 31;
 }
 
+/* line 57, ../scss/orbit.scss */
 div.orbit-wrapper span.rotator {
   display: block;
   width: 40px;
@@ -68,6 +76,7 @@ div.orbit-wrapper span.rotator {
   z-index: 3;
 }
 
+/* line 67, ../scss/orbit.scss */
 div.orbit-wrapper span.mask {
   display: block;
   width: 20px;
@@ -79,16 +88,19 @@ div.orbit-wrapper span.mask {
   overflow: hidden;
 }
 
+/* line 77, ../scss/orbit.scss */
 div.orbit-wrapper span.rotator.move {
   left: 0;
 }
 
+/* line 80, ../scss/orbit.scss */
 div.orbit-wrapper span.mask.move {
   width: 40px;
   left: 0;
   background: url(../images/orbit/timer-black.png) repeat 0 0;
 }
 
+/* line 85, ../scss/orbit.scss */
 div.orbit-wrapper span.pause {
   display: block;
   width: 40px;
@@ -101,10 +113,12 @@ div.orbit-wrapper span.pause {
   opacity: 0;
 }
 
+/* line 96, ../scss/orbit.scss */
 div.orbit-wrapper span.pause.active {
   background: url(../images/orbit/pause-black.png) no-repeat 0 -40px;
 }
 
+/* line 100, ../scss/orbit.scss */
 div.orbit-wrapper div.timer:hover span.pause,
 div.orbit-wrapper span.pause.active {
   opacity: 1;
@@ -112,11 +126,13 @@ div.orbit-wrapper span.pause.active {
 
 /* CAPTIONS
    ================================================== */
+/* line 107, ../scss/orbit.scss */
 .orbit-caption {
   display: none;
   font-family: "HelveticaNeue", "Helvetica-Neue", Helvetica, Arial, sans-serif;
 }
 
+/* line 111, ../scss/orbit.scss */
 .orbit-wrapper .orbit-caption {
   background: #000;
   background: rgba(0, 0, 0, 0.6);
@@ -133,10 +149,12 @@ div.orbit-wrapper span.pause.active {
 
 /* DIRECTIONAL NAV
    ================================================== */
+/* line 128, ../scss/orbit.scss */
 div.orbit-wrapper div.slider-nav {
   display: block;
 }
 
+/* line 131, ../scss/orbit.scss */
 div.orbit-wrapper div.slider-nav span {
   width: 78px;
   height: 100px;
@@ -148,11 +166,13 @@ div.orbit-wrapper div.slider-nav span {
   cursor: pointer;
 }
 
+/* line 141, ../scss/orbit.scss */
 div.orbit-wrapper div.slider-nav span.right {
   background: url(../images/orbit/right-arrow.png);
   right: 0;
 }
 
+/* line 145, ../scss/orbit.scss */
 div.orbit-wrapper div.slider-nav span.left {
   background: url(../images/orbit/left-arrow.png);
   left: 0;
@@ -160,6 +180,7 @@ div.orbit-wrapper div.slider-nav span.left {
 
 /* BULLET NAV
    ================================================== */
+/* line 152, ../scss/orbit.scss */
 ul.orbit-bullets {
   position: absolute;
   z-index: 30;
@@ -170,6 +191,7 @@ ul.orbit-bullets {
   padding: 0;
 }
 
+/* line 161, ../scss/orbit.scss */
 ul.orbit-bullets li {
   float: left;
   margin-left: 5px;
@@ -182,17 +204,20 @@ ul.orbit-bullets li {
   overflow: hidden;
 }
 
+/* line 172, ../scss/orbit.scss */
 ul.orbit-bullets li.active {
   color: #222;
   background-position: -8px 0;
 }
 
+/* line 176, ../scss/orbit.scss */
 ul.orbit-bullets li.has-thumb {
   background: none;
   width: 100px;
   height: 75px;
 }
 
+/* line 181, ../scss/orbit.scss */
 ul.orbit-bullets li.active.has-thumb {
   background-position: 0 0;
   border-top: 2px solid #000;
@@ -200,6 +225,7 @@ ul.orbit-bullets li.active.has-thumb {
 
 /* FLUID LAYOUT
    ================================================== */
+/* line 187, ../scss/orbit.scss */
 div.orbit img.fluid-placeholder {
   visibility: hidden;
   position: static;
@@ -207,10 +233,12 @@ div.orbit img.fluid-placeholder {
   width: 100%;
 }
 
+/* line 193, ../scss/orbit.scss */
 div.orbit, div.orbit-wrapper {
   width: 100% !important;
 }
 
+/* line 195, ../scss/orbit.scss */
 ul.orbit-bullets {
   position: absolute;
   z-index: 30;
@@ -221,6 +249,7 @@ ul.orbit-bullets {
   padding: 0;
 }
 
+/* line 204, ../scss/orbit.scss */
 ul.orbit-bullets li {
   float: left;
   margin-left: 5px;
@@ -233,27 +262,32 @@ ul.orbit-bullets li {
   overflow: hidden;
 }
 
+/* line 215, ../scss/orbit.scss */
 ul.orbit-bullets li.has-thumb {
   background: none;
   width: 100px;
   height: 75px;
 }
 
+/* line 220, ../scss/orbit.scss */
 ul.orbit-bullets li.active {
   color: #222;
   background-position: -8px 0;
 }
 
+/* line 224, ../scss/orbit.scss */
 ul.orbit-bullets li.active.has-thumb {
   background-position: 0 0;
   border-top: 2px solid #000;
 }
 
 /* Correct timer in IE */
+/* line 230, ../scss/orbit.scss */
 .timer {
   display: none !important;
 }
 
+/* line 231, ../scss/orbit.scss */
 div.caption {
   background: transparent;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
