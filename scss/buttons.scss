@@ -27,7 +27,7 @@
 		&.nice { background: $mainColor url(../images/misc/button-gloss.png) repeat-x 0 -31px; -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.5); -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.5); box-shadow: inset 0 1px 0 rgba(255,255,255,.5); text-shadow: 0 -1px 1px rgba(0,0,0,0.28);
   		background: $mainColor url(../images/misc/button-gloss.png) repeat-x 0 -31px, -moz-linear-gradient(top, rgba(255,255,255,.4) 0%, transparent 100%);
   		background: $mainColor url(../images/misc/button-gloss.png) repeat-x 0 -31px, -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.4)), color-stop(100%,transparent));
-  		border: 1px solid #0593dc;
+  		border: 1px solid darken(($mainColor), 15%);
   		-webkit-transition: background-color .15s ease-in-out;
   		-moz-transition: background-color .15s ease-in-out;
   		-o-transition: background-color .15s ease-in-out; 
@@ -38,11 +38,10 @@
     	&.large 		{ background-position: 0 -30px; }
     	
       /* Nice Colors ---------- */
-    	&.blue		{ border: 1px solid #0593dc; }
-    	&.red		  { border: 1px solid #b90b0b; }
-    	&.white		{ border: 1px solid #cacaca; text-shadow: none !important; }
-    	&.black		{ border: 1px solid #000; }
-    	&.green		{ border: 1px solid #4a6b2d; }
+    	&.primary		{ border: 1px solid darken(($mainColor), 15%); }
+    	&.secondary		{ border: 1px solid darken(($secondaryColor), 15%); text-shadow: none !important; }
+    	&.alert		  { border: 1px solid darken(($alertColor), 15%); }
+    	&.success		{ border: 1px solid darken(($successColor), 15%); }
     	
     	/* Hovers ---------- */
     	&:active 	{ 
@@ -53,25 +52,21 @@
     }
   	
   	/* Colors ---------- */
-    &.blue, &.blue.nice {
+    &.primary, &.primary.nice {
       background-color: $mainColor;
       &:hover { background-color: darken(($mainColor), 10%); }
   	}
-    &.red, &.red.nice {
-      background-color: $alertColor;
-      &:hover { background-color: darken(($alertColor), 10%); }
-    }
-    &.green, &.green.nice {
+    &.success, &.success.nice {
       background-color: $successColor; 
       &:hover { background-color: darken(($successColor), 10%); }
     }
-    &.white, &.white.nice {
-      background-color: $white; color: darken(($white), 80%);
-      &:hover { background-color: darken(($white), 10%); }
+    &.alert, &.alert.nice {
+      background-color: $alertColor;
+      &:hover { background-color: darken(($alertColor), 10%); }
     }
-    &.black, &.black.nice {
-      background-color: $black;
-      &:hover { background-color: darken(($black), 10%); }
+    &.secondary, &.secondary.nice {
+      background-color: $secondaryColor; color: darken(($secondaryColor), 80%);
+      &:hover { background-color: darken(($secondaryColor), 10%); }
     }
     
     &.radius { @include border-radius(3px); }

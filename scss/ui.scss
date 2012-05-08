@@ -30,9 +30,9 @@
 
   div.alert-box { display: block; padding: 6px 7px; font-weight: bold; font-size: 13px; background: #eee; border: 1px solid rgba(0,0,0,0.1); margin-bottom: 12px; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; text-shadow: 0 1px rgba(255,255,255,0.9); position: relative;
     
-    &.success { background-color: #7fae00; color: #fff; text-shadow: 0 -1px rgba(0,0,0,0.3); }
-    &.warning { background-color: #f68b01; color: #fff; text-shadow: 0 -1px rgba(0,0,0,0.3); }
-    &.error { background-color: #c00000; color: #fff; text-shadow: 0 -1px rgba(0,0,0,0.3); }
+    &.success { background-color: $successColor; color: #fff; text-shadow: 0 -1px rgba(0,0,0,0.3); }
+    &.alert { background-color: $alertColor; color: #fff; text-shadow: 0 -1px rgba(0,0,0,0.3); }
+    &.secondary { background-color: $secondaryColor; color: darken(($secondaryColor), 80%); text-shadow: 0 -1px rgba(0,0,0,0.3); }
     
     a.close { color: #000; position: absolute; right: 4px; top: 0; font-size: 18px; opacity: 0.2; padding: 4px; }
     a.close:hover, a.close:focus { opacity: 0.4; }
@@ -47,11 +47,10 @@
     &.radius { @include border-radius(2px); }
     &.round { padding: 1px 7px 2px; @include border-radius(8px); }
     
-    &.blue		{ background-color: $mainColor; }
-    &.red			{ background-color: #e91c21; }
-    &.green		{ background-color: #7fae00; }
-    &.white		{ background-color: #e9e9e9; color: #333; }
-    &.black		{ background-color: #141414; }
+    &.primary		{ background-color: $mainColor; }
+    &.alert			{ background-color: $alertColor; }
+    &.success		{ background-color: $successColor; }
+    &.secondary		{ background-color: $secondaryColor; color: #333; }
     
   }
  
@@ -72,7 +71,7 @@
     
   /* Breadcrumbs */    
   
-  ul.breadcrumbs { display: block; background: #f4f4f4; padding: 7px 10px; border: 1px solid #ddd; border-radius: 2px; overflow: hidden; 
+  ul.breadcrumbs { display: block; background: lighten(($secondaryColor), 5%); padding: 7px 10px; border: 1px solid $secondaryColor; border-radius: 2px; overflow: hidden; 
   
     li { margin: 0; padding: 0 12px 0 0; float: left; list-style: none; 
       a, span { text-transform: uppercase; font-size: 11px; padding-left: 12px; }

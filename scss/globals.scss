@@ -1,15 +1,13 @@
-/* Artfully Masterminded by ZURB */
-
-/* -------------------------------------------------- 
-    Table of Contents
------------------------------------------------------
-:: Base
-:: Standards
-:: Links
-:: Lists
-:: Tables
-:: Misc
+/* 
+  Foundation 3, artfully masterminded by ZURB
+  Core
+  mobile.css - Styles for mobile devices
+  
+  Requires: 
+    normalize.css
 */
+
+  @import "base";
 
 /*	--------------------------------------------------
 	:: Global Reset & Standards
@@ -26,9 +24,9 @@
 /*	--------------------------------------------------
 	:: Links
 	-------------------------------------------------- */
-	a { color: #2a85e8; text-decoration: none; line-height: inherit; }
-	a:hover { color: #11639d; }
-	a:focus { color: #cc4714; outline: none; }
+	a { color: $mainColor; text-decoration: none; line-height: inherit; }
+	a:hover { color: darken($mainColor, 5%); }
+	a:focus { color: $mainColor; outline: none; }
 	p a, p a:visited { line-height: inherit; }
 	
 

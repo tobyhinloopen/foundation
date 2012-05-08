@@ -1,18 +1,15 @@
-/* Artfully Masterminded by ZURB */
-/* -------------------------------------------------- 
-    Table of Contents
------------------------------------------------------
-:: Base
-:: Standards
-:: Links
-:: Lists
-:: Tables
-:: Misc
+/* 
+  Foundation 3, artfully masterminded by ZURB
+  Core
+  mobile.css - Styles for mobile devices
+  
+  Requires: 
+    normalize.css
 */
+/* Colors */
 /*	--------------------------------------------------
 	:: Global Reset & Standards
 	-------------------------------------------------- */
-/* line 18, ../scss/globals.scss */
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -20,12 +17,10 @@
   *behavior: url(/foundation/boxsizing.htc);
 }
 
-/* line 20, ../scss/globals.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 22, ../scss/globals.scss */
 body {
   background: #fff;
   font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -39,25 +34,21 @@ body {
 /*	--------------------------------------------------
 	:: Links
 	-------------------------------------------------- */
-/* line 29, ../scss/globals.scss */
 a {
-  color: #2a85e8;
+  color: #00a6fc;
   text-decoration: none;
   line-height: inherit;
 }
 
-/* line 30, ../scss/globals.scss */
 a:hover {
-  color: #11639d;
+  color: #0095e3;
 }
 
-/* line 31, ../scss/globals.scss */
 a:focus {
-  color: #cc4714;
+  color: #00a6fc;
   outline: none;
 }
 
-/* line 32, ../scss/globals.scss */
 p a, p a:visited {
   line-height: inherit;
 }
@@ -65,32 +56,26 @@ p a, p a:visited {
 /*	--------------------------------------------------
 	:: Lists
 	-------------------------------------------------- */
-/* line 38, ../scss/globals.scss */
 ul, ol {
   margin-bottom: 18px;
 }
 
-/* line 39, ../scss/globals.scss */
 ul.square {
   list-style: square outside;
 }
 
-/* line 40, ../scss/globals.scss */
 ul.circle {
   list-style: circle outside;
 }
 
-/* line 41, ../scss/globals.scss */
 ul.disc {
   list-style: disc outside;
 }
 
-/* line 42, ../scss/globals.scss */
 li {
   margin-bottom: 12px;
 }
 
-/* line 43, ../scss/globals.scss */
 ul.large li {
   line-height: 21px;
 }
@@ -98,7 +83,6 @@ ul.large li {
 /*	--------------------------------------------------
 	:: Tables
 	-------------------------------------------------- */
-/* line 49, ../scss/globals.scss */
 table {
   background: #fff;
   -moz-border-radius: 3px;
@@ -108,12 +92,10 @@ table {
   border: 1px solid #ddd;
 }
 
-/* line 51, ../scss/globals.scss */
 table thead, table tfoot {
   background: #f5f5f5;
 }
 
-/* line 56, ../scss/globals.scss */
 table thead tr th,
 table tfoot tr th,
 table tbody tr td,
@@ -124,7 +106,6 @@ table tfoot tr td {
   text-align: left;
 }
 
-/* line 58, ../scss/globals.scss */
 table thead tr th,
 table tfoot tr td {
   padding: 8px 10px 9px;
@@ -133,28 +114,23 @@ table tfoot tr td {
   color: #222;
 }
 
-/* line 59, ../scss/globals.scss */
 table thead tr th:first-child, table tfoot tr td:first-child {
   border-left: none;
 }
 
-/* line 60, ../scss/globals.scss */
 table thead tr th:last-child, table tfoot tr td:last-child {
   border-right: none;
 }
 
-/* line 63, ../scss/globals.scss */
 table tbody tr.even,
 table tbody tr.alt {
   background: #f9f9f9;
 }
 
-/* line 64, ../scss/globals.scss */
 table tbody tr:nth-child(even) {
   background: #f9f9f9;
 }
 
-/* line 65, ../scss/globals.scss */
 table tbody tr td {
   color: #333;
   padding: 9px 10px;
@@ -165,57 +141,46 @@ table tbody tr td {
 /* -------------------------------------------------- 
 	:: Misc
 ---------------------------------------------------*/
-/* line 70, ../scss/globals.scss */
 .left {
   float: left;
 }
 
-/* line 71, ../scss/globals.scss */
 .right {
   float: right;
 }
 
-/* line 72, ../scss/globals.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 73, ../scss/globals.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 74, ../scss/globals.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 75, ../scss/globals.scss */
 .hide {
   display: none;
 }
 
-/* line 76, ../scss/globals.scss */
 .highlight {
   background: #ff0;
 }
 
-/* line 78, ../scss/globals.scss */
 #googlemap img, object, embed {
   max-width: none;
 }
 
-/* line 80, ../scss/globals.scss */
 #map_canvas embed {
   max-width: none;
 }
 
-/* line 81, ../scss/globals.scss */
 #map_canvas img {
   max-width: none;
 }
 
-/* line 82, ../scss/globals.scss */
 #map_canvas object {
   max-width: none;
 }
