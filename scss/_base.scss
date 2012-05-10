@@ -1,7 +1,7 @@
 
-  @import "compass/css3";
-  @import "compass/typography";
-  
+  @import "compass";
+  @import "mixins";
+
   /* Colors */
   $mainColor: #00a6fc;
   $alertColor: #e91c21;

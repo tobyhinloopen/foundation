@@ -185,6 +185,7 @@ table.hide-on-tablets {
     width: 100%;
     padding: 6px 2% 4px;
     font-size: 18px;
+    font-size: 1.8rem;
   }
 
   form.nice div.form-field input, form.nice div.form-field input.oversize, form.nice input.input-text, form.nice input.input-text.oversize, form.nice textarea {

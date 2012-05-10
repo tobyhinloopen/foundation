@@ -2,11 +2,11 @@
  * Maintained for Foundation. foundation.zurb.com
  * Free to use under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
-
+*/
+/* Colors */
 /*	--------------------------------------------------
 	Reveal Modals
 	-------------------------------------------------- */
-/* line 10, ../scss/reveal.scss */
 .reveal-modal-bg {
   position: fixed;
   height: 100%;
@@ -18,7 +18,6 @@
   left: 0;
 }
 
-/* line 21, ../scss/reveal.scss */
 .reveal-modal {
   visibility: hidden;
   top: 100px;
@@ -37,33 +36,29 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
-/* line 39, ../scss/reveal.scss */
 .reveal-modal.small {
   width: 200px;
   margin-left: -140px;
 }
 
-/* line 40, ../scss/reveal.scss */
 .reveal-modal.medium {
   width: 400px;
   margin-left: -240px;
 }
 
-/* line 41, ../scss/reveal.scss */
 .reveal-modal.large {
   width: 600px;
   margin-left: -340px;
 }
 
-/* line 42, ../scss/reveal.scss */
 .reveal-modal.xlarge {
   width: 800px;
   margin-left: -440px;
 }
 
-/* line 44, ../scss/reveal.scss */
 .reveal-modal .close-reveal-modal {
   font-size: 22px;
+  font-size: 2.2rem;
   line-height: .5;
   position: absolute;
   top: 8px;
@@ -74,19 +69,16 @@
   cursor: pointer;
 }
 
-/* line 56, ../scss/reveal.scss */
 .reveal-modal .row {
   min-width: 0;
 }
 
 /* Mobile */
 @media handheld, only screen and (max-width: 1023px) {
-  /* line 63, ../scss/reveal.scss */
   .reveal-modal-bg {
     position: absolute;
   }
 
-  /* line 69, ../scss/reveal.scss */
   .reveal-modal,
   .reveal-modal.small,
   .reveal-modal.medium,
@@ -101,12 +93,10 @@
   }
 }
 @media handheld, only screen and (max-width: 767px) {
-  /* line 73, ../scss/reveal.scss */
   .reveal-modal-bg {
     position: absolute;
   }
 
-  /* line 79, ../scss/reveal.scss */
   .reveal-modal,
   .reveal-modal.small,
   .reveal-modal.medium,
