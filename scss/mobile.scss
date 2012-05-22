@@ -54,15 +54,15 @@
 	
 	/* Modernizr-enabled tablet targeting */
 	@media only screen and (max-width: 1280px) and (min-width: 768px) {
-		.touch .hide-for-small,
-		.touch .show-for-medium,
-		.touch .hide-for-large,
-		.touch .hide-for-xlarge { display: block !important; }
+		.hide-for-small,
+		.show-for-medium,
+		.hide-for-large,
+		.hide-for-xlarge { display: block !important; }
 		
-		.touch .show-for-small,
-		.touch .hide-for-medium,
-		.touch .show-for-large,
-		.touch .show-for-xlarge { display: none !important; }
+		.show-for-small,
+		.hide-for-medium,
+		.show-for-large,
+		.show-for-xlarge { display: none !important; }
 	}
 	
 	/* Small device targeting */	

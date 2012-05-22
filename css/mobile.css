@@ -21,9 +21,9 @@
   .show-for-small, .show-for-medium, .show-for-large, .hide-for-xlarge { display: none !important; } }
 /* Modernizr-enabled tablet targeting */
 @media only screen and (max-width: 1280px) and (min-width: 768px) { /* line 60, ../scss/mobile.scss */
-  .touch .hide-for-small, .touch .show-for-medium, .touch .hide-for-large, .touch .hide-for-xlarge { display: block !important; }
+  .hide-for-small, .show-for-medium, .hide-for-large, .hide-for-xlarge { display: block !important; }
   /* line 65, ../scss/mobile.scss */
-  .touch .show-for-small, .touch .hide-for-medium, .touch .show-for-large, .touch .show-for-xlarge { display: none !important; } }
+  .show-for-small, .hide-for-medium, .show-for-large, .show-for-xlarge { display: none !important; } }
 /* Small device targeting */
 @media only screen and (max-width: 767px) { /* line 73, ../scss/mobile.scss */
   .show-for-small, .hide-for-medium, .hide-for-large, .hide-for-xlarge { display: block !important; }
