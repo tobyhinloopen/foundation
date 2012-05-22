@@ -19,7 +19,7 @@
       &.has-flyout {
         &>a.main { padding-right: 36px; }
         &>a.flyout-toggle { position: absolute; right: 0; top: 0; padding: 22px; z-index: 2; display: block;
-          span { content: ""; width: 0; height: 0; border-left: 4px solid transparent;border-right: 4px solid transparent; border-top: 4px solid $mainColor; display: block; }
+          span { content: ""; width: 0; height: 0; border-left: 4px solid transparent; border-right: 4px solid transparent; border-top: 4px solid $mainColor; display: block; }
         }
       }
     }
@@ -28,7 +28,7 @@
   
   }
   
-  .flyout { background: #fff; margin: 0; padding: 20px; border: 1px solid #ddd; position: absolute; top: 45px; left: -1px; width: 400px; z-index: 40; 
+  .flyout { background: #fff; margin: 0; padding: 20px; border: 1px solid #ddd; position: absolute; top: 43px; left: -1px; width: 400px; z-index: 40; 
   
     &.small { width: 200px; }
     &.large { width: 600px; }

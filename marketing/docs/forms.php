@@ -72,7 +72,7 @@
 						<small>Whoa, cowboy. Try that again.</small>
 					</div>
 					
-					<label class="red" for="errorInput">Medium Input</label>
+					<label class="alert" for="errorInput">Medium Input</label>
 					<input type="text" class="medium input-text red" id="errorInput" />
 					<small class="error">Whoa, cowboy. Try that again.</small>
 
@@ -126,7 +126,7 @@
 						<small>Whoa, cowboy. Try that again.</small>
 					</div>
 					
-					<label class="red" for="errorNiceInput">Medium Input</label>
+					<label class="alert" for="errorNiceInput">Medium Input</label>
 					<input type="text" class="medium red input-text" id="errorNiceInput" />
 					<small class="error">Whoa, cowboy. Try that again.</small>
 
