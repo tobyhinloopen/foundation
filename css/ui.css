@@ -27,6 +27,7 @@ div.alert-box {
   padding: 6px 7px;
   font-weight: bold;
   font-size: 13px;
+  font-size: 1.3rem;
   background: #eee;
   border: 1px solid rgba(0, 0, 0, 0.1);
   margin-bottom: 12px;
@@ -57,6 +58,7 @@ div.alert-box a.close {
   right: 4px;
   top: 0;
   font-size: 18px;
+  font-size: 1.8rem;
   opacity: 0.2;
   padding: 4px;
 }
@@ -68,6 +70,7 @@ div.alert-box a.close:hover, div.alert-box a.close:focus {
 .label {
   padding: 0 4px 2px;
   font-size: 11px;
+  font-size: 1.1rem;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
@@ -120,6 +123,7 @@ ul.pagination li {
   height: 24px;
   color: #999;
   font-size: 15px;
+  font-size: 1.5rem;
   margin-left: 5px;
 }
 ul.pagination li a {
@@ -157,6 +161,7 @@ ul.breadcrumbs li {
 ul.breadcrumbs li a, ul.breadcrumbs li span {
   text-transform: uppercase;
   font-size: 11px;
+  font-size: 1.1rem;
   padding-left: 12px;
 }
 ul.breadcrumbs li:first-child a, ul.breadcrumbs li:first-child span {
@@ -380,7 +385,7 @@ p.vevent abbr {
 .tap-to-close {
   display: block;
   font-size: 10px;
-  font-size: 1.0rem;
+  font-size: 1rem;
   color: #888;
   font-weight: normal;
 }

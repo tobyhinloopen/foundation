@@ -28,13 +28,13 @@
 
   /* Alerts */
 
-  div.alert-box { display: block; padding: 6px 7px; font-weight: bold; font-size: 13px; background: #eee; border: 1px solid rgba(0,0,0,0.1); margin-bottom: 12px; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; text-shadow: 0 1px rgba(255,255,255,0.9); position: relative;
+  div.alert-box { display: block; padding: 6px 7px; font-weight: bold; @include font-size(13); background: #eee; border: 1px solid rgba(0,0,0,0.1); margin-bottom: 12px; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; text-shadow: 0 1px rgba(255,255,255,0.9); position: relative;
     
     &.success { background-color: $successColor; color: #fff; text-shadow: 0 -1px rgba(0,0,0,0.3); }
     &.alert { background-color: $alertColor; color: #fff; text-shadow: 0 -1px rgba(0,0,0,0.3); }
     &.secondary { background-color: $secondaryColor; color: darken(($secondaryColor), 80%); text-shadow: 0 -1px rgba(0,0,0,0.3); }
     
-    a.close { color: #000; position: absolute; right: 4px; top: 0; font-size: 18px; opacity: 0.2; padding: 4px; }
+    a.close { color: #000; position: absolute; right: 4px; top: 0; @include font-size(18); opacity: 0.2; padding: 4px; }
     a.close:hover, a.close:focus { opacity: 0.4; }
     
   }
@@ -42,7 +42,7 @@
 
   /* Labels */
 
-  .label { padding: 0 4px 2px; font-size: 11px; font-weight: bold; text-align: center; text-decoration: none; line-height: 1;  white-space: nowrap; display: inline; position: relative; bottom: 1px; color: #fff; background: $mainColor; 
+  .label { padding: 0 4px 2px; @include font-size(11); font-weight: bold; text-align: center; text-decoration: none; line-height: 1;  white-space: nowrap; display: inline; position: relative; bottom: 1px; color: #fff; background: $mainColor; 
     
     &.radius { @include border-radius(2px); }
     &.round { padding: 1px 7px 2px; @include border-radius(8px); }
@@ -59,7 +59,7 @@
 
   ul.pagination { display: block; height: 24px; margin-left: -5px; 
   
-    li { float: left; display: block; height: 24px; color: #999; font-size: 15px; margin-left: 5px; 
+    li { float: left; display: block; height: 24px; color: #999; @include font-size(15); margin-left: 5px; 
       a { display: block; padding: 6px 7px 4px; color: #555; }
       &.current a, &:hover a, a:focus { border-bottom: solid 2px $mainColor; color: #141414; }
       &.unavailable a { cursor: default; color: #999; }
@@ -74,7 +74,7 @@
   ul.breadcrumbs { display: block; background: lighten(($secondaryColor), 5%); padding: 7px 10px; border: 1px solid $secondaryColor; border-radius: 2px; overflow: hidden; 
   
     li { margin: 0; padding: 0 12px 0 0; float: left; list-style: none; 
-      a, span { text-transform: uppercase; font-size: 11px; padding-left: 12px; }
+      a, span { text-transform: uppercase; @include font-size(11); padding-left: 12px; }
       &:first-child a, &:first-child span { padding-left: 0; }
     }
     li:before { content: "/"; color: #aaa; }
@@ -151,7 +151,7 @@
   ul.vcard { display: inline-block; margin: 0 0 12px 0; border: 1px solid #ddd; padding: 10px;
   
     li { margin: 0; display: block; }
-    li.fn { font-weight: bold; font-size: 15px; font-size: 1.5rem; }
+    li.fn { font-weight: bold; @include font-size(15); }
   
   }
   
@@ -171,7 +171,7 @@
   
   }
   
-  .tooltip { display: none; background: rgb(0,0,0); background: rgba(0,0,0,0.8); position: absolute; color: #fff; font-weight: bold; font-size: 12px; font-size: 1.2rem; padding: 5px; z-index: 999; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; line-height: normal;
+  .tooltip { display: none; background: rgb(0,0,0); background: rgba(0,0,0,0.8); position: absolute; color: #fff; font-weight: bold; @include font-size(12); padding: 5px; z-index: 999; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; line-height: normal;
     
     &>.nub { display: block; width: 0; height: 0; border: solid 5px; border-color: transparent transparent rgb(0,0,0) transparent; border-color: transparent transparent rgba(0,0,0,0.8) transparent; position: absolute; top: -10px; left: 10px; }
     &.tip-verride>.nub { border-color: transparent transparent rgb(0,0,0) transparent !important; border-color: transparent transparent rgba(0,0,0,0.8) transparent !important; top: -10px !important; }
@@ -187,5 +187,5 @@
   
   }
   
-  .tap-to-close { display: block; font-size: 10px; font-size: 1.0rem; color: #888; font-weight: normal; }
+  .tap-to-close { display: block; @include font-size(10); color: #888; font-weight: normal; }
 	
