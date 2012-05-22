@@ -1,9 +1,9 @@
-/* 
+/*
   Foundation 3, artfully masterminded by ZURB
   Core
   mobile.css - Styles for mobile devices
-  
-  Requires: 
+
+  Requires:
     normalize.css
 */
 /* Colors */
@@ -24,8 +24,8 @@ html {
 body {
   background: #fff;
   font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 1.3rem;
-  line-height: 18px;
+  font-size: 1.4rem;
+  line-height: 1.5;
   color: #555;
   position: relative;
   -webkit-font-smoothing: antialiased;
@@ -140,7 +140,7 @@ table tbody tr td {
   border: none;
 }
 
-/* -------------------------------------------------- 
+/* --------------------------------------------------
 	:: Misc
 ---------------------------------------------------*/
 .left {

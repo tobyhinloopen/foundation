@@ -1,65 +1,87 @@
-/* 
+/*
   Foundation 3, artfully masterminded by ZURB
   Core
   tabs.css - Tab styles with preconfigured JS
-  
-  Requires: 
+
+  Requires:
     globals.css
     app.js
 */
 
   @import "base";
 
+  // Variables
+  $tabHeight: 30px;
+  $margin-btm-only: 0 0 20px 0;
+
+  // Mixins
+  @mixin margin-only($position, $size) {
+    @if $position == top {
+      margin: $size 0 0 0;
+    }
+    @if $position == right {
+      margin: 0 $size 0 0;
+    }
+    @if $position == bottom {
+      margin: 0 0 $size 0;
+    }
+    @if $position == left {
+      margin: 0 0 0 $size;
+    }
+  }
+
+
 /*--------------------------------------------------
   Tabs
   -------------------------------------------------- */
-  
-  dl.tabs { 
+
+  dl.tabs {
     display: block;
-    margin: 0 0 20px 0;
+    //margin: 0 0 20px 0;
+    @include margin-only(bottom, 20px);
     padding: 0;
-    height: 30px;
-    border-bottom: solid 1px #ddd; 
+    height: $tabHeight;
+    border-bottom: solid 1px #ddd;
     dt {
       display: block;
       width: auto;
-      height: 30px;
+      height: $tabHeight;
       padding: 0 9px 0 20px;
-      line-height: 30px;
+      line-height: $tabHeight;
       float: left;
       color: #999;
       @include font-size(11);
       text-transform: uppercase;
-      cursor: default; 
+      cursor: default;
       &:first-child {
         padding: 0 9px 0 0;
       }
     }
-    dd { 
+    dd {
       display: block;
       width: auto;
-      height: 30px;
+      height: $tabHeight;
       padding: 0;
       float: left;
-      margin-left: 0; 
+      margin-left: 0;
       a {
         display: block;
         width: auto;
-        height: 29px;
+        height: $tabHeight - 1px;
         padding: 0 9px;
-        line-height: 30px;
+        line-height: $tabHeight;
         border: solid 1px #ddd;
         margin: 0 -1px 0 0;
         color: #555;
-        background: #eee; 
+        background: #eee;
         &.active {
           background: #fff;
           border-width: 1px 1px 0 1px;
-          height: 30px;
+          height: $tabHeight;
         }
       }
     }
-    
+
     &.vertical {
       height: auto;
       dt, dd, &.nice dt, &.nice dd {
@@ -78,7 +100,7 @@
         color: #555;
         background: #eee;
         @include font-size(15);
-        &.active { 
+        &.active {
           height: auto;
           margin: 0;
           border-width: 1px 0 0;
@@ -86,17 +108,17 @@
         }
       }
     }
-    
+
     &.nice {
       border-bottom: solid 1px #eee;
-      margin: 0 0 30px 0;
-      height: 43px; 
-      dd a { 
-        padding: 7px 18px 9px; 
+      margin: 0 0 $tabHeight 0;
+      height: 43px;
+      dd a {
+        padding: 7px 18px 9px;
         @include font-size(15);
         color: #555555;
         background: none;
-        border: none; 
+        border: none;
         &.active {
           font-weight: bold;
           color: #333;
@@ -137,18 +159,18 @@
         }
       }
     }
-    
+
     &.contained, &.nice.contained { margin-bottom: 0; }
     &.contained dd a { padding: 0 14px; }
     &.contained.nice dd a { padding: 7px 18px 9px; }
   }
-  
+
   ul.tabs-content {
     margin: 0;
     padding: 0;
-    display: block; 
+    display: block;
     &>li {
-      display: none; 
+      display: none;
       &.active {
         display: block;
       }
@@ -164,5 +186,5 @@
       &.nice>li { border-collapse: #eee; }
     }
   }
-  
+
   .no-js ul.tabs-content>li { display: block; }
