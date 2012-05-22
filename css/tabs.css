@@ -1,9 +1,9 @@
-/* 
+/*
   Foundation 3, artfully masterminded by ZURB
   Core
   tabs.css - Tab styles with preconfigured JS
-  
-  Requires: 
+
+  Requires:
     globals.css
     app.js
 */
@@ -27,6 +27,7 @@ dl.tabs dt {
   float: left;
   color: #999;
   font-size: 11px;
+  font-size: 1.1rem;
   text-transform: uppercase;
   cursor: default;
 }

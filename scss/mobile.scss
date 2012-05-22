@@ -20,7 +20,7 @@
 	-------------------------------------------------- */
 	
 	@media handheld, only screen and (max-width: 767px) {
-		
+    
 	}
 	
 
@@ -135,7 +135,7 @@
 
 	@media only screen and (max-width: 767px) {
 		div.form-field input, div.form-field input.small, div.form-field input.medium, div.form-field input.large, div.form-field input.oversize, input.input-text, input.input-text.oversize, textarea,
-		form.nice div.form-field input, form.nice div.form-field input.oversize, form.nice input.input-text, form.nice input.input-text.oversize, form.nice textarea { display: block; width: 100%; padding: 6px 2% 4px; font-size: 18px; }
+		form.nice div.form-field input, form.nice div.form-field input.oversize, form.nice input.input-text, form.nice input.input-text.oversize, form.nice textarea { display: block; width: 100%; padding: 6px 2% 4px; @include font-size(18); }
 		form.nice div.form-field input, form.nice div.form-field input.oversize, form.nice input.input-text, form.nice input.input-text.oversize, form.nice textarea { -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; }
 		
 		form.nice div.form-field.error small, form.nice small.error { padding: 6px 2%; display: block; }
@@ -163,7 +163,7 @@
 		dl.tabs.mobile, dl.nice.tabs.mobile { width: auto; margin: 20px -20px 40px; height: auto; }
 		dl.tabs.mobile dt, dl.tabs.mobile dd, dl.nice.tabs.mobile dt, dl.nice.tabs.mobile dd { float: none; height: auto; }
 
-		dl.tabs.mobile dd a { display: block; width: auto; height: auto; padding: 18px 20px; line-height: 1; border: solid 0 #ccc; border-width: 1px 0 0; margin: 0; color: #555; background: #eee; font-size: 15px; font-size: 1.5rem; }
+		dl.tabs.mobile dd a { display: block; width: auto; height: auto; padding: 18px 20px; line-height: 1; border: solid 0 #ccc; border-width: 1px 0 0; margin: 0; color: #555; background: #eee; @include font-size(15); }
 		dl.tabs.mobile dd a.active { height: auto; margin: 0; border-width: 1px 0 0; }
 	
 		.nice.tabs.mobile { border-bottom: solid 1px #ccc; height: auto; 
@@ -184,7 +184,7 @@
 
 	/* Modernizr-enabled tablet targeting */
 	@media only screen and (max-width: 1280px) and (min-width: 768px) {
-		.touch .nav-bar li a { font-size: 13px; font-size: 1.3rem; }
+		.touch .nav-bar li a { @include font-size(13); }
 		.touch .nav-bar li.has-flyout>a.flyout-toggle { padding: 20px; }
 	}
 
@@ -212,8 +212,7 @@
 	/* Tooltips */
 	@media only screen and (max-width: 767px) {
 	  .tooltip {
-	    font-size: 14px;
-	    font-size: 1.4rem;
+	    @include font-size(14);
 	    line-height: 1.4;
 	    padding: 7px 10px 9px 10px;
 	  }

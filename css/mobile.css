@@ -69,7 +69,7 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
 	:: Forms
 ---------------------------------------------------*/
 @media only screen and (max-width: 767px) { /* line 138, ../scss/mobile.scss */
-  div.form-field input, div.form-field input.small, div.form-field input.medium, div.form-field input.large, div.form-field input.oversize, input.input-text, input.input-text.oversize, textarea, form.nice div.form-field input, form.nice div.form-field input.oversize, form.nice input.input-text, form.nice input.input-text.oversize, form.nice textarea { display: block; width: 100%; padding: 6px 2% 4px; font-size: 18px; }
+  div.form-field input, div.form-field input.small, div.form-field input.medium, div.form-field input.large, div.form-field input.oversize, input.input-text, input.input-text.oversize, textarea, form.nice div.form-field input, form.nice div.form-field input.oversize, form.nice input.input-text, form.nice input.input-text.oversize, form.nice textarea { display: block; width: 100%; padding: 6px 2% 4px; font-size: 18px; font-size: 1.8rem; }
   /* line 139, ../scss/mobile.scss */
   form.nice div.form-field input, form.nice div.form-field input.oversize, form.nice input.input-text, form.nice input.input-text.oversize, form.nice textarea { -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; }
   /* line 141, ../scss/mobile.scss */
@@ -140,8 +140,8 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
 /* Tooltips */
 @media only screen and (max-width: 767px) { /* line 214, ../scss/mobile.scss */
   .tooltip { font-size: 14px; font-size: 1.4rem; line-height: 1.4; padding: 7px 10px 9px 10px; }
-  /* line 220, ../scss/mobile.scss */
+  /* line 219, ../scss/mobile.scss */
   .tooltip > .nub, .tooltip.top > .nub, .tooltip.left > .nub, .tooltip.right > .nub { border-color: transparent transparent black transparent; border-color: transparent transparent rgba(0, 0, 0, 0.85) transparent; top: -12px; left: 10px; } }
 /* Video */
-@media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) { /* line 232, ../scss/mobile.scss */
+@media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) { /* line 231, ../scss/mobile.scss */
   .flex-video { padding-top: 0; } }
