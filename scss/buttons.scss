@@ -8,13 +8,12 @@
 */
 
   @import "base";
-
-  /*	-------------------------------------------------
-	Buttons
-	-------------------------------------------------- */
+  
+  $radius: 3px;
+  
 
 	.button {
-		background: $mainColor; border: 1px solid darken(($mainColor), 15%); -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.5); -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.5); box-shadow: inset 0 1px 0 rgba(255,255,255,.5); color: #fff; cursor: pointer; display: inline-block; font-family: "Helvetica Neue", "Helvetica", Arial, Verdana, sans-serif; @include font-size(13); font-weight: bold; line-height: 1; margin: 0; outline: none; padding: 9px 34px 11px; position: relative; text-align: center; text-decoration: none; text-shadow: 0 -1px 1px rgba(0,0,0,0.28); -webkit-transition: background-color .15s ease-in-out; -moz-transition: background-color .15s ease-in-out; -o-transition: background-color .15s ease-in-out;
+		background: $mainColor; border: 1px solid darken(($mainColor), 15%); -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.5); -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.5); box-shadow: inset 0 1px 0 rgba(255,255,255,.5); color: #fff; cursor: pointer; display: inline-block; font-family: "Helvetica Neue", "Helvetica", Arial, Verdana, sans-serif; @include font-size(13); font-weight: bold; line-height: 1; margin: 0; outline: none; padding: 9px 21px 11px; position: relative; text-align: center; text-decoration: none; text-shadow: 0 -1px 1px rgba(0,0,0,0.28); -webkit-transition: background-color .15s ease-in-out; -moz-transition: background-color .15s ease-in-out; -o-transition: background-color .15s ease-in-out;
 		
   	&.secondary		{ text-shadow: none !important; }
   	
@@ -28,10 +27,10 @@
 		&:hover { color: #fff; }
     
     /* Sizes ---------- */
-  	&.tiny			{ @include font-size(10); padding: 6px 14px 8px; width: auto; }
-  	&.small 		{ @include font-size(11); padding: 8px 20px 10px; width: auto; }
+  	&.tiny			{ @include font-size(10); padding: 6px 9px 8px; width: auto; }
+  	&.small 		{ @include font-size(11); padding: 8px 14px 10px; width: auto; }
   	&.medium 		{ @include font-size(13); width: auto; }
-  	&.large 		{ @include font-size(18); padding: 11px 48px 13px; width: auto; }
+  	&.large 		{ @include font-size(18); padding: 11px 28px 13px; width: auto; }
   	
   	/* Colors ---------- */
     &.primary {
@@ -51,7 +50,7 @@
       &:hover { background-color: darken(($secondaryColor), 10%); }
     }
     
-    &.radius { @include border-radius(3px); }
+    &.radius { @include border-radius($radius); }
     &.round { @include border-radius(1000px); }
     
     &.full-width { width: 100%; text-align: center; padding-left: 0 !important; padding-right: !important; }
@@ -73,3 +72,45 @@
     input[type=submit].medium.button	{ padding: 8px 34px 9px; }
     input[type=submit].large.button		{ padding: 9px 48px 10px; }
   }
+  
+  /* Button Groups */
+  
+  ul.button-group { list-style: none; padding: 0; margin: 0 0 12px; overflow: hidden;
+    
+    li { padding: 0; margin: 0 0 0 -1px; float: left;
+      
+      &:first-child { margin-left: 0; }
+      a.button {  }
+    }
+    
+    &.radius {
+      
+      li:first-child a.button, li:first-child a.button.radius, li:first-child a.button.rounded { @include border-radius(0px); border-top-left-radius: $radius; border-bottom-left-radius: $radius; }
+      li + li a.button, li + li a.button.radius, li + li a.button.rounded { border-radius: 0; }
+      li:last-child a.button, li:last-child a.button.radius, li:last-child a.button.rounded { @include border-radius(0px); border-top-right-radius: $radius; border-bottom-right-radius: $radius; }
+    }
+    
+    &.rounded {
+      
+      li:first-child a.button, li:first-child a.button.radius, li:first-child a.button.rounded { @include border-radius(0px); border-top-left-radius: 1000px; border-bottom-left-radius: 1000px; }
+      li + li a.button, li + li a.button.radius, li + li a.button.rounded { border-radius: 0; }
+      li:last-child a.button, li:last-child a.button.radius, li:last-child a.button.rounded { @include border-radius(0px); border-top-right-radius: 1000px; border-bottom-right-radius: 1000px; }
+    }
+    
+    &.even { 
+      
+      a.button { width: 100%; }
+      &.two-up li { width: 50%; }
+      &.three-up li { width: 33.3%; }
+      &.three-up li:first-child { width: 33.4%; }
+      &.four-up li { width: 25%; }
+      &.five-up li { width: 20%; }
+    }
+  }
+  
+  div.button-bar { overflow: hidden;
+    
+    ul.button-group { float: left; margin-left: 8px; }
+    ul.button-group:first-child { margin-left: 0; }
+  }
+  

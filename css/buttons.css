@@ -7,9 +7,6 @@
     globals.css
 */
 /* Colors */
-  /*	-------------------------------------------------
-	Buttons
-	-------------------------------------------------- */
 .button {
   background: #00a6fc;
   border: 1px solid #0074b0;
@@ -26,7 +23,7 @@
   line-height: 1;
   margin: 0;
   outline: none;
-  padding: 9px 34px 11px;
+  padding: 9px 21px 11px;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -53,13 +50,13 @@
 .button.tiny {
   font-size: 10px;
   font-size: 1rem;
-  padding: 6px 14px 8px;
+  padding: 6px 9px 8px;
   width: auto;
 }
 .button.small {
   font-size: 11px;
   font-size: 1.1rem;
-  padding: 8px 20px 10px;
+  padding: 8px 14px 10px;
   width: auto;
 }
 .button.medium {
@@ -70,7 +67,7 @@
 .button.large {
   font-size: 18px;
   font-size: 1.8rem;
-  padding: 11px 48px 13px;
+  padding: 11px 28px 13px;
   width: auto;
 }
 .button.primary {
@@ -158,4 +155,91 @@ input[type=submit].button, button.button {
   input[type=submit].large.button {
     padding: 9px 48px 10px;
   }
+}
+
+/* Button Groups */
+ul.button-group {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px;
+  overflow: hidden;
+}
+ul.button-group li {
+  padding: 0;
+  margin: 0 0 0 -1px;
+  float: left;
+}
+ul.button-group li:first-child {
+  margin-left: 0;
+}
+ul.button-group.radius li:first-child a.button, ul.button-group.radius li:first-child a.button.radius, ul.button-group.radius li:first-child a.button.rounded {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+ul.button-group.radius li + li a.button, ul.button-group.radius li + li a.button.radius, ul.button-group.radius li + li a.button.rounded {
+  border-radius: 0;
+}
+ul.button-group.radius li:last-child a.button, ul.button-group.radius li:last-child a.button.radius, ul.button-group.radius li:last-child a.button.rounded {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+ul.button-group.rounded li:first-child a.button, ul.button-group.rounded li:first-child a.button.radius, ul.button-group.rounded li:first-child a.button.rounded {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  border-top-left-radius: 1000px;
+  border-bottom-left-radius: 1000px;
+}
+ul.button-group.rounded li + li a.button, ul.button-group.rounded li + li a.button.radius, ul.button-group.rounded li + li a.button.rounded {
+  border-radius: 0;
+}
+ul.button-group.rounded li:last-child a.button, ul.button-group.rounded li:last-child a.button.radius, ul.button-group.rounded li:last-child a.button.rounded {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  border-top-right-radius: 1000px;
+  border-bottom-right-radius: 1000px;
+}
+ul.button-group.even a.button {
+  width: 100%;
+}
+ul.button-group.even.two-up li {
+  width: 50%;
+}
+ul.button-group.even.three-up li {
+  width: 33.3%;
+}
+ul.button-group.even.three-up li:first-child {
+  width: 33.4%;
+}
+ul.button-group.even.four-up li {
+  width: 25%;
+}
+ul.button-group.even.five-up li {
+  width: 20%;
+}
+
+div.button-bar {
+  overflow: hidden;
+}
+div.button-bar ul.button-group {
+  float: left;
+  margin-left: 8px;
+}
+div.button-bar ul.button-group:first-child {
+  margin-left: 0;
 }
