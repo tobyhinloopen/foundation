@@ -12,144 +12,110 @@
   Tabs
   -------------------------------------------------- */
 dl.tabs {
+  border-bottom: solid 1px #eee;
   display: block;
-  margin: 0 0 20px 0;
+  height: 43px;
+  margin: 0 0 43px 0;
   padding: 0;
-  height: 30px;
-  border-bottom: solid 1px #ddd;
 }
 dl.tabs dt {
-  display: block;
-  width: auto;
-  height: 30px;
-  padding: 0 9px 0 20px;
-  line-height: 30px;
-  float: left;
   color: #999;
+  cursor: default;
+  display: block;
+  float: left;
   font-size: 11px;
   font-size: 1.1rem;
+  height: 43px;
+  line-height: 43px;
+  padding: 0 9px 0 20px;
+  width: auto;
   text-transform: uppercase;
-  cursor: default;
 }
 dl.tabs dt:first-child {
   padding: 0 9px 0 0;
 }
 dl.tabs dd {
   display: block;
-  width: auto;
-  height: 30px;
-  padding: 0;
   float: left;
+  height: 43px;
+  padding: 0;
   margin-left: 0;
+  width: auto;
 }
 dl.tabs dd a {
-  display: block;
-  width: auto;
-  height: 29px;
-  padding: 0 9px;
-  line-height: 30px;
-  border: solid 1px #ddd;
-  margin: 0 -1px 0 0;
-  color: #555;
-  background: #eee;
-}
-dl.tabs dd a.active {
-  background: #fff;
-  border-width: 1px 1px 0 1px;
-  height: 30px;
-}
-dl.tabs.vertical {
-  height: auto;
-}
-dl.tabs.vertical dt, dl.tabs.vertical dd, dl.tabs.vertical.nice dt, dl.tabs.vertical.nice dd {
-  float: none;
-  height: auto;
-}
-dl.tabs.vertical dd a {
-  display: block;
-  width: auto;
-  height: auto;
-  padding: 15px 20px;
-  line-height: 1;
-  border: solid 0 #ccc;
-  border-width: 1px 1px 0;
-  margin: 0;
-  color: #555;
-  background: #eee;
-  font-size: 15px;
-  font-size: 1.5rem;
-}
-dl.tabs.vertical dd a.active {
-  height: auto;
-  margin: 0;
-  border-width: 1px 0 0;
-  background: #fff;
-}
-dl.tabs.nice {
-  border-bottom: solid 1px #eee;
-  margin: 0 0 30px 0;
-  height: 43px;
-}
-dl.tabs.nice dd a {
-  padding: 7px 18px 9px;
-  font-size: 15px;
-  font-size: 1.5rem;
-  color: #555555;
   background: none;
   border: none;
+  color: #555;
+  display: block;
+  font-size: 15px;
+  font-size: 1.5rem;
+  height: 42px;
+  line-height: 43px;
+  margin: 0 10px;
+  padding: 7px 18px 9px;
+  position: relative;
+  top: -5px;
+  width: auto;
 }
-dl.tabs.nice dd a.active {
-  font-weight: bold;
-  color: #333;
+dl.tabs dd a.active {
   background: #fff;
   border-left: 1px solid #eee;
   border-right: 1px solid #eee;
   border-top: 3px solid #00a6fc;
-  margin: 0 10px;
-  position: relative;
-  top: -5px;
+  color: #333;
+  font-weight: bold;
+  height: 43px;
 }
-dl.tabs.nice dd:first-child a.active {
+dl.tabs dd:first-child a.active {
   margin-left: 0;
 }
-dl.tabs.nice.vertical {
+dl.tabs.vertical {
+  height: auto;
   border-bottom: solid 1px #eee;
+}
+dl.tabs.vertical dt, dl.tabs.vertical dd {
+  float: none;
   height: auto;
 }
-dl.tabs.nice.vertical dd a {
-  padding: 15px 20px;
+dl.tabs.vertical dd a {
+  background: #fff;
   border: none;
   border-left: 1px solid #eee;
   border-right: 1px solid #eee;
   border-top: 1px solid #eee;
-  background: #fff;
+  color: #555;
+  display: block;
+  font-size: 15px;
+  font-size: 1.5rem;
+  height: auto;
+  line-height: 1;
+  margin: 0;
+  padding: 15px 20px;
+  width: auto;
 }
-dl.tabs.nice.vertical dd a.active {
-  border: none;
+dl.tabs.vertical dd a.active {
   background: #00a6fc;
+  border: none;
   color: #fff;
+  height: auto;
   margin: 0;
   position: static;
   top: 0;
-  height: auto;
 }
-dl.tabs.nice.vertical dd:first-child a.active {
+dl.tabs.vertical dd:first-child a.active {
   margin: 0;
 }
-dl.tabs.contained, dl.tabs.nice.contained {
+dl.tabs.contained {
   margin-bottom: 0;
 }
 dl.tabs.contained dd a {
-  padding: 0 14px;
-}
-dl.tabs.contained.nice dd a {
   padding: 7px 18px 9px;
 }
 
 ul.tabs-content {
+  display: block;
   margin: 0;
   padding: 0;
-  display: block;
 }
 ul.tabs-content > li {
   display: none;
@@ -161,15 +127,12 @@ ul.tabs-content.contained {
   padding: 0;
 }
 ul.tabs-content.contained > li {
-  padding: 20px;
-  border: solid 0 #ddd;
+  border: solid 0 #eee;
   border-width: 0 1px 1px 1px;
+  padding: 20px;
 }
 ul.tabs-content.contained.vertical > li {
   border-width: 1px 1px 1px 1px;
-}
-ul.tabs-content.contained.nice > li {
-  border-collapse: #eee;
 }
 
 .no-js ul.tabs-content > li {
