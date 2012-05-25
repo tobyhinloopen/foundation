@@ -1,9 +1,9 @@
-/* 
+/*
   Foundation 3, artfully masterminded by ZURB
   Core
   mobile.css - Styles for mobile devices
-  
-  Requires: 
+
+  Requires:
     buttons.css
     forms.css
     grid.css
@@ -13,10 +13,11 @@
     modernizr
 */
 /* Colors */
+/* Media Query Breaks */
 /* --------------------------------------------------
 	:: Typography
 	-------------------------------------------------- */
-/* -------------------------------------------------- 
+/* --------------------------------------------------
 	:: Visibility Affordances
 ---------------------------------------------------*/
 /* Desktop visibility targeting */
@@ -35,7 +36,7 @@
 }
 
 /* Very large display targeting */
-@media only screen and (min-width: 1441px) {
+@media only screen and (max-width: 1441px) {
   .hide-for-small,
   .hide-for-medium,
   .hide-for-large,
@@ -156,7 +157,7 @@ table.hide-for-medium {
     display: table !important;
   }
 }
-/* -------------------------------------------------- 
+/* --------------------------------------------------
 	:: Forms
 ---------------------------------------------------*/
 @media only screen and (max-width: 767px) {
@@ -187,7 +188,7 @@ table.hide-for-medium {
     width: auto;
   }
 }
-/* -------------------------------------------------- 
+/* --------------------------------------------------
 	:: UI
 ---------------------------------------------------*/
 /* Buttons */

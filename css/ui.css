@@ -1,9 +1,9 @@
-/* 
+/*
   Foundation 3, artfully masterminded by ZURB
   Core
   ui.css
-  
-  Requires: 
+
+  Requires:
     globals.css
 */
 /* Table of Contents
@@ -21,6 +21,7 @@
 
 */
 /* Colors */
+/* Media Query Breaks */
 /* Alerts */
 div.alert-box {
   display: block;

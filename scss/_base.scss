@@ -7,3 +7,11 @@
   $alertColor: #e91c21;
   $successColor: #5b8737;
   $secondaryColor: #e9e9e9;
+
+  /* Media Query Breaks */
+  $media-small: "only screen and (max-width: 767px)";
+  $media-medium: "only screen and (max-width: 1280px) and (min-width: 768px)";
+  $media-xlarge: "only screen and (max-width: 1441px)";
+  $media-landscape: "screen and (orientation: landscape)";
+  $media-portrait: "screen and (orientation: portrait)";
+  $media-all: "only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px)";

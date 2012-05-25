@@ -44,7 +44,7 @@
 			.reveal-modal.xlarge { width: 60%; top: 60px; left: 15%; margin-left: 0; padding: 20px; height: auto; }
 		}
 
-		@media handheld, only screen and (max-width: 767px) {
+		@media #{$media-small} {
 			.reveal-modal-bg { position: absolute; }
 
 			.reveal-modal,
