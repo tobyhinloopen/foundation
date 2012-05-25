@@ -1,7 +1,7 @@
 /*
   Foundation 3, artfully masterminded by ZURB
   Core
-  forms.css - Regular, 'nice', and custom styles for common form elements.
+  forms.css - Regular and custom styles for common form elements.
 
   Requires:
     globals.css
@@ -32,6 +32,9 @@ input.input-text, textarea {
   -moz-box-sizing: border-box;
   /* Text input and textarea sizes */
 }
+input.input-text:focus, textarea:focus {
+  background-color: #f9f9f9;
+}
 input.input-text[disabled], textarea[disabled] {
   background-color: #ddd;
 }
@@ -48,9 +51,18 @@ input.input-text.expand, textarea.expand {
   width: 100%;
 }
 
-input.input-text, textarea, select {
+input.input-text, textarea {
+  border: solid 1px #bbb;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
   display: block;
   margin-bottom: 9px;
+  font-size: 13px;
+  font-size: 1.3rem;
+  padding: 6px 3px 4px;
+  outline: none !important;
+  background: url(../images/misc/input-bg.png) white;
 }
 
 label + input.input-text, label + textarea, label + select, label + div.dropdown, select + div.dropdown {
@@ -109,8 +121,11 @@ textarea.locked.expand {
 
 /* Fieldsets */
 form fieldset {
-  padding: 9px 9px 2px 9px;
   border: solid 1px #ddd;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  padding: 9px 9px 2px 9px;
   margin: 18px 0;
 }
 
@@ -132,12 +147,23 @@ form fieldset {
 }
 
 .form-field.error small, small.error {
-  margin-top: -6px;
+  padding: 6px 4px;
+  border: solid 0 #C00000;
+  border-width: 0 1px 1px 1px;
+  margin-top: -10px;
+  background: #e91c21;
+  color: #fff;
+  font-size: 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  -webkit-border-bottom-left-radius: 2px;
+  -webkit-border-bottom-right-radius: 2px;
+  -moz-border-radius-bottomleft: 2px;
+  -moz-border-radius-bottomright: 2px;
   display: block;
   margin-bottom: 9px;
-  font-size: 11px;
-  color: #e91c21;
-  width: 254px;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -176,89 +202,11 @@ form fieldset {
 }
 
 /* -----------------------------------------
-   Nicer Forms
------------------------------------------ */
-form.nice div.form-field input, form.nice input.input-text, form.nice textarea {
-  border: solid 1px #bbb;
-  border-radius: 2px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-}
-
-form.nice div.form-field input, form.nice input.input-text, form.nice textarea {
-  font-size: 13px;
-  font-size: 1.3rem;
-  padding: 6px 3px 4px;
-  outline: none !important;
-  background: url(../images/misc/input-bg.png) white;
-}
-
-form.nice div.form-field input:focus, form.nice input.input-text:focus, form.nice textarea:focus {
-  background-color: #f9f9f9;
-}
-
-/* Text input and textarea, disabled */
-form.nice div.form-field input[disabled], form.nice input.input-text[disabled], form.nice textarea[disabled] {
-  background-color: #ddd;
-}
-
-form.nice fieldset {
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-}
-
-form.nice div.form-field input[type=radio], form.nice div.form-field input[type=checkbox] {
-  display: inline;
-  width: auto;
-  margin-bottom: 0;
-}
-
-form.nice div.form-field.error small, form.nice small.error {
-  padding: 6px 4px;
-  border: solid 0 #C00000;
-  border-width: 0 1px 1px 1px;
-  margin-top: -10px;
-  background: #C00000;
-  color: #fff;
-  font-size: 12px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  -webkit-border-bottom-left-radius: 2px;
-  -webkit-border-bottom-right-radius: 2px;
-  -moz-border-radius-bottomleft: 2px;
-  -moz-border-radius-bottomright: 2px;
-}
-
-form.nice div.form-field.error .small + small, form.nice .small + small.error {
-  width: 134px;
-}
-
-form.nice div.form-field.error .medium + small, form.nice .medium + small.error {
-  width: 254px;
-}
-
-form.nice div.form-field.error .large + small, form.nice .large + small.error {
-  width: 434px;
-}
-
-form.nice div.form-field.error .small.oversize + small, form.nice .small.oversize + small.error {
-  width: 138px;
-}
-
-form.nice div.form-field.error .medium.oversize + small, form.nice .medium.oversize + small.error {
-  width: 258px;
-}
-
-form.nice div.form-field.error .large.oversize + small, form.nice .large.oversize + small.error {
-  width: 438px;
-}
-
-/* -----------------------------------------
    Custom Forms
 ----------------------------------------- */
+form.custom {
+  /* Custom input, disabled */
+}
 form.custom span.custom {
   display: inline-block;
   width: 14px;
@@ -268,21 +216,17 @@ form.custom span.custom {
   border: solid 1px #ccc;
   background: url(../images/misc/custom-form-sprites.png) 0 0 no-repeat;
 }
-
 form.custom span.custom.radio {
   border-radius: 7px;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
 }
-
 form.custom span.custom.radio.checked {
   background-position: -1px -15px;
 }
-
 form.custom span.custom.checkbox.checked {
   background-position: -1px -29px;
 }
-
 form.custom div.custom.dropdown {
   display: block;
   position: relative;
@@ -340,12 +284,10 @@ form.custom div.custom.dropdown.open.large ul {
 form.custom div.custom.dropdown.open.expand ul {
   width: 100% !important;
 }
-
 form.custom div.custom.dropdown:hover a.selector,
 form.custom div.custom.dropdown.open a.selector {
   background-position: -14px -25px;
 }
-
 form.custom div.custom.dropdown ul {
   position: absolute;
   width: auto;
@@ -381,36 +323,6 @@ form.custom div.custom.dropdown ul li.selected:hover {
 form.custom div.custom.dropdown ul.show {
   display: block;
 }
-
-/* Custom input, disabled */
 form.custom .custom.disabled {
   background-color: #ddd;
-}
-
-/* -----------------------------------------
-   Nicer Custom Forms
------------------------------------------ */
-form.custom.nice span.custom.checkbox {
-  border-radius: 2px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-}
-form.custom.nice div.custom.dropdown a.current {
-  border-radius: 2px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  background-image: url(../images/misc/input-bg-outset.png);
-  background-position: bottom right;
-}
-form.custom.nice div.custom.dropdown a.selector {
-  height: 27px;
-  border-width: 0 0 0 1px;
-}
-form.custom.nice div.custom.dropdown ul {
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  -webkit-border-bottom-left-radius: 2px;
-  -webkit-border-bottom-right-radius: 2px;
-  -moz-border-radius-bottomleft: 2px;
-  -moz-border-radius-bottomright: 2px;
 }

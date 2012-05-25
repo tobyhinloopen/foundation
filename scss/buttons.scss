@@ -35,19 +35,19 @@
   	
   	/* Colors ---------- */
     &.primary {
-      background-color: $mainColor;
+      background-color: $mainColor; border: 1px solid darken(($mainColor), 15%);
       &:hover { background-color: darken(($mainColor), 10%); }
   	}
     &.success {
-      background-color: $successColor; 
+      background-color: $successColor; border: 1px solid darken(($successColor), 15%);
       &:hover { background-color: darken(($successColor), 10%); }
     }
     &.alert {
-      background-color: $alertColor;
+      background-color: $alertColor; border: 1px solid darken(($alertColor), 15%);
       &:hover { background-color: darken(($alertColor), 10%); }
     }
     &.secondary {
-      background-color: $secondaryColor; color: darken(($secondaryColor), 80%);
+      background-color: $secondaryColor; color: darken(($secondaryColor), 80%); border: 1px solid darken(($secondaryColor), 15%);
       &:hover { background-color: darken(($secondaryColor), 10%); }
     }
     
