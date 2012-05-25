@@ -1,104 +1,49 @@
-/* CSS for jQuery Reveal Plugin
- * Maintained for Foundation. foundation.zurb.com
- * Free to use under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- */
-/* Colors */
-/* Media Query Breaks */
-/*	--------------------------------------------------
-	Reveal Modals
-	-------------------------------------------------- */
-.reveal-modal-bg {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  background: #000;
-  z-index: 40;
-  display: none;
-  top: 0;
-  left: 0;
-}
+/*
+Syntax error: Invalid CSS after "		@media ": expected "{", was "#{$media-small} {"
+        on line 47 of /Users/chris/Sites/foundation/scss/reveal.scss
 
-.reveal-modal {
-  visibility: hidden;
-  top: 100px;
-  left: 50%;
-  margin-left: -300px;
-  width: 520px;
-  background: #eeeeee url(../images/misc/modal-gloss.png) no-repeat -200px -80px;
-  position: absolute;
-  z-index: 41;
-  padding: 30px 40px 34px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  /* Mobile */
-}
-.reveal-modal .reveal-modal .close-reveal-modal {
-  font-size: 22px;
-  font-size: 2.2rem;
-  line-height: .5;
-  position: absolute;
-  top: 8px;
-  right: 11px;
-  color: #aaa;
-  text-shadow: 0 -1px 1px rbga(0, 0, 0, 0.6);
-  font-weight: bold;
-  cursor: pointer;
-}
-.reveal-modal .reveal-modal .close-reveal-modal.small {
-  width: 200px;
-  margin-left: -140px;
-}
-.reveal-modal .reveal-modal .close-reveal-modal.medium {
-  width: 400px;
-  margin-left: -240px;
-}
-.reveal-modal .reveal-modal .close-reveal-modal.large {
-  width: 600px;
-  margin-left: -340px;
-}
-.reveal-modal .reveal-modal .close-reveal-modal.xlarge {
-  width: 800px;
-  margin-left: -440px;
-}
-.reveal-modal .reveal-modal .row {
-  min-width: 0;
-}
-@media handheld, only screen and (max-width: 1023px) {
-  .reveal-modal .reveal-modal-bg {
-    position: absolute;
-  }
-  .reveal-modal .reveal-modal,
-  .reveal-modal .reveal-modal.small,
-  .reveal-modal .reveal-modal.medium,
-  .reveal-modal .reveal-modal.large,
-  .reveal-modal .reveal-modal.xlarge {
-    width: 60%;
-    top: 60px;
-    left: 15%;
-    margin-left: 0;
-    padding: 20px;
-    height: auto;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .reveal-modal .reveal-modal-bg {
-    position: absolute;
-  }
-  .reveal-modal .reveal-modal,
-  .reveal-modal .reveal-modal.small,
-  .reveal-modal .reveal-modal.medium,
-  .reveal-modal .reveal-modal.large,
-  .reveal-modal .reveal-modal.xlarge {
-    width: 80%;
-    top: 15px;
-    left: 5%;
-    margin-left: 0;
-    padding: 20px;
-    height: auto;
-  }
-}
+Backtrace:
+/Users/chris/Sites/foundation/scss/reveal.scss:47
+/Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/sass/lib/sass/../sass/scss/parser.rb:1014:in `expected'
+/Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/sass/lib/sass/../sass/scss/parser.rb:960:in `expected'
+/Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/sass/lib/sass/../sass/scss/parser.rb:955:in `tok!'
+/Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/sass/lib/sass/../sass/scss/parser.rb:461:in `block'
+/Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/sass/lib/sass/../sass/scss/parser.rb:302:in `media_directive'
+/Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/sass/lib/sass/../sass/scss/parser.rb:153:in `send'
+/Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/sass/lib/sass/../sass/scss/parser.rb:153:in `special_directive'
+/Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/sass/lib/sass/../sass/scss/parser.rb:126:in `directive'
+/Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/sass/lib/sass/../sass/scss/parser.rb:481:in `block_child'
+/Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/sass/lib/sass/../sass/scss/parser.rb:473:in `block_contents'
+/Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/sass/lib/sass/../sass/scss/parser.rb:462:in `block'
+/Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/sass/lib/sass/../sass/scss/parser.rb:456:in `ruleset'
+/Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/sass/lib/sass/../sass/scss/parser.rb:480:in `block_child'
+/Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/sass/lib/sass/../sass/scss/parser.rb:473:in `block_contents'
+/Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/sass/lib/sass/../sass/scss/parser.rb:58:in `stylesheet'
+/Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/sass/lib/sass/../sass/scss/parser.rb:27:in `parse'
+/Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/sass/lib/sass/../sass/engine.rb:326:in `_to_tree'
+/Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/sass/lib/sass/../sass/engine.rb:299:in `_render'
+/Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/sass/lib/sass/../sass/engine.rb:246:in `render'
+/Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/lib/compass/compiler.rb:140:in `compile'
+/Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/lib/compass/compiler.rb:126:in `timed'
+/Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/lib/compass/compiler.rb:139:in `compile'
+/Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/lib/compass/logger.rb:45:in `red'
+/Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/lib/compass/compiler.rb:138:in `compile'
+/Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/lib/compass/compiler.rb:118:in `compile_if_required'
+/Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/lib/compass/compiler.rb:103:in `run'
+/Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/lib/compass/compiler.rb:101:in `each'
+/Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/lib/compass/compiler.rb:101:in `run'
+/Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/lib/compass/compiler.rb:126:in `timed'
+/Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/lib/compass/compiler.rb:100:in `run'
+/Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/lib/compass/commands/update_project.rb:45:in `perform'
+/Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/lib/compass/commands/base.rb:18:in `execute'
+/Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/lib/compass/commands/project_base.rb:19:in `execute'
+/Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/bin/compass:29
+/Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/bin/compass:43:in `call'
+/Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/bin/compass:43
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"		@media \": expected \"{\", was \"#{$media-small} {\"\A         on line 47 of /Users/chris/Sites/foundation/scss/reveal.scss"; }

@@ -14,7 +14,7 @@
 
 
   @function grid-calc($row_number, $number_of_columns) {
-    @return percentage(($row_number / $number_of_columns));
+    @return percentage($row_number / $number_of_columns);
   }
 
   .row {
@@ -158,7 +158,7 @@ that IE7/8 do not support :nth-child.
 
   /* Mobile */
 
-	@media #{$media-small} {
+  @media #{$media-small} {
 		.block-grid.mobile { margin-left: 0; }
 		.block-grid.mobile > li { float: none; width: 100%; margin-left: 0; }
 	}

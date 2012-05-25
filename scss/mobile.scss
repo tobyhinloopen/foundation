@@ -19,7 +19,7 @@
 	:: Typography
 	-------------------------------------------------- */
 
-	@media #{$media-small} {
+	@media only screen and (max-width: $media-small) {
 
 	}
 
