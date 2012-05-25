@@ -1,9 +1,9 @@
-/* 
+/*
   Foundation 3, artfully masterminded by ZURB
   Core
   ui.css
-  
-  Requires: 
+
+  Requires:
     globals.css
 */
 /* Table of Contents
@@ -21,6 +21,7 @@
 
 */
 /* Colors */
+/* Media Query Breaks */
 /* Alerts */
 div.alert-box {
   display: block;
@@ -83,18 +84,20 @@ div.alert-box a.close:hover, div.alert-box a.close:focus {
   background: #00a6fc;
 }
 .label.radius {
-  -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
+  -webkit-border-radius: 2px;
   -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -khtml-border-radius: 2px;
   border-radius: 2px;
 }
 .label.round {
   padding: 1px 7px 2px;
-  -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
+  -webkit-border-radius: 8px;
   -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
   border-radius: 8px;
 }
 .label.primary {
@@ -371,10 +374,11 @@ p.vevent abbr {
   left: -10px;
 }
 .tooltip.noradius {
-  -webkit-border-radius: 0;
   -moz-border-radius: 0;
-  -ms-border-radius: 0;
+  -webkit-border-radius: 0;
   -o-border-radius: 0;
+  -ms-border-radius: 0;
+  -khtml-border-radius: 0;
   border-radius: 0;
 }
 .tooltip.opened {

@@ -7,6 +7,7 @@
     globals.css
 */
 /* Colors */
+/* Media Query Breaks */
   /*	-------------------------------------------------
 	Buttons
 	-------------------------------------------------- */
@@ -99,17 +100,19 @@
   background-color: #d0d0d0;
 }
 .button.radius {
-  -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
+  -webkit-border-radius: 3px;
   -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
   border-radius: 3px;
 }
 .button.round {
-  -webkit-border-radius: 1000px;
   -moz-border-radius: 1000px;
-  -ms-border-radius: 1000px;
+  -webkit-border-radius: 1000px;
   -o-border-radius: 1000px;
+  -ms-border-radius: 1000px;
+  -khtml-border-radius: 1000px;
   border-radius: 1000px;
 }
 .button.full-width {

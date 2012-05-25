@@ -1,34 +1,91 @@
-/*  Foundation 3, artfully masterminded by ZURB Core navbar.css - Relatively simple nav bars with single level dropdowns  Requires:  globals.css
+/* 
+  Foundation 3, artfully masterminded by ZURB
+  Core
+  navbar.css - Relatively simple nav bars with single level dropdowns
+  
+  Requires: 
+    globals.css
 */
 /* Colors */
-/* line 12, ../scss/navbar.scss */
-.nav-bar { height: 45px; background: #fff; margin-top: 20px; padding: 0; border: 1px solid #ddd; }
-/* line 14, ../scss/navbar.scss */
-.nav-bar > li { float: left; display: block; position: relative; padding: 0; margin: 0; border-right: 1px solid #ddd; line-height: 45px; }
-/* line 15, ../scss/navbar.scss */
-.nav-bar > li ul { margin-bottom: 0; }
-/* line 16, ../scss/navbar.scss */
-.nav-bar > li li { line-height: 1.3; }
-/* line 17, ../scss/navbar.scss */
-.nav-bar > li .flyout { display: none; }
-/* line 20, ../scss/navbar.scss */
-.nav-bar > li.has-flyout > a.main { padding-right: 36px; }
-/* line 21, ../scss/navbar.scss */
-.nav-bar > li.has-flyout > a.flyout-toggle { position: absolute; right: 0; top: 0; padding: 22px; z-index: 2; display: block; }
-/* line 22, ../scss/navbar.scss */
-.nav-bar > li.has-flyout > a.flyout-toggle span { content: ""; width: 0; height: 0; border-left: 4px solid transparent; border-right: 4px solid transparent; border-top: 4px solid #00a6fc; display: block; }
-/* line 26, ../scss/navbar.scss */
-.nav-bar > li > a.main { position: relative; padding: 0 20px; display: block; text-decoration: none; font-size: 15px; font-size: 1.5rem; }
-/* line 27, ../scss/navbar.scss */
-.nav-bar > li > input { margin: 0 16px; }
+/* Media Query Breaks */
+.nav-bar {
+  height: 45px;
+  background: #fff;
+  margin-top: 20px;
+  padding: 0;
+  border: 1px solid #ddd;
+}
+.nav-bar > li {
+  float: left;
+  display: block;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  border-right: 1px solid #ddd;
+  line-height: 45px;
+}
+.nav-bar > li ul {
+  margin-bottom: 0;
+}
+.nav-bar > li li {
+  line-height: 1.3;
+}
+.nav-bar > li .flyout {
+  display: none;
+}
+.nav-bar > li.has-flyout > a.main {
+  padding-right: 36px;
+}
+.nav-bar > li.has-flyout > a.flyout-toggle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 22px;
+  z-index: 2;
+  display: block;
+}
+.nav-bar > li.has-flyout > a.flyout-toggle span {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #00a6fc;
+  display: block;
+}
+.nav-bar > li > a.main {
+  position: relative;
+  padding: 0 20px;
+  display: block;
+  text-decoration: none;
+  font-size: 15px;
+  font-size: 1.5rem;
+}
+.nav-bar > li > input {
+  margin: 0 16px;
+}
 
-/* line 31, ../scss/navbar.scss */
-.flyout { background: #fff; margin: 0; padding: 20px; border: 1px solid #ddd; position: absolute; top: 43px; left: -1px; width: 400px; z-index: 40; }
-/* line 33, ../scss/navbar.scss */
-.flyout.small { width: 200px; }
-/* line 34, ../scss/navbar.scss */
-.flyout.large { width: 600px; }
-/* line 35, ../scss/navbar.scss */
-.flyout.right { left: auto; right: 0; }
-/* line 36, ../scss/navbar.scss */
-.flyout p:last-child { margin-bottom: 0; }
+.flyout {
+  background: #fff;
+  margin: 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  position: absolute;
+  top: 43px;
+  left: -1px;
+  width: 400px;
+  z-index: 40;
+}
+.flyout.small {
+  width: 200px;
+}
+.flyout.large {
+  width: 600px;
+}
+.flyout.right {
+  left: auto;
+  right: 0;
+}
+.flyout p:last-child {
+  margin-bottom: 0;
+}

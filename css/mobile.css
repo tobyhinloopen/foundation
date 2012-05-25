@@ -1,147 +1,375 @@
-/*  Foundation 3, artfully masterminded by ZURB Core mobile.css - Styles for mobile devices  Requires:  buttons.css forms.css grid.css tabs.css typography.css ui.css modernizr
+/*
+  Foundation 3, artfully masterminded by ZURB
+  Core
+  mobile.css - Styles for mobile devices
+
+  Requires:
+    buttons.css
+    forms.css
+    grid.css
+    tabs.css
+    typography.css
+    ui.css
+    modernizr
 */
 /* Colors */
+/* Media Query Breaks */
 /* --------------------------------------------------
 	:: Typography
 	-------------------------------------------------- */
-/* -------------------------------------------------- 
+/* --------------------------------------------------
 	:: Visibility Affordances
 ---------------------------------------------------*/
 /* Desktop visibility targeting */
-/* line 35, ../scss/mobile.scss */
-.show-for-small, .show-for-medium, .hide-for-large, .show-for-xlarge { display: none !important; }
+.show-for-small,
+.show-for-medium,
+.hide-for-large,
+.show-for-xlarge {
+  display: none !important;
+}
 
-/* line 40, ../scss/mobile.scss */
-.hide-for-xlarge, .show-for-large, .hide-for-small, .hide-for-medium { display: block !important; }
+.hide-for-xlarge,
+.show-for-large,
+.hide-for-small,
+.hide-for-medium {
+  display: block !important;
+}
 
 /* Very large display targeting */
-@media only screen and (min-width: 1441px) { /* line 47, ../scss/mobile.scss */
-  .hide-for-small, .hide-for-medium, .hide-for-large, .show-for-xlarge { display: block !important; }
-  /* line 52, ../scss/mobile.scss */
-  .show-for-small, .show-for-medium, .show-for-large, .hide-for-xlarge { display: none !important; } }
+@media only screen and (max-width: 1441px) {
+  .hide-for-small,
+  .hide-for-medium,
+  .hide-for-large,
+  .show-for-xlarge {
+    display: block !important;
+  }
+
+  .show-for-small,
+  .show-for-medium,
+  .show-for-large,
+  .hide-for-xlarge {
+    display: none !important;
+  }
+}
 /* Modernizr-enabled tablet targeting */
-@media only screen and (max-width: 1280px) and (min-width: 768px) { /* line 60, ../scss/mobile.scss */
-  .hide-for-small, .show-for-medium, .hide-for-large, .hide-for-xlarge { display: block !important; }
-  /* line 65, ../scss/mobile.scss */
-  .show-for-small, .hide-for-medium, .show-for-large, .show-for-xlarge { display: none !important; } }
+@media only screen and (max-width: 1280px) and (min-width: 768px) {
+  .hide-for-small,
+  .show-for-medium,
+  .hide-for-large,
+  .hide-for-xlarge {
+    display: block !important;
+  }
+
+  .show-for-small,
+  .hide-for-medium,
+  .show-for-large,
+  .show-for-xlarge {
+    display: none !important;
+  }
+}
 /* Small device targeting */
-@media only screen and (max-width: 767px) { /* line 73, ../scss/mobile.scss */
-  .show-for-small, .hide-for-medium, .hide-for-large, .hide-for-xlarge { display: block !important; }
-  /* line 78, ../scss/mobile.scss */
-  .hide-for-small, .show-for-medium, .show-for-large, .show-for-xlarge { display: none !important; } }
+@media only screen and (max-width: 767px) {
+  .show-for-small,
+  .hide-for-medium,
+  .hide-for-large,
+  .hide-for-xlarge {
+    display: block !important;
+  }
+
+  .hide-for-small,
+  .show-for-medium,
+  .show-for-large,
+  .show-for-xlarge {
+    display: none !important;
+  }
+}
 /* Touch-enabled device targeting */
-/* line 83, ../scss/mobile.scss */
-.show-for-touch { display: none !important; }
+.show-for-touch {
+  display: none !important;
+}
 
-/* line 84, ../scss/mobile.scss */
-.hide-for-touch { display: block !important; }
+.hide-for-touch {
+  display: block !important;
+}
 
-/* line 85, ../scss/mobile.scss */
-.touch .show-for-touch { display: block !important; }
+.touch .show-for-touch {
+  display: block !important;
+}
 
-/* line 86, ../scss/mobile.scss */
-.touch .hide-for-touch { display: none !important; }
+.touch .hide-for-touch {
+  display: none !important;
+}
 
 /* Orientation targeting */
-/* line 90, ../scss/mobile.scss */
-.show-for-landscape, .hide-for-portrait { display: block !important; }
+.show-for-landscape,
+.hide-for-portrait {
+  display: block !important;
+}
 
-/* line 92, ../scss/mobile.scss */
-.hide-for-landscape, .show-for-portrait { display: none !important; }
+.hide-for-landscape,
+.show-for-portrait {
+  display: none !important;
+}
 
-@media screen and (orientation: landscape) { /* line 96, ../scss/mobile.scss */
-  .show-for-landscape, .hide-for-portrait { display: block !important; }
-  /* line 98, ../scss/mobile.scss */
-  .hide-for-landscape, .show-for-portrait { display: none !important; } }
-@media screen and (orientation: portrait) { /* line 103, ../scss/mobile.scss */
-  .show-for-portrait, .hide-for-landscape { display: block !important; }
-  /* line 105, ../scss/mobile.scss */
-  .hide-for-portrait, .show-for-landscape { display: none !important; } }
+@media screen and (orientation: landscape) {
+  .show-for-landscape,
+  .hide-for-portrait {
+    display: block !important;
+  }
+
+  .hide-for-landscape,
+  .show-for-portrait {
+    display: none !important;
+  }
+}
+@media screen and (orientation: portrait) {
+  .show-for-portrait,
+  .hide-for-landscape {
+    display: block !important;
+  }
+
+  .hide-for-portrait,
+  .show-for-landscape {
+    display: none !important;
+  }
+}
 /* Specific overrides for elements that require something other than display: block */
-/* line 114, ../scss/mobile.scss */
-table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-for-medium { display: table !important; }
+table.show-for-xlarge,
+table.show-for-large,
+table.hide-for-small,
+table.hide-for-medium {
+  display: table !important;
+}
 
-@media only screen and (max-width: 1280px) and (min-width: 768px) { /* line 120, ../scss/mobile.scss */
-  .touch table.hide-for-xlarge, .touch table.hide-for-large, .touch table.hide-for-small, .touch table.show-for-medium { display: table !important; } }
-@media only screen and (max-width: 767px) { /* line 127, ../scss/mobile.scss */
-  table.hide-for-xlarge, table.hide-for-large, table.hide-for-medium, table.show-for-small { display: table !important; } }
-/* -------------------------------------------------- 
+@media only screen and (max-width: 1280px) and (min-width: 768px) {
+  .touch table.hide-for-xlarge,
+  .touch table.hide-for-large,
+  .touch table.hide-for-small,
+  .touch table.show-for-medium {
+    display: table !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  table.hide-for-xlarge,
+  table.hide-for-large,
+  table.hide-for-medium,
+  table.show-for-small {
+    display: table !important;
+  }
+}
+/* --------------------------------------------------
 	:: Forms
 ---------------------------------------------------*/
-@media only screen and (max-width: 767px) { /* line 138, ../scss/mobile.scss */
-  div.form-field input, div.form-field input.small, div.form-field input.medium, div.form-field input.large, div.form-field input.oversize, input.input-text, input.input-text.oversize, textarea, form.nice div.form-field input, form.nice div.form-field input.oversize, form.nice input.input-text, form.nice input.input-text.oversize, form.nice textarea { display: block; width: 100%; padding: 6px 2% 4px; font-size: 18px; font-size: 1.8rem; }
-  /* line 139, ../scss/mobile.scss */
-  form.nice div.form-field input, form.nice div.form-field input.oversize, form.nice input.input-text, form.nice input.input-text.oversize, form.nice textarea { -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; }
-  /* line 141, ../scss/mobile.scss */
-  form.nice div.form-field.error small, form.nice small.error { padding: 6px 2%; display: block; }
-  /* line 146, ../scss/mobile.scss */
-  form.nice div.form-field.error .small + small, form.nice .small + .error, form.nice div.form-field.error .medium + small, form.nice .medium + .error, form.nice div.form-field.error .large + small, form.nice .large + .error, form.nice div.form-field.error .expand + small, form.nice .expand + .error { width: auto; } }
-/* -------------------------------------------------- 
+@media only screen and (max-width: 767px) {
+  div.form-field input, div.form-field input.small, div.form-field input.medium, div.form-field input.large, div.form-field input.oversize, input.input-text, input.input-text.oversize, textarea,
+  form.nice div.form-field input, form.nice div.form-field input.oversize, form.nice input.input-text, form.nice input.input-text.oversize, form.nice textarea {
+    display: block;
+    width: 100%;
+    padding: 6px 2% 4px;
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
+
+  form.nice div.form-field input, form.nice div.form-field input.oversize, form.nice input.input-text, form.nice input.input-text.oversize, form.nice textarea {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+  }
+
+  form.nice div.form-field.error small, form.nice small.error {
+    padding: 6px 2%;
+    display: block;
+  }
+
+  form.nice div.form-field.error .small + small, form.nice .small + .error,
+  form.nice div.form-field.error .medium + small, form.nice .medium + .error,
+  form.nice div.form-field.error .large + small, form.nice .large + .error,
+  form.nice div.form-field.error .expand + small, form.nice .expand + .error {
+    width: auto;
+  }
+}
+/* --------------------------------------------------
 	:: UI
 ---------------------------------------------------*/
 /* Buttons */
-@media only screen and (max-width: 767px) { /* line 156, ../scss/mobile.scss */
-  .button { display: block; }
-  /* line 157, ../scss/mobile.scss */
-  button.button, input[type="submit"].button { width: 100%; padding-left: 0; padding-right: 0; margin-bottom: 5px; } }
+@media only screen and (max-width: 767px) {
+  .button {
+    display: block;
+  }
+
+  button.button, input[type="submit"].button {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 5px;
+  }
+}
 /* Tabs */
-@media only screen and (max-width: 767px) { /* line 163, ../scss/mobile.scss */
-  dl.tabs.mobile, dl.nice.tabs.mobile { width: auto; margin: 20px -20px 40px; height: auto; }
-  /* line 164, ../scss/mobile.scss */
-  dl.tabs.mobile dt, dl.tabs.mobile dd, dl.nice.tabs.mobile dt, dl.nice.tabs.mobile dd { float: none; height: auto; }
-  /* line 166, ../scss/mobile.scss */
-  dl.tabs.mobile dd a { display: block; width: auto; height: auto; padding: 18px 20px; line-height: 1; border: solid 0 #ccc; border-width: 1px 0 0; margin: 0; color: #555; background: #eee; font-size: 15px; font-size: 1.5rem; }
-  /* line 167, ../scss/mobile.scss */
-  dl.tabs.mobile dd a.active { height: auto; margin: 0; border-width: 1px 0 0; }
-  /* line 169, ../scss/mobile.scss */
-  .nice.tabs.mobile { border-bottom: solid 1px #ccc; height: auto; }
-  /* line 171, ../scss/mobile.scss */
-  .nice.tabs.mobile dd a { padding: 18px 20px; border: none; border-left: none; border-right: none; border-top: 1px solid #ccc; background: #fff; }
-  /* line 172, ../scss/mobile.scss */
-  .nice.tabs.mobile dd a.active { border: none; background: #00a6fc; color: #fff; margin: 0; position: static; top: 0; height: auto; }
-  /* line 173, ../scss/mobile.scss */
-  .nice.tabs.mobile dd:first-child a.active { margin: 0; }
-  /* line 176, ../scss/mobile.scss */
-  dl.contained.mobile, dl.nice.contained.mobile { margin-bottom: 0; }
-  /* line 177, ../scss/mobile.scss */
-  dl.contained.tabs.mobile dd a { padding: 18px 20px; }
-  /* line 178, ../scss/mobile.scss */
-  dl.nice.contained.tabs.mobile dd a { padding: 18px 20px; }
-  /* line 180, ../scss/mobile.scss */
-  dl.tabs.mobile + ul.contained { margin-left: -20px; margin-right: -20px; border-width: 0 0 1px 0; } }
+@media only screen and (max-width: 767px) {
+  dl.tabs.mobile, dl.nice.tabs.mobile {
+    width: auto;
+    margin: 20px -20px 40px;
+    height: auto;
+  }
+
+  dl.tabs.mobile dt, dl.tabs.mobile dd, dl.nice.tabs.mobile dt, dl.nice.tabs.mobile dd {
+    float: none;
+    height: auto;
+  }
+
+  dl.tabs.mobile dd a {
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 18px 20px;
+    line-height: 1;
+    border: solid 0 #ccc;
+    border-width: 1px 0 0;
+    margin: 0;
+    color: #555;
+    background: #eee;
+    font-size: 15px;
+    font-size: 1.5rem;
+  }
+
+  dl.tabs.mobile dd a.active {
+    height: auto;
+    margin: 0;
+    border-width: 1px 0 0;
+  }
+
+  .nice.tabs.mobile {
+    border-bottom: solid 1px #ccc;
+    height: auto;
+  }
+  .nice.tabs.mobile dd a {
+    padding: 18px 20px;
+    border: none;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #ccc;
+    background: #fff;
+  }
+  .nice.tabs.mobile dd a.active {
+    border: none;
+    background: #00a6fc;
+    color: #fff;
+    margin: 0;
+    position: static;
+    top: 0;
+    height: auto;
+  }
+  .nice.tabs.mobile dd:first-child a.active {
+    margin: 0;
+  }
+
+  dl.contained.mobile, dl.nice.contained.mobile {
+    margin-bottom: 0;
+  }
+
+  dl.contained.tabs.mobile dd a {
+    padding: 18px 20px;
+  }
+
+  dl.nice.contained.tabs.mobile dd a {
+    padding: 18px 20px;
+  }
+
+  dl.tabs.mobile + ul.contained {
+    margin-left: -20px;
+    margin-right: -20px;
+    border-width: 0 0 1px 0;
+  }
+}
 /* Nav Bar */
 /* Modernizr-enabled tablet targeting */
-@media only screen and (max-width: 1280px) and (min-width: 768px) { /* line 187, ../scss/mobile.scss */
-  .touch .nav-bar li a { font-size: 13px; font-size: 1.3rem; }
-  /* line 188, ../scss/mobile.scss */
-  .touch .nav-bar li.has-flyout > a.flyout-toggle { padding: 20px; } }
-@media only screen and (max-width: 767px) { /* line 192, ../scss/mobile.scss */
-  .nav-bar { height: auto; }
-  /* line 194, ../scss/mobile.scss */
-  .nav-bar > li { float: none; display: block; border-right: none; }
-  /* line 195, ../scss/mobile.scss */
-  .nav-bar > li > a.main { text-align: left; border-top: 1px solid #ddd; border-right: none; }
-  /* line 196, ../scss/mobile.scss */
-  .nav-bar > li:first-child > a.main { border-top: none; }
-  /* line 197, ../scss/mobile.scss */
-  .nav-bar > li.has-flyout > a.flyout-toggle { position: absolute; right: 0; top: 0; padding: 22px; z-index: 2; border-left: 1px dashed #eee; display: block; }
-  /* line 198, ../scss/mobile.scss */
-  .nav-bar > li.has-flyout > a.flyout-toggle span { content: ""; width: 0; height: 0; border-left: 4px solid transparent; border-right: 4px solid transparent; border-top: 4px solid #2a85e8; display: block; }
-  /* line 199, ../scss/mobile.scss */
-  .nav-bar > li.has-flyout > a.flyout-toggle:hover span { border-top-color: #141414; }
-  /* line 202, ../scss/mobile.scss */
-  .flyout { position: relative; width: auto; top: auto; margin-right: -2px; border-width: 1px 1px 0 1px; }
-  /* line 204, ../scss/mobile.scss */
-  .flyout.right { float: none; right: auto; left: -1px; }
-  /* line 205, ../scss/mobile.scss */
-  .flyout.small, .flyout .flyout.large { width: auto; }
-  /* line 206, ../scss/mobile.scss */
-  .flyout p:last-child { margin-bottom: 18px; } }
+@media only screen and (max-width: 1280px) and (min-width: 768px) {
+  .touch .nav-bar li a {
+    font-size: 13px;
+    font-size: 1.3rem;
+  }
+
+  .touch .nav-bar li.has-flyout > a.flyout-toggle {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .nav-bar {
+    height: auto;
+  }
+  .nav-bar > li {
+    float: none;
+    display: block;
+    border-right: none;
+  }
+  .nav-bar > li > a.main {
+    text-align: left;
+    border-top: 1px solid #ddd;
+    border-right: none;
+  }
+  .nav-bar > li:first-child > a.main {
+    border-top: none;
+  }
+  .nav-bar > li.has-flyout > a.flyout-toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 22px;
+    z-index: 2;
+    border-left: 1px dashed #eee;
+    display: block;
+  }
+  .nav-bar > li.has-flyout > a.flyout-toggle span {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #2a85e8;
+    display: block;
+  }
+  .nav-bar > li.has-flyout > a.flyout-toggle:hover span {
+    border-top-color: #141414;
+  }
+
+  .flyout {
+    position: relative;
+    width: auto;
+    top: auto;
+    margin-right: -2px;
+    border-width: 1px 1px 0 1px;
+  }
+  .flyout.right {
+    float: none;
+    right: auto;
+    left: -1px;
+  }
+  .flyout.small, .flyout .flyout.large {
+    width: auto;
+  }
+  .flyout p:last-child {
+    margin-bottom: 18px;
+  }
+}
 /* Tooltips */
-@media only screen and (max-width: 767px) { /* line 214, ../scss/mobile.scss */
-  .tooltip { font-size: 14px; font-size: 1.4rem; line-height: 1.4; padding: 7px 10px 9px 10px; }
-  /* line 219, ../scss/mobile.scss */
-  .tooltip > .nub, .tooltip.top > .nub, .tooltip.left > .nub, .tooltip.right > .nub { border-color: transparent transparent black transparent; border-color: transparent transparent rgba(0, 0, 0, 0.85) transparent; top: -12px; left: 10px; } }
+@media only screen and (max-width: 767px) {
+  .tooltip {
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    padding: 7px 10px 9px 10px;
+  }
+
+  .tooltip > .nub, .tooltip.top > .nub, .tooltip.left > .nub, .tooltip.right > .nub {
+    border-color: transparent transparent black transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.85) transparent;
+    top: -12px;
+    left: 10px;
+  }
+}
 /* Video */
-@media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) { /* line 231, ../scss/mobile.scss */
-  .flex-video { padding-top: 0; } }
+@media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+  .flex-video {
+    padding-top: 0;
+  }
+}
