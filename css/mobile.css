@@ -162,7 +162,7 @@ table.hide-for-medium {
 ---------------------------------------------------*/
 @media only screen and (max-width: 767px) {
   div.form-field input, div.form-field input.small, div.form-field input.medium, div.form-field input.large, div.form-field input.oversize, input.input-text, input.input-text.oversize, textarea,
-  form.nice div.form-field input, form.nice div.form-field input.oversize, form.nice input.input-text, form.nice input.input-text.oversize, form.nice textarea {
+  form div.form-field input, form.nice div.form-field input.oversize, form.nice input.input-text, form.nice input.input-text.oversize, form.nice textarea {
     display: block;
     width: 100%;
     padding: 6px 2% 4px;
@@ -170,21 +170,21 @@ table.hide-for-medium {
     font-size: 1.8rem;
   }
 
-  form.nice div.form-field input, form.nice div.form-field input.oversize, form.nice input.input-text, form.nice input.input-text.oversize, form.nice textarea {
+  form div.form-field input, form.nice div.form-field input.oversize, form.nice input.input-text, form.nice input.input-text.oversize, form.nice textarea {
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
   }
 
-  form.nice div.form-field.error small, form.nice small.error {
+  form div.form-field.error small, form.nice small.error {
     padding: 6px 2%;
     display: block;
   }
 
-  form.nice div.form-field.error .small + small, form.nice .small + .error,
-  form.nice div.form-field.error .medium + small, form.nice .medium + .error,
-  form.nice div.form-field.error .large + small, form.nice .large + .error,
-  form.nice div.form-field.error .expand + small, form.nice .expand + .error {
+  form div.form-field.error .small + small, form .small + .error,
+  form div.form-field.error .medium + small, form .medium + .error,
+  form div.form-field.error .large + small, form .large + .error,
+  form div.form-field.error .expand + small, form .expand + .error {
     width: auto;
   }
 }
@@ -238,11 +238,11 @@ table.hide-for-medium {
     border-width: 1px 0 0;
   }
 
-  .nice.tabs.mobile {
+  .tabs.mobile {
     border-bottom: solid 1px #ccc;
     height: auto;
   }
-  .nice.tabs.mobile dd a {
+  .tabs.mobile dd a {
     padding: 18px 20px;
     border: none;
     border-left: none;
@@ -250,7 +250,7 @@ table.hide-for-medium {
     border-top: 1px solid #ccc;
     background: #fff;
   }
-  .nice.tabs.mobile dd a.active {
+  .tabs.mobile dd a.active {
     border: none;
     background: #00a6fc;
     color: #fff;
@@ -259,7 +259,7 @@ table.hide-for-medium {
     top: 0;
     height: auto;
   }
-  .nice.tabs.mobile dd:first-child a.active {
+  .tabs.mobile dd:first-child a.active {
     margin: 0;
   }
 
@@ -268,10 +268,6 @@ table.hide-for-medium {
   }
 
   dl.contained.tabs.mobile dd a {
-    padding: 18px 20px;
-  }
-
-  dl.nice.contained.tabs.mobile dd a {
     padding: 18px 20px;
   }
 
