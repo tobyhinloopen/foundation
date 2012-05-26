@@ -1,38 +1,136 @@
-/* 
+/*
   Foundation 3, artfully masterminded by ZURB
   Core
   buttons.css - CSS3 buttons with configurable display and appearance options
-  
-  Requires: 
+
+  Requires:
     globals.css
 */
 
   @import "base";
 
-  /*	-------------------------------------------------
-	Buttons
-	-------------------------------------------------- */
+  // Normal Button Padding
+  $btn-top-pad: 9px;
+  $btn-rl-pad: 34px;
+  $btn-bottom-pad: 11px;
 
-	.button {
-		background: $mainColor; border: 1px solid darken(($mainColor), 15%); -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.5); -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.5); box-shadow: inset 0 1px 0 rgba(255,255,255,.5); color: #fff; cursor: pointer; display: inline-block; font-family: "Helvetica Neue", "Helvetica", Arial, Verdana, sans-serif; @include font-size(13); font-weight: bold; line-height: 1; margin: 0; outline: none; padding: 9px 34px 11px; position: relative; text-align: center; text-decoration: none; text-shadow: 0 -1px 1px rgba(0,0,0,0.28); -webkit-transition: background-color .15s ease-in-out; -moz-transition: background-color .15s ease-in-out; -o-transition: background-color .15s ease-in-out;
-		
+  // Tiny Button Padding
+  $btn-top-pad-tiny: 6px;
+  $btn-rl-pad-tiny: 14px;
+  $btn-bottom-pad-tiny: 8px;
+
+  // Small Button Padding
+  $btn-top-pad-small: 8px;
+  $btn-rl-pad-small: 20px;
+  $btn-bottom-pad-small: 10px;
+
+  // Large Button Padding
+  $btn-top-pad-large: 11px;
+  $btn-rl-pad-large: 48px;
+  $btn-bottom-pad-large: 13px;
+
+  // Button Borders
+  $btn-border-style: solid;
+  $btn-border-size: 1px;
+  $btn-border-color: darken($mainColor, 15%);
+
+  // Primary Buttons Mixin
+  @mixin buttons {
+    .button {
+      cursor: pointer;
+      display: inline-block;
+      font-family: $base-font-family;
+      font-weight: bold;
+      line-height: 1;
+      margin: 0;
+      outline: none;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      text-shadow: 0 -1px 1px rgba(0,0,0,0.28);
+      @include button-border;
+      @include button-padding($btn-top-pad, $btn-rl-pad, $btn-bottom-pad);
+      @include button(#fff, $mainColor);
+      @include box-shadow(0 1px 0 inset rgba(255,255,255,0.5));
+      @include font-size(13);
+      @include transition(background-color, .15s, ease-in-out);
+      &.secondary { text-shadow: none !important; }
+      &:active { @include box-shadow(0 1px 0 inset rgba(0,0,0,0.15)) }
+      &:hover { color: #fff; }
+      &.tiny  { @include font-size(10); @include button-padding($btn-top-pad-tiny, $btn-rl-pad-tiny, $btn-bottom-pad-tiny); width: auto; }
+      &.small { @include font-size(11); @include button-padding($btn-top-pad-small, $btn-rl-pad-small, $btn-bottom-pad-small); width: auto; }
+      &.medium { @include font-size(13); width: auto; }
+      &.large { @include font-size(18); @include button-padding($btn-top-pad-large, $btn-rl-pad-large, $btn-bottom-pad-large); width: auto; }
+      &.primary {
+        @include button(#fff, $mainColor);
+        @include button-border;
+        &:hover { background-color: darken($mainColor, 10%); }
+      }
+      &.success {
+        @include button(#fff, $successColor);
+        @include button-border($btn-border-style, $btn-border-size, darken($successColor, 15%));
+        &:hover { background-color: darken($successColor, 10%); }
+      }
+      &.alert {
+        @include button(#fff, $alertColor);
+        @include button-border($btn-border-style, $btn-border-size, darken($alertColor, 15%));
+        &:hover { background-color: darken($alertColor, 10%); }
+      }
+      &.secondary {
+        @include button(#fff, $secondaryColor);
+        @include button-border($btn-border-style, $btn-border-size, darken($secondaryColor, 15%));
+        &:hover { background-color: darken($secondaryColor, 10%); }
+      }
+      &.radius { @include border-radius(3px); }
+      &.round { @include border-radius(1000px); }
+      &.full-width { width: 100%; text-align: center; padding-left: 0 !important; padding-right: !important; }
+      &.left-align { text-align: left; text-indent: 12px; }
+      &.disabled, &[disabled] { @include opacity(0.6); cursor: default; }
+    }
+  }
+
+  // Button Mixins
+  @mixin button($text-color, $bg-color) {
+    color: $text-color;
+    background-color: $bg-color;
+  }
+
+  @mixin button-padding($btn-top-pad, $btn-rl-pad, $btn-bottom-pad) {
+    padding: $btn-top-pad $btn-rl-pad $btn-bottom-pad $btn-rl-pad;
+  }
+
+  @mixin button-border($btn-border-style, $btn-border-size, $btn-border-color) {
+    border: $btn-border-style $btn-border-size $btn-border-color;
+  }
+
+  // In the actual file, include this
+  @include buttons;
+
+
+  /*  -------------------------------------------------
+  Buttons
+  -------------------------------------------------- */
+
+  .button {
+		background: $mainColor; border: 1px solid darken($mainColor, 15%); -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.5); -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.5); box-shadow: inset 0 1px 0 rgba(255,255,255,.5); color: #fff; cursor: pointer; display: inline-block; font-family: "Helvetica Neue", "Helvetica", Arial, Verdana, sans-serif; @include font-size(13); font-weight: bold; line-height: 1; margin: 0; outline: none; padding: 9px 34px 11px; position: relative; text-align: center; text-decoration: none; text-shadow: 0 -1px 1px rgba(0,0,0,0.28); -webkit-transition: background-color .15s ease-in-out; -moz-transition: background-color .15s ease-in-out; -o-transition: background-color .15s ease-in-out;
+
   	&.secondary		{ text-shadow: none !important; }
-  	
+
   	/* Hovers ---------- */
-  	&:active 	{ 
+  	&:active 	{
   		-moz-box-shadow: inset 0 1px 0 rgba(0,0,0,.15);
   		-webkit-box-shadow: inset 0 1px 0 rgba(0,0,0,.15);
   		box-shadow: inset 0 1px 0 rgba(0,0,0,.15);
   	}
-		
+
 		&:hover { color: #fff; }
-    
+
     /* Sizes ---------- */
   	&.tiny			{ @include font-size(10); padding: 6px 14px 8px; width: auto; }
   	&.small 		{ @include font-size(11); padding: 8px 20px 10px; width: auto; }
   	&.medium 		{ @include font-size(13); width: auto; }
   	&.large 		{ @include font-size(18); padding: 11px 48px 13px; width: auto; }
-  	
+
   	/* Colors ---------- */
     &.primary {
       background-color: $mainColor; border: 1px solid darken(($mainColor), 15%);
@@ -50,24 +148,24 @@
       background-color: $secondaryColor; color: darken(($secondaryColor), 80%); border: 1px solid darken(($secondaryColor), 15%);
       &:hover { background-color: darken(($secondaryColor), 10%); }
     }
-    
+
     &.radius { @include border-radius(3px); }
     &.round { @include border-radius(1000px); }
-    
+
     &.full-width { width: 100%; text-align: center; padding-left: 0 !important; padding-right: !important; }
     &.left-align { text-align: left; text-indent: 12px; }
-		
+
 		/* Disabled ---------- */
 		&.disabled, &[disabled] { opacity: 0.6; cursor: default; }
-		
+
 	}
-	
+
   /* Don't use native buttons on iOS */
 	input[type=submit].button, button.button { -webkit-appearance: none; }
-	
+
   /* Correct FF button padding */
   @-moz-document url-prefix("http://") {
-    button::-moz-focus-inner, input[type="reset"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, input[type="file"] > input[type="button"]::-moz-focus-inner { border: none; padding: 0;  }	
+    button::-moz-focus-inner, input[type="reset"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, input[type="file"] > input[type="button"]::-moz-focus-inner { border: none; padding: 0;  }
     input[type=submit].tiny.button		{ padding: 5px 14px 7px; }
     input[type=submit].small.button		{ padding: 7px 20px 8px; }
     input[type=submit].medium.button	{ padding: 8px 34px 9px; }
