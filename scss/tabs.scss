@@ -1,66 +1,85 @@
-/* 
+/*
   Foundation 3, artfully masterminded by ZURB
   Core
   tabs.css - Tab styles with preconfigured JS
-  
-  Requires: 
+
+  Requires:
     globals.css
     app.js
 */
 
   @import "base";
 
+  // Variables
+  $tabHeight: 43px;
+  $margin-btm-only: 0 0 20px 0;
+
+  // Mixins
+  @mixin margin-only($position, $size) {
+    @if $position == top {
+      margin: $size 0 0 0;
+    }
+    @if $position == right {
+      margin: 0 $size 0 0;
+    }
+    @if $position == bottom {
+      margin: 0 0 $size 0;
+    }
+    @if $position == left {
+      margin: 0 0 0 $size;
+    }
+  }
+
+
 /*--------------------------------------------------
   Tabs
   -------------------------------------------------- */
-  
-  dl.tabs { display: block; margin: 0 0 20px 0; padding: 0; height: 30px; border-bottom: solid 1px #ddd; 
-  
-    dt { display: block; width: auto; height: 30px; padding: 0 9px 0 20px; line-height: 30px; float: left; color: #999; font-size: 11px; text-transform: uppercase; cursor: default; 
+
+  dl.tabs {
+    border-bottom: solid 1px #eee; display: block; height: $tabHeight; @include margin-only(bottom, $tabHeight); padding: 0;
+    
+    dt { color: #999; cursor: default; display: block; float: left; @include font-size(11); height: $tabHeight; line-height: $tabHeight; padding: 0 9px 0 20px; width: auto; text-transform: uppercase;
+    
       &:first-child { padding: 0 9px 0 0; }
     }
-    dd { display: block; width: auto; height: 30px; padding: 0; float: left; margin-left: 0; 
-      a { display: block; width: auto; height: 29px; padding: 0 9px; line-height: 30px; border: solid 1px #ddd; margin: 0 -1px 0 0; color: #555; background: #eee; 
-        &.active { background: #fff; border-width: 1px 1px 0 1px; height: 30px; }
-      }
-    }
     
-    &.vertical { height: auto;
-    
-      dt, dd, &.nice dt, &.nice dd { float: none; height: auto; }
-      dd a { display: block; width: auto; height: auto; padding: 15px 20px; line-height: 1; border: solid 0 #ccc; border-width: 1px 1px 0; margin: 0; color: #555; background: #eee; font-size: 15px; font-size: 1.5rem;
-        &.active { height: auto; margin: 0; border-width: 1px 0 0; background: #fff; }
-      }
-    }
-    
-    &.nice { border-bottom: solid 1px #eee; margin: 0 0 30px 0; height: 43px; 
-      dd a { padding: 7px 18px 9px; font-size: 15px; font-size: 1.5rem; color: #555555; background: none; border: none; 
-        &.active { font-weight: bold; color: #333; background: #fff; border-left: 1px solid #eee; border-right: 1px solid #eee; border-top: 3px solid #00a6fc; margin: 0 10px; position: relative; top: -5px; }
-      }
-      dd:first-child a.active { margin-left: 0; }
+    dd { display: block; float: left; height: $tabHeight; padding: 0; margin-left: 0; width: auto;
       
-      &.vertical { border-bottom: solid 1px #eee; height: auto;
-        dd a { padding: 15px 20px; border: none; border-left: 1px solid #eee; border-right: 1px solid #eee; border-top: 1px solid #eee; background: #fff;
-          &.active { border: none; background: #00a6fc; color: #fff; margin: 0; position: static; top: 0; height: auto; }
-        }
-        dd:first-child a.active { margin: 0; }
+      a { background: none; border: none; color: #555; display: block; @include font-size(15); height: $tabHeight - 1px; line-height: $tabHeight; margin: 0 10px; padding: 7px 18px 9px; position: relative; top: -5px; width: auto;
+        
+        &.active { background: #fff; border-left: 1px solid #eee; border-right: 1px solid #eee; border-top: 3px solid $mainColor;color: #333; font-weight: bold; height: $tabHeight; }
       }
+      
+      &:first-child a.active { margin-left: 0; }
     }
-    
-    &.contained, &.nice.contained { margin-bottom: 0; }
-    &.contained dd a { padding: 0 14px; }
-    &.contained.nice dd a { padding: 7px 18px 9px; }
+
+    &.vertical { height: auto; border-bottom: solid 1px #eee;
+      
+      dt, dd { float: none; height: auto; }
+      dd a { background: #fff; border: none; border-left: 1px solid #eee; border-right: 1px solid #eee; border-top: 1px solid #eee; color: #555; display: block; @include font-size(15); height: auto;
+        line-height: 1; margin: 0; padding: 15px 20px; width: auto;
+        
+        &.active { background: $mainColor; border: none; color: #fff; height: auto; margin: 0; position: static; top: 0; }
+      }
+      dd:first-child a.active { margin: 0; }
+    }
+
+    &.contained { margin-bottom: 0; }
+    &.contained dd a { padding: 7px 18px 9px; }
   }
-  
-  ul.tabs-content { margin: 0; padding: 0; display: block; 
-    &>li { display: none; 
+
+  ul.tabs-content {
+    display: block; margin: 0; padding: 0;
+    
+    &>li { display: none;
+      
       &.active { display: block; }
     }
+    
     &.contained { padding: 0;
-      &>li { padding: 20px; border: solid 0 #ddd; border-width: 0 1px 1px 1px; }
+      &>li { border: solid 0 #eee; border-width: 0 1px 1px 1px; padding: 20px; }
       &.vertical>li { border-width: 1px 1px 1px 1px; }
-      &.nice>li { border-collapse: #eee; }
     }
   }
-  
+
   .no-js ul.tabs-content>li { display: block; }

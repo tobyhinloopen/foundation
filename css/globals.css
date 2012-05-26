@@ -1,14 +1,13 @@
-/* Artfully Masterminded by ZURB */
-/* -------------------------------------------------- 
-    Table of Contents
------------------------------------------------------
-:: Base
-:: Standards
-:: Links
-:: Lists
-:: Tables
-:: Misc
+/*
+  Foundation 3, artfully masterminded by ZURB
+  Core
+  mobile.css - Styles for mobile devices
+
+  Requires:
+    normalize.css
 */
+/* Colors */
+/* Media Query Breaks */
 /*	--------------------------------------------------
 	:: Global Reset & Standards
 	-------------------------------------------------- */
@@ -26,8 +25,8 @@ html {
 body {
   background: #fff;
   font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 1.3rem;
-  line-height: 18px;
+  font-size: 1.4rem;
+  line-height: 1.5;
   color: #555;
   position: relative;
   -webkit-font-smoothing: antialiased;
@@ -37,17 +36,17 @@ body {
 	:: Links
 	-------------------------------------------------- */
 a {
-  color: #2a85e8;
+  color: #00a6fc;
   text-decoration: none;
   line-height: inherit;
 }
 
 a:hover {
-  color: #11639d;
+  color: #0095e3;
 }
 
 a:focus {
-  color: #cc4714;
+  color: #00a6fc;
   outline: none;
 }
 
@@ -104,6 +103,7 @@ table tbody tr td,
 table tr td,
 table tfoot tr td {
   font-size: 12px;
+  font-size: 1.2rem;
   line-height: 18px;
   text-align: left;
 }
@@ -112,6 +112,7 @@ table thead tr th,
 table tfoot tr td {
   padding: 8px 10px 9px;
   font-size: 14px;
+  font-size: 1.4rem;
   font-weight: bold;
   color: #222;
 }
@@ -140,7 +141,7 @@ table tbody tr td {
   border: none;
 }
 
-/* -------------------------------------------------- 
+/* --------------------------------------------------
 	:: Misc
 ---------------------------------------------------*/
 .left {

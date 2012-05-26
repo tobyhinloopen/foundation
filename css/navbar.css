@@ -6,6 +6,8 @@
   Requires: 
     globals.css
 */
+/* Colors */
+/* Media Query Breaks */
 .nav-bar {
   height: 45px;
   background: #fff;
@@ -28,7 +30,7 @@
 .nav-bar > li li {
   line-height: 1.3;
 }
-.nav-bar > li li .flyout {
+.nav-bar > li .flyout {
   display: none;
 }
 .nav-bar > li.has-flyout > a.main {
@@ -48,7 +50,7 @@
   height: 0;
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
-  border-top: 4px solid #2a85e8;
+  border-top: 4px solid #00a6fc;
   display: block;
 }
 .nav-bar > li > a.main {
@@ -69,7 +71,7 @@
   padding: 20px;
   border: 1px solid #ddd;
   position: absolute;
-  top: 45px;
+  top: 43px;
   left: -1px;
   width: 400px;
   z-index: 40;

@@ -2,7 +2,9 @@
  * Maintained for Foundation. foundation.zurb.com
  * Free to use under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
-
+ */
+/* Colors */
+/* Media Query Breaks */
 /*	--------------------------------------------------
 	Reveal Modals
 	-------------------------------------------------- */
@@ -33,30 +35,11 @@
   -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  /* Mobile */
 }
-
-.reveal-modal.small {
-  width: 200px;
-  margin-left: -140px;
-}
-
-.reveal-modal.medium {
-  width: 400px;
-  margin-left: -240px;
-}
-
-.reveal-modal.large {
-  width: 600px;
-  margin-left: -340px;
-}
-
-.reveal-modal.xlarge {
-  width: 800px;
-  margin-left: -440px;
-}
-
-.reveal-modal .close-reveal-modal {
+.reveal-modal .reveal-modal .close-reveal-modal {
   font-size: 22px;
+  font-size: 2.2rem;
   line-height: .5;
   position: absolute;
   top: 8px;
@@ -66,22 +49,34 @@
   font-weight: bold;
   cursor: pointer;
 }
-
-.reveal-modal .row {
+.reveal-modal .reveal-modal .close-reveal-modal.small {
+  width: 200px;
+  margin-left: -140px;
+}
+.reveal-modal .reveal-modal .close-reveal-modal.medium {
+  width: 400px;
+  margin-left: -240px;
+}
+.reveal-modal .reveal-modal .close-reveal-modal.large {
+  width: 600px;
+  margin-left: -340px;
+}
+.reveal-modal .reveal-modal .close-reveal-modal.xlarge {
+  width: 800px;
+  margin-left: -440px;
+}
+.reveal-modal .reveal-modal .row {
   min-width: 0;
 }
-
-/* Mobile */
 @media handheld, only screen and (max-width: 1023px) {
-  .reveal-modal-bg {
+  .reveal-modal .reveal-modal-bg {
     position: absolute;
   }
-
-  .reveal-modal,
-  .reveal-modal.small,
-  .reveal-modal.medium,
-  .reveal-modal.large,
-  .reveal-modal.xlarge {
+  .reveal-modal .reveal-modal,
+  .reveal-modal .reveal-modal.small,
+  .reveal-modal .reveal-modal.medium,
+  .reveal-modal .reveal-modal.large,
+  .reveal-modal .reveal-modal.xlarge {
     width: 60%;
     top: 60px;
     left: 15%;
@@ -90,16 +85,15 @@
     height: auto;
   }
 }
-@media handheld, only screen and (max-width: 767px) {
-  .reveal-modal-bg {
+@media only screen and (max-width: 767px) {
+  .reveal-modal .reveal-modal-bg {
     position: absolute;
   }
-
-  .reveal-modal,
-  .reveal-modal.small,
-  .reveal-modal.medium,
-  .reveal-modal.large,
-  .reveal-modal.xlarge {
+  .reveal-modal .reveal-modal,
+  .reveal-modal .reveal-modal.small,
+  .reveal-modal .reveal-modal.medium,
+  .reveal-modal .reveal-modal.large,
+  .reveal-modal .reveal-modal.xlarge {
     width: 80%;
     top: 15px;
     left: 5%;
@@ -108,19 +102,3 @@
     height: auto;
   }
 }
-/*
-		
-NOTES
-
-Close button entity is &#215;
-
-Example markup
-
-<div id="myModal" class="reveal-modal">
-	<h2>Awesome. I have it.</h2>
-	<p class="lead">Your couch.  I it's mine.</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices aliquet placerat. Duis pulvinar orci et nisi euismod vitae tempus lorem consectetur. Duis at magna quis turpis mattis venenatis eget id diam. </p>
-	<a class="close-reveal-modal">&#215;</a>
-</div>
-
-*/

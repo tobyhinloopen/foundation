@@ -1,6 +1,13 @@
-/* 	Artfully masterminded by ZURB
-	Make sure to include app.js / foundation.js if you are going to use inline label inputs
+/*
+  Foundation 3, artfully masterminded by ZURB
+  Core
+  forms.css - Regular and custom styles for common form elements.
+
+  Requires:
+    globals.css
 */
+/* Colors */
+/* Media Query Breaks */
 /* -----------------------------------------
    Standard Forms
 ----------------------------------------- */
@@ -11,6 +18,7 @@ form {
 form label {
   display: block;
   font-size: 13px;
+  font-size: 1.3rem;
   line-height: 18px;
   cursor: pointer;
   margin-bottom: 9px;
@@ -19,11 +27,43 @@ form label {
 input.input-text, textarea {
   border-right: 1px solid #bbb;
   border-bottom: 1px solid #bbb;
+  width: 254px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Text input and textarea sizes */
+}
+input.input-text:focus, textarea:focus {
+  background-color: #f9f9f9;
+}
+input.input-text[disabled], textarea[disabled] {
+  background-color: #ddd;
+}
+input.input-text.small, textarea.small {
+  width: 134px;
+}
+input.input-text.medium, textarea.medium {
+  width: 254px;
+}
+input.input-text.large, textarea.large {
+  width: 434px;
+}
+input.input-text.expand, textarea.expand {
+  width: 100%;
 }
 
-input.input-text, textarea, select {
+input.input-text, textarea {
+  border: solid 1px #bbb;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
   display: block;
   margin-bottom: 9px;
+  font-size: 13px;
+  font-size: 1.3rem;
+  padding: 6px 3px 4px;
+  outline: none !important;
+  background: url(../images/misc/input-bg.png) white;
 }
 
 label + input.input-text, label + textarea, label + select, label + div.dropdown, select + div.dropdown {
@@ -37,6 +77,7 @@ textarea {
 /* Text input and textarea font and padding */
 input.input-text, textarea {
   font-size: 13px;
+  font-size: 1.3rem;
   padding: 4px 3px 2px;
   background: #fff;
 }
@@ -47,6 +88,7 @@ input.input-text:focus, textarea:focus {
 
 input.input-text.oversize, textarea.oversize {
   font-size: 18px !important;
+  font-size: 1.8rem !important;
   padding: 4px 5px !important;
 }
 
@@ -64,51 +106,27 @@ input.placeholder, textarea.placeholder {
   color: #888;
 }
 
-/* Text input and textarea sizes */
-input.input-text, textarea {
-  width: 254px;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-}
-
-input.small, textarea.small {
-  width: 134px;
-}
-
-input.medium, textarea.medium {
-  width: 254px;
-}
-
-input.large, textarea.large {
-  width: 434px;
-}
-
-input.expand, textarea.expand {
-  width: 100%;
-}
-
 /* Lock textareas so they can't be resized beyond their set width in webkit */
 textarea.locked {
   max-width: 254px;
 }
-
 textarea.locked.small {
   max-width: 134px;
 }
-
 textarea.locked.large {
   max-width: 434px;
 }
-
 textarea.locked.expand {
   max-width: 100%;
 }
 
 /* Fieldsets */
 form fieldset {
-  padding: 9px 9px 2px 9px;
   border: solid 1px #ddd;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  padding: 9px 9px 2px 9px;
   margin: 18px 0;
 }
 
@@ -120,22 +138,33 @@ form fieldset {
 }
 
 /* Errors */
-.form-field.error input, input.input-text.red {
-  border-color: #C00000;
+.form-field.error input, input.input-text.alert {
+  border-color: #e91c21;
   background-color: rgba(255, 0, 0, 0.15);
 }
 
-.form-field.error label, label.red {
-  color: #C00000;
+.form-field.error label, label.alert {
+  color: #e91c21;
 }
 
 .form-field.error small, small.error {
-  margin-top: -6px;
+  padding: 6px 4px;
+  border: solid 0 #C00000;
+  border-width: 0 1px 1px 1px;
+  margin-top: -10px;
+  background: #e91c21;
+  color: #fff;
+  font-size: 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  -webkit-border-bottom-left-radius: 2px;
+  -webkit-border-bottom-right-radius: 2px;
+  -moz-border-radius-bottomleft: 2px;
+  -moz-border-radius-bottomright: 2px;
   display: block;
   margin-bottom: 9px;
-  font-size: 11px;
-  color: #C00000;
-  width: 254px;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -174,87 +203,11 @@ form fieldset {
 }
 
 /* -----------------------------------------
-   Nicer Forms
------------------------------------------ */
-form.nice div.form-field input, form.nice input.input-text, form.nice textarea {
-  border: solid 1px #bbb;
-  border-radius: 2px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-}
-
-form.nice div.form-field input, form.nice input.input-text, form.nice textarea {
-  font-size: 13px;
-  padding: 6px 3px 4px;
-  outline: none !important;
-  background: url(../images/misc/input-bg.png) white;
-}
-
-form.nice div.form-field input:focus, form.nice input.input-text:focus, form.nice textarea:focus {
-  background-color: #f9f9f9;
-}
-
-/* Text input and textarea, disabled */
-form.nice div.form-field input[disabled], form.nice input.input-text[disabled], form.nice textarea[disabled] {
-  background-color: #ddd;
-}
-
-form.nice fieldset {
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-}
-
-form.nice div.form-field input[type=radio], form.nice div.form-field input[type=checkbox] {
-  display: inline;
-  width: auto;
-  margin-bottom: 0;
-}
-
-form.nice div.form-field.error small, form.nice small.error {
-  padding: 6px 4px;
-  border: solid 0 #C00000;
-  border-width: 0 1px 1px 1px;
-  margin-top: -10px;
-  background: #C00000;
-  color: #fff;
-  font-size: 12px;
-  font-weight: bold;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  -webkit-border-bottom-left-radius: 2px;
-  -webkit-border-bottom-right-radius: 2px;
-  -moz-border-radius-bottomleft: 2px;
-  -moz-border-radius-bottomright: 2px;
-}
-
-form.nice div.form-field.error .small + small, form.nice .small + small.error {
-  width: 132px;
-}
-
-form.nice div.form-field.error .medium + small, form.nice .medium + small.error {
-  width: 252px;
-}
-
-form.nice div.form-field.error .large + small, form.nice .large + small.error {
-  width: 432px;
-}
-
-form.nice div.form-field.error .small.oversize + small, form.nice .small.oversize + small.error {
-  width: 136px;
-}
-
-form.nice div.form-field.error .medium.oversize + small, form.nice .medium.oversize + small.error {
-  width: 256px;
-}
-
-form.nice div.form-field.error .large.oversize + small, form.nice .large.oversize + small.error {
-  width: 436px;
-}
-
-/* -----------------------------------------
    Custom Forms
 ----------------------------------------- */
+form.custom {
+  /* Custom input, disabled */
+}
 form.custom span.custom {
   display: inline-block;
   width: 14px;
@@ -264,21 +217,17 @@ form.custom span.custom {
   border: solid 1px #ccc;
   background: url(../images/misc/custom-form-sprites.png) 0 0 no-repeat;
 }
-
 form.custom span.custom.radio {
   border-radius: 7px;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
 }
-
 form.custom span.custom.radio.checked {
-  background-position: 0 -14px;
+  background-position: -1px -15px;
 }
-
 form.custom span.custom.checkbox.checked {
-  background-position: 0 -28px;
+  background-position: -1px -29px;
 }
-
 form.custom div.custom.dropdown {
   display: block;
   position: relative;
@@ -287,35 +236,59 @@ form.custom div.custom.dropdown {
   margin-bottom: 9px;
   margin-top: 2px;
 }
-
 form.custom div.custom.dropdown a.current {
   display: block;
   width: auto;
   line-height: 26px;
-  min-height: 26px;
+  min-height: 28px;
   padding: 0 38px 0 6px;
   border: solid 1px #ddd;
   color: #141414;
   background-color: #fff;
   word-wrap: nowrap;
 }
-
 form.custom div.custom.dropdown a.selector {
   position: absolute;
-  width: 26px;
-  height: 26px;
+  width: 28px;
+  height: 28px;
   display: block;
   background: url(../images/misc/custom-form-sprites.png) -14px 1px no-repeat;
   right: 0;
   top: 0;
   border: solid 1px #ddd;
 }
-
+form.custom div.custom.dropdown.open ul {
+  display: block;
+  z-index: 10;
+}
+form.custom div.custom.dropdown.small {
+  width: 134px !important;
+}
+form.custom div.custom.dropdown.medium {
+  width: 254px !important;
+}
+form.custom div.custom.dropdown.large {
+  width: 434px !important;
+}
+form.custom div.custom.dropdown.expand {
+  width: 100% !important;
+}
+form.custom div.custom.dropdown.open.small ul {
+  width: 134px !important;
+}
+form.custom div.custom.dropdown.open.medium ul {
+  width: 254px !important;
+}
+form.custom div.custom.dropdown.open.large ul {
+  width: 434px !important;
+}
+form.custom div.custom.dropdown.open.expand ul {
+  width: 100% !important;
+}
 form.custom div.custom.dropdown:hover a.selector,
 form.custom div.custom.dropdown.open a.selector {
-  background-position: -14px -26px;
+  background-position: -14px -25px;
 }
-
 form.custom div.custom.dropdown ul {
   position: absolute;
   width: auto;
@@ -329,102 +302,28 @@ form.custom div.custom.dropdown ul {
   background: rgba(255, 255, 255, 0.95);
   border: solid 1px #ddd;
 }
-
 form.custom div.custom.dropdown ul li {
   cursor: pointer;
   padding: 3px 38px 3px 6px;
   min-height: 18px;
+  line-height: 18px;
   margin: 0;
   white-space: nowrap;
+  list-style: none;
 }
-
 form.custom div.custom.dropdown ul li.selected {
   background: url(../images/misc/custom-form-sprites.png) right -52px no-repeat;
 }
-
 form.custom div.custom.dropdown ul li:hover {
-  background-color: #2a85e8;
+  background-color: #00a6fc;
   color: #fff;
 }
-
 form.custom div.custom.dropdown ul li.selected:hover {
-  background: url(../images/misc/custom-form-sprites.png) #2a85e8 right -78px no-repeat;
+  background: url(../images/misc/custom-form-sprites.png) #00a6fc right -78px no-repeat;
 }
-
 form.custom div.custom.dropdown ul.show {
   display: block;
 }
-
-form.custom div.custom.dropdown.open ul {
-  display: block;
-  z-index: 10;
-}
-
-form.custom div.custom.dropdown.small {
-  width: 134px !important;
-}
-
-form.custom div.custom.dropdown.medium {
-  width: 254px !important;
-}
-
-form.custom div.custom.dropdown.large {
-  width: 434px !important;
-}
-
-form.custom div.custom.dropdown.expand {
-  width: 100% !important;
-}
-
-form.custom div.custom.dropdown.open.small ul {
-  width: 132px !important;
-}
-
-form.custom div.custom.dropdown.open.medium ul {
-  width: 252px !important;
-}
-
-form.custom div.custom.dropdown.open.large ul {
-  width: 432px !important;
-}
-
-form.custom div.custom.dropdown.open.expand ul {
-  width: 100% !important;
-  box-sizing: border-box;
-}
-
-/* Custom input, disabled */
 form.custom .custom.disabled {
   background-color: #ddd;
-}
-
-/* -----------------------------------------
-   Nicer Custom Forms
------------------------------------------ */
-form.custom.nice span.custom.checkbox {
-  border-radius: 2px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-}
-
-form.custom.nice div.custom.dropdown a.current {
-  border-radius: 2px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  background-image: url(../images/misc/input-bg-outset.png);
-  background-position: bottom right;
-}
-
-form.custom.nice div.custom.dropdown a.selector {
-  height: 27px;
-  border-width: 0 0 0 1px;
-}
-
-form.custom.nice div.custom.dropdown ul {
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  -webkit-border-bottom-left-radius: 2px;
-  -webkit-border-bottom-right-radius: 2px;
-  -moz-border-radius-bottomleft: 2px;
-  -moz-border-radius-bottomright: 2px;
 }
