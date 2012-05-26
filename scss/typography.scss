@@ -1,158 +1,144 @@
 @import "base";
-$base-font-size: 14px;
-$base-line-height: 22px;
-@include establish-baseline;
 
-
-body {
-//  @include baseline-grid-background(24px, rgba(255,0,0,0.3))
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,th,td {
+	margin:0;
+	padding:0;
 }
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,th,td {  
-	margin:0; 
-	padding:0; 
-} 
 
 //* --------------------------------------------------
 //    :: Typography
 //  -------------------------------------------------- */
 
-// Second Attempt with Compass Vertical Rhythm
-h1 {
-  adjust-font-size-to(50px);
-}
+// Modular Scale of 3:4 based on 16px body copy with 44px key value for mobile.
 
+ p {
+   @include font-size(16);
+   line-height: 25px;
+   line-height: 2.5rem;
+   margin-bottom: 25px;
+   &.lead {
+     font-size: 18px;
+     font-size: 1.8rem;
+     line-height: 25px;
+   }
+   &.sidenote {
+     font-size: 14px;
+     font-size: 1.4rem;
+     line-height: 20px;
+     line-height: 2.0rem;
+     font-style: italic;
+     padding-top: 4px;
+   }
+   img.left {
+     margin: 25px 25px 25px 0px;
+   }
+ }
 
-// First Attempt without Compass Vertical Rhythm
+ h1 {
+   font-size: 46px;
+   font-size: 4.6rem;
+   line-height: 50px;
+   line-height: 5.0rem;
+   margin-bottom: 25px;
+   margin-top: 25px;
+ }
+ h2 {
+   font-size: 36px;
+   font-size: 3.6rem;
+   line-height: 40px;
+   line-height: 4.0rem;
+   margin-bottom: 10px;
+   margin-top: 0px;
+ }
+ h3 {
+   font-size: 28px;
+   font-size: 2.8rem;
+   line-height: 25px;
+   line-height: 2.5rem;
+   margin-bottom: 14px;
+   margin-top: 11px;
+ }
+ h4 {
+   font-size: 23px;
+   font-size: 2.3rem;
+   line-height: 40px;
+   line-height: 4.0rem;
+   margin-bottom: 10px;
+   margin-top: 25px;
+ }
+ h5 {
+   font-size: 20px;
+   font-size: 2.0rem;
+   line-height: 25px;
+   line-height: 2.5rem;
+   margin-bottom: 15px;
+   margin-top: 10px;
+ }
+ h6 {
+   font-size: 16px;
+   font-size: 1.6rem;
+   line-height: 25px;
+   line-height: 2.5rem;
+   margin-bottom: 15px;
+   margin-top: 10px;
+ }
 
-//  hr {
-//    border: solid #ddd;
-//    border-width: 1px 0 0;
-//    clear: both;
-//    margin: 24px 0 24px;
-//    height: 0;
-//  }
-//
-//  p {
-//    font-size: 16px;
-//    font-size: 1.6rem;
-//    line-height: 25px;
-//    line-height: 2.5rem;
-//    margin-bottom: 25px;
-//    &.lead {
-//      font-size: 18px;
-//      font-size: 1.8rem;
-//      line-height: 25px;
-//    }
-//    &.sidenote {
-//      font-size: 14px;
-//      font-size: 1.4rem;
-//      line-height: 20px;
-//      line-height: 2.0rem;
-//      font-style: italic;
-//      padding-top: 4px;
-//    }
-//    img.left {
-//      margin: 25px 25px 25px 0px;
-//    }
-//  }
-//  
-//  h1 {
-//    font-size: 46px;
-//    font-size: 4.6rem;
-//    line-height: 50px;
-//    line-height: 5.0rem;
-//    margin-bottom: 25px;
-//    margin-top: 25px;
-//  }
-//  h2 {
-//    font-size: 36px;
-//    font-size: 3.6rem;
-//    line-height: 40px;
-//    line-height: 4.0rem;
-//    margin-bottom: 10px;
-//    margin-top: 0px;
-//  }
-//  h3 {
-//    font-size: 28px;
-//    font-size: 2.8rem;
-//    line-height: 25px;
-//    line-height: 2.5rem;
-//    margin-bottom: 14px;
-//    margin-top: 11px;
-//  }
-//  h4 {
-//    font-size: 23px;
-//    font-size: 2.3rem;
-//    line-height: 40px;
-//    line-height: 4.0rem;
-//    margin-bottom: 10px;
-//    margin-top: 25px;
-//  }
-//  h5 {
-//    font-size: 20px;
-//    font-size: 2.0rem;
-//    line-height: 25px;
-//    line-height: 2.5rem;
-//    margin-bottom: 15px;
-//    margin-top: 10px;
-//  }
-//  h6 {
-//    font-size: 16px;
-//    font-size: 1.6rem;
-//    line-height: 25px;
-//    line-height: 2.5rem;
-//    margin-bottom: 15px;
-//    margin-top: 10px;
-//  }
-//    
-//  h1, h2, h3, h4, h5, h6 {
-//    small {
-//      font-size: 60%;
-//      color: #888;
-//      line-height: 0;
-//    }
-//  }
-//  
-//  ul { 
-//    font-size: 16px;
-//    font-size: 1.6rem;
-//    line-height: 25px;
-//    line-height: 2.5rem;
-//    margin-bottom: 25px;
-//  }
+ h1, h2, h3, h4, h5, h6 {
+   small {
+     font-size: 60%;
+     color: #888;
+     line-height: 0;
+   }
+ }
 
-//  h1, h2, h3, h4, h5, h6 { line-height: 1; }
-//  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
-//  h1 { font-size: 46px; font-size: 4.6rem; margin-bottom: 12px;}
-//  h2 { font-size: 35px; font-size: 3.5rem; margin-bottom: 9px; }
-//  h3 { font-size: 28px; font-size: 2.8rem; margin-bottom: 9px; }
-//  h4 { font-size: 21px; font-size: 2.1rem; margin-bottom: 3px; }
-//  h5 { font-size: 18px; font-size: 1.8rem; font-weight: normal; margin-bottom: 3px;  }
-//  h6 { font-size: 15px; font-size: 1.5rem; font-weight: normal; }
-//
-//  .subheader { color: #777; font-weight: 300; margin-bottom: 24px; }
-//
-//  p { font-size: 16px; font-size: 1.6rem; line-height: 25px; margin: 0 0 18px; }
-//  p img { margin: 0; float: left; }
-//  p.lead { font-size: 18px; font-size: 1.8rem; line-height: 1.5;  }
-//  
-//  em, i { font-style: italic; line-height: inherit; }
-//  strong, b { font-weight: bold; line-height: inherit; }
-//  small { font-size: 60%; line-height: inherit; }
-//  
-//  h1 small, h2 small, h3 small, h4 small, h5 small { color: #777; }
-//  
-//  /*  Blockquotes  */
-//  blockquote, blockquote p { line-height: 20px; color: #777; }
-//  blockquote { margin: 0 0 18px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
-//  blockquote cite { display: block; font-size: 12px; font-size: 1.2rem; color: #555; }
-//  blockquote cite:before { content: "\2014 \0020"; }
-//  blockquote cite a, blockquote cite a:visited { color: #555; }
-//  
-//  hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 12px 0 18px; height: 0; }
-//  
-//  abbr, acronym { text-transform: uppercase; font-size: 90%; color: #222; border-bottom: 1px solid #ddd; cursor: help; }
-//  abbr { text-transform: none; }
+ ul {
+   font-size: 16px;
+   font-size: 1.6rem;
+   line-height: 25px;
+   line-height: 2.5rem;
+   margin-bottom: 25px;
+ }
+
+ hr {
+   border: solid #ddd;
+   border-width: 1px 0 0;
+   clear: both;
+   margin: 24px 0 24px;
+   height: 0;
+ }
+
+ h1, h2, h3, h4, h5, h6 { line-height: 1; }
+ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+ h1 { font-size: 46px; font-size: 4.6rem; margin-bottom: 12px;}
+ h2 { font-size: 35px; font-size: 3.5rem; margin-bottom: 9px; }
+ h3 { font-size: 28px; font-size: 2.8rem; margin-bottom: 9px; }
+ h4 { font-size: 21px; font-size: 2.1rem; margin-bottom: 3px; }
+ h5 { font-size: 18px; font-size: 1.8rem; font-weight: normal; margin-bottom: 3px;  }
+ h6 { font-size: 15px; font-size: 1.5rem; font-weight: normal; }
+
+ .subheader { color: #777; font-weight: 300; margin-bottom: 24px; }
+
+ p { font-size: 16px; font-size: 1.6rem; line-height: 25px; margin: 0 0 18px; }
+ p img { margin: 0; float: left; }
+ p.lead { font-size: 18px; font-size: 1.8rem; line-height: 1.5;  }
+
+ em, i { font-style: italic; line-height: inherit; }
+ strong, b { font-weight: bold; line-height: inherit; }
+ small { font-size: 60%; line-height: inherit; }
+
+ h1 small, h2 small, h3 small, h4 small, h5 small { color: #777; }
+
+ /*  Blockquotes  */
+ blockquote, blockquote p { line-height: 20px; color: #777; }
+ blockquote { margin: 0 0 18px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
+ blockquote cite { display: block; font-size: 12px; font-size: 1.2rem; color: #555; }
+ blockquote cite:before { content: "\2014 \0020"; }
+ blockquote cite a, blockquote cite a:visited { color: #555; }
+
+ hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 12px 0 18px; height: 0; }
+
+ abbr, acronym { text-transform: uppercase; font-size: 90%; color: #222; border-bottom: 1px solid #ddd; cursor: help; }
+ abbr { text-transform: none; }
 
 	/**
  	 * Print styles.

@@ -1,29 +1,38 @@
 /*
-Syntax error: Invalid CSS after "...st-font-size-to": expected "{", was "(50px);"
-        on line 21 of /Users/chris/Sites/foundation/scss/typography.scss
+Syntax error: Undefined mixin 'font-size'.
+        on line 15 of /Users/chris/Sites/foundation/scss/typography.scss, in `font-size'
+        from line 15 of /Users/chris/Sites/foundation/scss/typography.scss
 
 Backtrace:
-/Users/chris/Sites/foundation/scss/typography.scss:21
-/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/scss/parser.rb:928:in `expected'
-/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/scss/parser.rb:874:in `expected'
-/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/scss/parser.rb:869:in `tok!'
-/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/scss/parser.rb:378:in `block'
-/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/scss/parser.rb:373:in `ruleset'
-/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/scss/parser.rb:435:in `block in declaration_or_ruleset'
-/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/scss/parser.rb:912:in `call'
-/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/scss/parser.rb:912:in `rethrow'
-/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/scss/parser.rb:436:in `declaration_or_ruleset'
-/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/scss/parser.rb:398:in `block_child'
-/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/scss/parser.rb:387:in `block_contents'
-/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/scss/parser.rb:379:in `block'
-/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/scss/parser.rb:373:in `ruleset'
-/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/scss/parser.rb:397:in `block_child'
-/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/scss/parser.rb:390:in `block_contents'
-/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/scss/parser.rb:58:in `stylesheet'
-/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/scss/parser.rb:27:in `parse'
-/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/engine.rb:326:in `_to_tree'
-/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/engine.rb:299:in `_render'
-/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.1.15/lib/sass/engine.rb:246:in `render'
+/Users/chris/Sites/foundation/scss/typography.scss:15:in `font-size'
+/Users/chris/Sites/foundation/scss/typography.scss:15
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.104/lib/sass/tree/visitors/perform.rb:170:in `visit_mixin'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.104/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.104/lib/sass/tree/visitors/perform.rb:20:in `visit'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.104/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.104/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.104/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.104/lib/sass/tree/visitors/perform.rb:29:in `block in visit_children'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.104/lib/sass/tree/visitors/perform.rb:41:in `with_environment'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.104/lib/sass/tree/visitors/perform.rb:28:in `visit_children'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.104/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.104/lib/sass/tree/visitors/perform.rb:259:in `visit_rule'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.104/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.104/lib/sass/tree/visitors/perform.rb:20:in `visit'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.104/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.104/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.104/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.104/lib/sass/tree/visitors/perform.rb:29:in `block in visit_children'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.104/lib/sass/tree/visitors/perform.rb:41:in `with_environment'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.104/lib/sass/tree/visitors/perform.rb:28:in `visit_children'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.104/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.104/lib/sass/tree/visitors/perform.rb:49:in `visit_root'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.104/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.104/lib/sass/tree/visitors/perform.rb:20:in `visit'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.104/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.104/lib/sass/tree/root_node.rb:20:in `render'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.104/lib/sass/engine.rb:308:in `_render'
+/Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.104/lib/sass/engine.rb:255:in `render'
 /Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.1/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
 /Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.1/lib/compass/compiler.rb:126:in `timed'
 /Users/chris/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.1/lib/compass/compiler.rb:139:in `block in compile'
@@ -65,4 +74,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"...st-font-size-to\": expected \"{\", was \"(50px);\"\A         on line 21 of /Users/chris/Sites/foundation/scss/typography.scss"; }
+  content: "Syntax error: Undefined mixin 'font-size'.\A         on line 15 of /Users/chris/Sites/foundation/scss/typography.scss, in `font-size'\A         from line 15 of /Users/chris/Sites/foundation/scss/typography.scss"; }
