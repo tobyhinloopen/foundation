@@ -95,15 +95,32 @@
     &.split { padding: 0;
     
       &:hover { background-color: $mainColor; }
+      &.alert:hover { background-color: $alertColor; }
+      &.success:hover { background-color: $successColor; }
+      &.secondary:hover { background-color: $secondaryColor; }
       
       &>a { color: #fff; display: block; padding: 9px 54px 11px 21px; -webkit-transition: background-color .15s ease-in-out; -moz-transition: background-color .15s ease-in-out; -o-transition: background-color .15s ease-in-out;
         
         &:hover { background-color: darken(($mainColor), 10%); }
       }
+      
       &>span { background-color: $mainColor; background-position: 10px 10px; display: block; position: absolute; right: 0; top: 0; width: 32px; height: 33px; border-left: 1px solid darken(($mainColor), 15%); box-shadow: inset 1px 1px 0px rgba(255,255,255,0.35); -webkit-transition: background-color .15s ease-in-out; -moz-transition: background-color .15s ease-in-out; -o-transition: background-color .15s ease-in-out;
         
         &:hover { background-color: darken(($mainColor), 10%); }
       }
+      
+      &.alert>span { background-color: $alertColor; border-left-color: darken(($alertColor), 15%); }
+      &.success>span { background-color: $successColor; border-left-color: darken(($successColor), 15%); }
+      &.secondary>span { background-color: $secondaryColor; border-left-color: darken(($secondaryColor), 15%); }
+      
+      &.alert>a:hover, &.alert>span:hover { background-color: darken(($alertColor), 10%); }
+      &.success>a:hover, &.success>span:hover { background-color: darken(($successColor), 10%); }
+      &.secondary>a:hover, &.secondary>span:hover { background-color: darken(($secondaryColor), 10%); }
+      
+      &.small>span { height: 32px; }
+      
+      &.large>a { padding: 11px 54px 13px 21px; }
+      &.large>span { height: 42px; width: 36px; background-position: 12px 15px; }
     }
   }
   

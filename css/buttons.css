@@ -217,6 +217,15 @@ input[type=submit].button, button.button {
 .button.dropdown.split:hover {
   background-color: #00a6fc;
 }
+.button.dropdown.split.alert:hover {
+  background-color: #e91c21;
+}
+.button.dropdown.split.success:hover {
+  background-color: #5b8737;
+}
+.button.dropdown.split.secondary:hover {
+  background-color: #e9e9e9;
+}
 .button.dropdown.split > a {
   color: #fff;
   display: block;
@@ -245,6 +254,38 @@ input[type=submit].button, button.button {
 }
 .button.dropdown.split > span:hover {
   background-color: #0084c9;
+}
+.button.dropdown.split.alert > span {
+  background-color: #e91c21;
+  border-left-color: #a81014;
+}
+.button.dropdown.split.success > span {
+  background-color: #5b8737;
+  border-left-color: #365121;
+}
+.button.dropdown.split.secondary > span {
+  background-color: #e9e9e9;
+  border-left-color: #c3c3c3;
+}
+.button.dropdown.split.alert > a:hover, .button.dropdown.split.alert > span:hover {
+  background-color: #bf1317;
+}
+.button.dropdown.split.success > a:hover, .button.dropdown.split.success > span:hover {
+  background-color: #436328;
+}
+.button.dropdown.split.secondary > a:hover, .button.dropdown.split.secondary > span:hover {
+  background-color: #d0d0d0;
+}
+.button.dropdown.split.small > span {
+  height: 32px;
+}
+.button.dropdown.split.large > a {
+  padding: 11px 54px 13px 21px;
+}
+.button.dropdown.split.large > span {
+  height: 42px;
+  width: 36px;
+  background-position: 12px 15px;
 }
 
 /* Button Groups */
