@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Colors */
 /* Media Query Breaks */
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, p, blockquote, th, td {
@@ -7,92 +8,99 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, 
 
 p {
   font-size: 14px;
-  font-size: 1.4rem;
-  line-height: 22px;
-  margin-bottom: 22px;
+  line-height: 1.6;
+  margin-bottom: 17px;
 }
 p.lead {
-  font-size: 20px;
-  font-size: 2rem;
-  line-height: 27px;
-  margin-bottom: 22px;
-}
-p.sidenote {
-  font-size: 13px;
-  font-size: 1.3rem;
-  line-height: 18px;
-  font-style: italic;
-  padding-top: 3px;
+  font-size: 17.5px;
+  line-height: 1.4;
+  margin-bottom: 17px;
 }
 p img.left, p img {
-  margin: 22px 22px 22px 0px;
+  margin: 17px;
+  margin-left: 0;
 }
 p img.right {
-  margin: 22px 0px 22px 22px;
+  margin: 17px;
+  margin-right: 0;
 }
 
-h1 {
-  font-size: 44px;
-  font-size: 4.4rem;
-  line-height: 44px;
-  margin-bottom: 26px;
-  margin-top: 38px;
-}
-
-h2 {
-  font-size: 32px;
-  font-size: 3.2rem;
-  line-height: 22px;
-  margin-bottom: 22px;
-  margin-top: 22px;
-}
-
-h3 {
-  font-size: 26px;
-  font-size: 2.6rem;
-  line-height: 22px;
-  margin-bottom: 18px;
-  margin-top: 26px;
-}
-
-h4 {
-  font-size: 21px;
-  font-size: 2.1rem;
-  line-height: 22px;
-  margin-bottom: 16px;
-  margin-top: 28px;
-}
-
-h5 {
-  font-size: 18px;
-  font-size: 1.8rem;
-  line-height: 22px;
-  margin-bottom: 15px;
-  margin-top: 29px;
-}
-
-h6 {
+aside p {
   font-size: 13px;
-  font-size: 1.3rem;
-  line-height: 22px;
-  margin-bottom: 12px;
-  margin-top: 32px;
+  line-height: 1.35;
+  font-style: italic;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  text-rendering: optimizeLegibility;
+  line-height: 1.1;
+  margin-bottom: 14px;
+  margin-top: 14px;
+}
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   font-size: 60%;
   color: #888;
   line-height: 0;
 }
 
-/*	--------------------------------------------------
-:: Lists
--------------------------------------------------- */
+h1 {
+  font-size: 44px;
+}
+
+h2 {
+  font-size: 37px;
+}
+
+h3 {
+  font-size: 27px;
+}
+
+h4 {
+  font-size: 23px;
+}
+
+h5 {
+  font-size: 17px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+hr {
+  border: solid #ddd;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 22px 0 21px;
+  height: 0;
+}
+
+.subheader {
+  color: #777;
+  font-weight: 300;
+  margin-bottom: 17px;
+}
+
+em, i {
+  font-style: italic;
+  line-height: inherit;
+}
+
+strong, b {
+  font-weight: bold;
+  line-height: inherit;
+}
+
+small {
+  font-size: 60%;
+  line-height: inherit;
+}
+
+/* Lists */
 ul, ol {
   font-size: 14px;
-  font-size: 1.4rem;
-  line-height: 22px;
-  margin-bottom: 22px;
+  line-height: 1.6;
+  margin-bottom: 17px;
   list-style-position: inside;
 }
 
@@ -112,51 +120,21 @@ ul.large li {
   line-height: 21px;
 }
 
-hr {
-  border: solid #ddd;
-  border-width: 1px 0 0;
-  clear: both;
-  margin: 22px 0 21px;
-  height: 0;
-}
-
-.subheader {
-  color: #777;
-  font-weight: 300;
-  margin-bottom: 24px;
-}
-
-em, i {
-  font-style: italic;
-  line-height: inherit;
-}
-
-strong, b {
-  font-weight: bold;
-  line-height: inherit;
-}
-
-small {
-  font-size: 60%;
-  line-height: inherit;
-}
-
 /*  Blockquotes  */
 blockquote, blockquote p {
-  line-height: 20px;
+  line-height: 1.5;
   color: #777;
 }
 
 blockquote {
-  margin: 0 0 22px;
+  margin: 0 0 17px;
   padding: 9px 20px 0 19px;
   border-left: 1px solid #ddd;
 }
 
 blockquote cite {
   display: block;
-  font-size: 12px;
-  font-size: 1.2rem;
+  font-size: 13px;
   color: #555;
 }
 
@@ -180,12 +158,12 @@ abbr {
   text-transform: none;
 }
 
-	/**
+	/*
  	 * Print styles.
 	 *
 	 * Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
 	 * Credit to Paul Irish and HTML5 Boilerplate (html5boilerplate.com)
-	 */
+	*/
 .print-only {
   display: none !important;
 }

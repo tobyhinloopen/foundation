@@ -1,68 +1,67 @@
-@import "base";
+	@import "base";
 
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,th,td {
-	margin:0;
-	padding:0;
-}
+	// Modular Scale Variables
+	$ratio: $golden;
+	$base-size: 14px 44px;
 
-//* --------------------------------------------------
-//    :: Typography
-//  -------------------------------------------------- */
+	body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,th,td {
+		margin:0;
+		padding:0;
+	}
 
-// Modular Scale of 1:1.5 based on 14px body copy with 44px key value.
-// We rounded and eye-balled in certain areas to give keep in rhythm visually.
+	p { font-size: ms(0); line-height: 1.6; margin-bottom: ms(1);
+	 	&.lead { font-size: ms(0) * 1.25; line-height: 1.4; margin-bottom: ms(1); }
+	 	img.left, img { margin: ms(1); margin-left: 0; }
+	 	img.right { margin: ms(1); margin-right: 0; }
+	}
+	aside p { font-size: ms(0) - 1; line-height: 1.35; font-style: italic; }
 
- p { @include font-size(14); line-height: 22px; margin-bottom: 22px;
-   &.lead { @include font-size(20); line-height: 27px; margin-bottom: 22px; }
-   &.sidenote { @include font-size(13); line-height: 18px; font-style: italic; padding-top: 3px; }
-   img.left, img { margin: 22px 22px 22px 0px; }
-   img.right { margin: 22px 0px 22px 22px; }
- }
+ 	h1, h2, h3, h4, h5, h6 {
+ 		text-rendering: optimizeLegibility;
+ 		line-height: 1.1;
+ 		margin-bottom: ms(0);
+ 		margin-top: ms(0);
+ 	  small { font-size: 60%; color: #888; line-height: 0; }
+ 	}
 
- h1 { @include font-size(44); line-height: 44px; margin-bottom: 26px; margin-top: 38px; }
- h2 { @include font-size(32); line-height: 22px; margin-bottom: 22px; margin-top: 22px; }
- h3 { @include font-size(26); line-height: 22px; margin-bottom: 18px; margin-top: 26px; }
- h4 { @include font-size(21); line-height: 22px; margin-bottom: 16px; margin-top: 28px; }
- h5 { @include font-size(18); line-height: 22px; margin-bottom: 15px; margin-top: 29px; }
- h6 { @include font-size(13); line-height: 22px; margin-bottom: 12px; margin-top: 32px; }
+	h1 { font-size: ms(5); }
+ 	h2 { font-size: ms(4); }
+ 	h3 { font-size: ms(3); }
+ 	h4 { font-size: ms(2); }
+ 	h5 { font-size: ms(1); }
+ 	h6 { font-size: ms(0); }
 
- h1, h2, h3, h4, h5, h6 {
-   small { font-size: 60%; color: #888; line-height: 0; }
- }
+ 	hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 22px 0 21px; height: 0; }
 
-	/*	--------------------------------------------------
-	:: Lists
-	-------------------------------------------------- */
-	ul, ol { @include font-size(14); line-height: 22px; margin-bottom: 22px; list-style-position: inside;  }
+ 	.subheader { color: #777; font-weight: 300; margin-bottom: ms(1); }
+
+ 	em, i { font-style: italic; line-height: inherit; }
+ 	strong, b { font-weight: bold; line-height: inherit; }
+ 	small { font-size: 60%; line-height: inherit; }
+
+	/* Lists */
+	ul, ol { font-size: ms(0); line-height: 1.6; margin-bottom: ms(1); list-style-position: inside;  }
 	ul.square { list-style-type: square; }
 	ul.circle { list-style-type: circle ; }
 	ul.disc { list-style-type: disc; }
 	ul.large li { line-height: 21px; }
 
- hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 22px 0 21px; height: 0; }
+ 	/*  Blockquotes  */
+ 	blockquote, blockquote p { line-height: 1.5; color: #777; }
+ 	blockquote { margin: 0 0 ms(1); padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
+ 	blockquote cite { display: block; font-size: ms(0) - 1; color: #555; }
+ 	blockquote cite:before { content: "\2014 \0020"; }
+ 	blockquote cite a, blockquote cite a:visited { color: #555; }
 
- .subheader { color: #777; font-weight: 300; margin-bottom: 24px; }
+ 	abbr, acronym { text-transform: uppercase; font-size: 90%; color: #222; border-bottom: 1px solid #ddd; cursor: help; }
+ 	abbr { text-transform: none; }
 
- em, i { font-style: italic; line-height: inherit; }
- strong, b { font-weight: bold; line-height: inherit; }
- small { font-size: 60%; line-height: inherit; }
-
- /*  Blockquotes  */
- blockquote, blockquote p { line-height: 20px; color: #777; }
- blockquote { margin: 0 0 22px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
- blockquote cite { display: block; font-size: 12px; font-size: 1.2rem; color: #555; }
- blockquote cite:before { content: "\2014 \0020"; }
- blockquote cite a, blockquote cite a:visited { color: #555; }
-
- abbr, acronym { text-transform: uppercase; font-size: 90%; color: #222; border-bottom: 1px solid #ddd; cursor: help; }
- abbr { text-transform: none; }
-
-	/**
+	/*
  	 * Print styles.
 	 *
 	 * Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
 	 * Credit to Paul Irish and HTML5 Boilerplate (html5boilerplate.com)
-	 */
+	*/
 	.print-only { display: none !important; }
 	@media print {
 		* { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;
