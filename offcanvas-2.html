@@ -44,8 +44,17 @@
 
 </head>
 
-  <body id="page" class="off-canvas">		
+  <body id="page" class="off-canvas slide-nav">		
 	<div class="container">	
+		
+		<nav id="topMenu" role="navigation">
+			<ul id="nav" class="nav-bar">
+				<li><a href="" class="main">One</a></li>
+				<li><a href="" class="main">Two</a></li>
+				<li><a href="" class="main">Three</a></li>
+				<li><a href="" class="main">Four</a></li>							
+			</ul>											
+		</nav>
 		
 		<header id="header" class="row">	
 		  <div class="four columns phone-two">
@@ -53,7 +62,7 @@
 		  </div>
 		  <div class="eight columns phone-two">
 		    <nav id="menu" role="navigation" class="hide-for-small">
-    			<ul id="nav" class="nav-bar">
+    			<ul id="mainNav" class="nav-bar">
     				<li><a href="" class="main">One</a></li>
     				<li><a href="" class="main">Two</a></li>
     				<li><a href="" class="main">Three</a></li>
@@ -61,9 +70,9 @@
     			</ul>											
     		</nav>
   			<p class="show-for-small">
-  			  <a class='menu-button button' href="#bottomNav">Menu</a>	
-  			  <a class='sidebar-button button' id='sidebarButton' href="#sidebar" >Extra</a>
-  			</p>
+  			  <a class='menu-button button' id="menuButton" href="#menu">Menu</a>		
+  			  <a class='sidebar-button button' id="sidebarButton" href="#sidebar" >Extra</a>
+  			</p> 
 		  </div>	
 		</header>	
 		
@@ -89,16 +98,7 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget nulla massa. Sed ultricies posuere tincidunt. Morbi dolor est, aliquet quis egestas eu, consectetur nec neque. Etiam velit libero, congue eu accumsan sit amet, eleifend et sem. Donec ac felis sed sapien placerat venenatis. Fusce id tempus nunc. Vestibulum pellentesque vulputate tempus. Suspendisse sed consequat lectus. Nulla bibendum venenatis eros, elementum malesuada mi imperdiet eu. Fusce ornare gravida nulla, sed scelerisque sem scelerisque at.</p>
   		</section>
 		</div>
-		
-				
-		<nav id="bottomMenu" role="navigation" class="show-for-small">
-			<ul id="bottomNav" class="nav-bar">
-				<li><a href="" class="main">One</a></li>
-				<li><a href="" class="main">Two</a></li>
-				<li><a href="" class="main">Three</a></li>
-				<li><a href="" class="main">Four</a></li>							
-			</ul>											
-		</nav>		
+			
     <footer class="site-footer row" role="contentinfo">
       <div class="twelve columns">
         Footer Copyright info here

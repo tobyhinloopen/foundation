@@ -345,7 +345,7 @@ p.vevent abbr {
   top: -10px;
   left: 10px;
 }
-.tooltip.tip-verride > .nub {
+.tooltip.tip-override > .nub {
   border-color: transparent transparent black transparent !important;
   border-color: transparent transparent rgba(0, 0, 0, 0.8) transparent !important;
   top: -10px !important;
