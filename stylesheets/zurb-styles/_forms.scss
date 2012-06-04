@@ -7,7 +7,7 @@
     globals.css
 */
 
-	@import "base";
+	@import "shared";
 
 /* -----------------------------------------
    Standard Forms
@@ -73,51 +73,51 @@
 	.medium.oversize + small.error { width: 264px; }
 	.large.oversize + small.error { width: 444px; }
 	.expand.oversize + small.error { width: 100%; }
-	
+
 
 	/* -----------------------------------------
 	   Custom Forms
 	----------------------------------------- */
 
 	form.custom {
-	
-  	span.custom { display: inline-block; width: 14px; height: 14px; position: relative; top: 2px; border: solid 1px #ccc; background: url(../images/misc/custom-form-sprites.png) 0 0 no-repeat; 
-    	
+
+  	span.custom { display: inline-block; width: 14px; height: 14px; position: relative; top: 2px; border: solid 1px #ccc; background: url(../images/misc/custom-form-sprites.png) 0 0 no-repeat;
+
     	&.radio { border-radius: 7px; -webkit-border-radius: 7px; -moz-border-radius: 7px; }
     	&.radio.checked { background-position: -1px -15px; }
     	&.checkbox.checked { background-position: -1px -29px; }
   	}
-  
+
   	div.custom.dropdown { display: block; position: relative; width: auto; height: 28px; margin-bottom: 9px; margin-top: 2px;
-  
+
       a.current { display: block; width: auto; line-height: 26px; min-height: 28px; padding: 0 38px 0 6px; border: solid 1px #ddd; color: #141414; background-color: #fff; word-wrap: nowrap; }
       a.selector { position: absolute; width: 28px; height: 28px; display: block; background: url(../images/misc/custom-form-sprites.png) -14px 1px no-repeat; right: 0; top: 0; border: solid 1px #ddd; }
-  
+
       &.open ul { display: block; z-index: 10; }
-  
+
       &.small { width: 134px !important; }
     	&.medium { width: 254px !important; }
     	&.large { width: 434px !important; }
     	&.expand { width: 100% !important; }
-  
+
     	&.open.small ul { width: 134px !important; }
     	&.open.medium ul { width: 254px !important; }
     	&.open.large ul { width: 434px !important; }
     	&.open.expand ul { width: 100% !important; }
   	}
-  
+
   	div.custom.dropdown:hover a.selector,
   	div.custom.dropdown.open a.selector { background-position: -14px -25px; }
-  
+
   	div.custom.dropdown ul { position: absolute; width: auto; display: none; margin: 0; left: 0; top: 27px; margin: 0; padding: 0; background: #fff; background: rgba(255,255,255,0.95); border: solid 1px #ddd;
-  
+
       li { cursor: pointer; padding: 3px 38px 3px 6px; min-height: 18px; line-height: 18px; margin: 0; white-space: nowrap; list-style: none; }
       li.selected { background: url(../images/misc/custom-form-sprites.png) right -52px no-repeat; }
       li:hover { background-color: $mainColor; color: #fff; }
       li.selected:hover { background: url(../images/misc/custom-form-sprites.png) $mainColor right -78px no-repeat; }
       &.show { display: block; }
   	}
-  
+
   	/* Custom input, disabled */
   	.custom.disabled { background-color: #ddd; }
   }

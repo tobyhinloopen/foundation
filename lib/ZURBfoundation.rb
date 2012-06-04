@@ -1,4 +1,5 @@
 require 'compass'
+
 Compass::Frameworks.register("ZURBfoundation", :path => File.join(File.dirname(__FILE__), ".."))
 
 module ZURBfoundation

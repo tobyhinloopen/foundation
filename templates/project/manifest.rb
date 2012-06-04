@@ -1,20 +1,20 @@
 description 'ZURBfoundation Compass Gem'
 
 # Sass Files
-stylesheet 'sass/foundation.sass', :to => 'foundation.sass', :media => "screen, projector, print"
-stylesheet 'sass/app.sass', :to => 'app.sass', :media => "screen, projector, print"
-stylesheet 'sass/ie.sass', :to => 'ie.sass', :condition => "IE lt 9"
-# stylesheet 'sass/_settings.sass', :to => '_settings.sass'
+stylesheet 'sass/foundation.scss', :to => 'foundation.scss', :media => "screen, projector, print"
+stylesheet 'sass/app.scss', :to => 'app.scss', :media => "screen, projector, print"
+stylesheet 'sass/ie.scss', :to => 'ie.scss', :condition => "IE lt 9"
+# stylesheet 'scss/_settings.scss', :to => '_settings.scss'
 
 # Javascripts
-javascript 'js/jquery.min.js', :to => 'jquery.min.js'
-javascript 'js/modernizr.foundation.js', :to => 'modernizr.foundation.js'
-javascript 'js/jquery.customforms.js', :to => 'jquery.customforms.js'
-javascript 'js/jquery.reveal.js', :to => 'jquery.reveal.js'
-javascript 'js/jquery.orbit-1.4.0.js', :to => 'jquery.orbit-1.4.0.js'
-javascript 'js/jquery.tooltips.js', :to => 'jquery.tooltips.js'
-javascript 'js/jquery.placeholder.min.js', :to => 'jquery.placeholder.min.js'
-javascript 'js/app.js', :to => 'app.js'
+javascript 'javascripts/jquery.min.js', :to => 'jquery.min.js'
+javascript 'javascripts/modernizr.foundation.js', :to => 'modernizr.foundation.js'
+javascript 'javascripts/jquery.customforms.js', :to => 'jquery.customforms.js'
+javascript 'javascripts/jquery.reveal.js', :to => 'jquery.reveal.js'
+javascript 'javascripts/jquery.orbit-1.4.0.js', :to => 'jquery.orbit-1.4.0.js'
+javascript 'javascripts/jquery.tooltips.js', :to => 'jquery.tooltips.js'
+javascript 'javascripts/jquery.placeholder.min.js', :to => 'jquery.placeholder.min.js'
+javascript 'javascripts/app.js', :to => 'app.js'
 
 # Make sure you list all the project template files here in the manifest.
 html 'index.html'
@@ -28,7 +28,7 @@ file 'convert-number-to-word.rb'
 image 'images/misc/custom-form-sprites.png', :to => 'misc/custom-form-sprites.png'
 image 'images/misc/input-bg.png', :to => 'misc/input-bg.png'
 image 'images/misc/input-bg-outset.png', :to => 'misc/input-bg-outset.png'
-image 'images/misc/table-sorter.png', :to => 'misc/table-sorter.png'
+image 'images/misc/dropdown-button-nub.png', :to => 'misc/dropdown-button-nub.png'
 image 'images/orbit/bullets.jpg', :to => 'orbit/bullets.jpg'
 image 'images/orbit/left-arrow.png', :to => 'orbit/left-arrow.png'
 image 'images/orbit/loading.gif', :to => 'orbit/loading.gif'

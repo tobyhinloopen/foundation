@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.homepage = "http://foundation.zurb.com"
 
   # Gem Files
-  s.files = %w(README.mkdn)
+  s.files = %w(README.markdown)
   s.files += Dir.glob("lib/**/*.*")
   s.files += Dir.glob("stylesheets/**/*.*")
   s.files += Dir.glob("templates/**/*.*")
