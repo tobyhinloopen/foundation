@@ -4,11 +4,8 @@
 */
 /* Colors */
 /* Media Query Breaks */
-/* --------------------------------------------------
-	:: Typography
-	-------------------------------------------------- */
-/* --------------------------------------------------
-	:: Visibility Affordances
+/* -------------------------------------------------- :: Typography -------------------------------------------------- */
+/* -------------------------------------------------- :: Visibility Affordances
 ---------------------------------------------------*/
 /* Desktop visibility targeting */
 .show-for-small, .show-for-medium, .hide-for-large, .show-for-xlarge { display: none !important; }
@@ -47,15 +44,13 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
 
 @media only screen and (max-width: 1280px) and (min-width: 768px) { .touch table.hide-for-xlarge, .touch table.hide-for-large, .touch table.hide-for-small, .touch table.show-for-medium { display: table !important; } }
 @media only screen and (max-width: 767px) { table.hide-for-xlarge, table.hide-for-large, table.hide-for-medium, table.show-for-small { display: table !important; } }
-/* --------------------------------------------------
-	:: Forms
+/* -------------------------------------------------- :: Forms
 ---------------------------------------------------*/
 @media only screen and (max-width: 767px) { div.form-field input, div.form-field input.small, div.form-field input.medium, div.form-field input.large, div.form-field input.oversize, input.input-text, input.input-text.oversize, textarea, form div.form-field input, form.nice div.form-field input.oversize, form.nice input.input-text, form.nice input.input-text.oversize, form.nice textarea { display: block; width: 100%; padding: 6px 2% 4px; font-size: 18px; font-size: 1.8rem; }
   form div.form-field input, form.nice div.form-field input.oversize, form.nice input.input-text, form.nice input.input-text.oversize, form.nice textarea { -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; }
   form div.form-field.error small, form.nice small.error { padding: 6px 2%; display: block; }
   form div.form-field.error .small + small, form .small + .error, form div.form-field.error .medium + small, form .medium + .error, form div.form-field.error .large + small, form .large + .error, form div.form-field.error .expand + small, form .expand + .error { width: auto; } }
-/* --------------------------------------------------
-	:: UI
+/* -------------------------------------------------- :: UI
 ---------------------------------------------------*/
 /* Buttons */
 @media only screen and (max-width: 767px) { .button { display: block; }

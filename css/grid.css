@@ -132,7 +132,7 @@ img { -ms-interpolation-mode: bicubic; }
   .row .pull-one-phone { right: 25%; }
   .row .pull-two-phone { right: 50%; }
   .row .pull-three-phone { right: 75%; } }
-/*	--------------------------------------------------
+/*  --------------------------------------------------
 :: Block grids
 
 These are 2-up, 3-up, 4-up and 5-up ULs, suited
@@ -153,22 +153,22 @@ that IE7/8 do not support :nth-child.
 
 .block-grid.two-up > li { width: 50%; padding: 0 15px 15px; }
 
-/* 	.block-grid.two-up>li:nth-child(2n+1) {clear: left;} */
+/*  .block-grid.two-up>li:nth-child(2n+1) {clear: left;} */
 .block-grid.three-up { margin: 0 -12px; }
 
 .block-grid.three-up > li { width: 33.33%; padding: 0 12px 12px; }
 
-/* 	.block-grid.three-up>li:nth-child(3n+1) {clear: left;} */
+/*  .block-grid.three-up>li:nth-child(3n+1) {clear: left;} */
 .block-grid.four-up { margin: 0 -10px; }
 
 .block-grid.four-up > li { width: 25%; padding: 0 10px 10px; }
 
-/* 	.block-grid.four-up>li:nth-child(4n+1) {clear: left;} */
+/*  .block-grid.four-up>li:nth-child(4n+1) {clear: left;} */
 .block-grid.five-up { margin: 0 -8px; }
 
 .block-grid.five-up > li { width: 20%; padding: 0 8px 8px; }
 
-/* 	.block-grid.five-up>li:nth-child(5n+1) {clear: left;} */
+/*  .block-grid.five-up>li:nth-child(5n+1) {clear: left;} */
 /* Mobile */
 @media only screen and (max-width: 767px) { .block-grid.mobile { margin-left: 0; }
   .block-grid.mobile > li { float: none; width: 100%; margin-left: 0; } }
