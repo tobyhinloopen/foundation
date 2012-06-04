@@ -4,11 +4,7 @@
  * http://www.opensource.org/licenses/mit-license.php
 */
 
-<<<<<<< HEAD:scss/orbit.scss
-@import "base";
-=======
-  @import "shared";
->>>>>>> d0822a7711577c74c4ce504787654bfcc9804d44:stylesheets/zurb-styles/_orbit.scss
+  @import "base";
 
 /* CONTAINER
    ================================================== */
@@ -160,7 +156,7 @@ ul.orbit-bullets {
   list-style: none;
   bottom: -40px;
   left: 50%;
-	margin-left: -50px;
+  margin-left: -50px;
   padding: 0; }
 
 ul.orbit-bullets li {
@@ -203,7 +199,7 @@ ul.orbit-bullets {
   list-style: none;
   bottom: -50px;
   left: 50%;
-	margin-left: -50px;
+  margin-left: -50px;
   padding: 0; }
 
 ul.orbit-bullets li {
@@ -232,5 +228,5 @@ ul.orbit-bullets li.active.has-thumb {
 
 
 /* Correct timer in IE */
-	.timer { display: none !important; }
-	div.caption { background:transparent; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);zoom: 1; }
+  .timer { display: none !important; }
+  div.caption { background:transparent; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);zoom: 1; }

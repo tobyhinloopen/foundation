@@ -6,7 +6,7 @@
   Requires:
     boxsizing.htc for IE7 support
 */
-  @import "shared";
+  @import "base";
 
   $row_width: 1000px;
   $column_gutter: 30px;
@@ -104,10 +104,10 @@
     .row .phone-one, .row .phone-two, .row .phone-three, .row .phone-four { float: left; padding: 0 15px; }
     .row .phone-one:last-child, .row .phone-two:last-child, .row .phone-three:last-child, .row .phone-four:last-child { float: right; }
 
-    .row .phone-one 	{ width: 25% !important; }
-    .row .phone-two 	{ width: 50% !important; }
-    .row .phone-three 	{ width: 75% !important; }
-    .row .phone-four 	{ width: 100% !important; }
+    .row .phone-one   { width: 25% !important; }
+    .row .phone-two   { width: 50% !important; }
+    .row .phone-three   { width: 75% !important; }
+    .row .phone-four  { width: 100% !important; }
 
     .row .push-one-phone { left: 25%; }
     .row .push-two-phone { left: 50% }
@@ -121,7 +121,7 @@
 
 
 
-/*	--------------------------------------------------
+/*  --------------------------------------------------
 :: Block grids
 
 These are 2-up, 3-up, 4-up and 5-up ULs, suited
@@ -140,26 +140,25 @@ that IE7/8 do not support :nth-child.
 
   .block-grid.two-up { margin: 0 -15px; }
   .block-grid.two-up>li { width: 50%; padding: 0 15px 15px; }
-  /* 	.block-grid.two-up>li:nth-child(2n+1) {clear: left;} */
+  /*  .block-grid.two-up>li:nth-child(2n+1) {clear: left;} */
 
   .block-grid.three-up { margin: 0 -12px; }
   .block-grid.three-up>li { width: 33.33%; padding: 0 12px 12px; }
-  /* 	.block-grid.three-up>li:nth-child(3n+1) {clear: left;} */
+  /*  .block-grid.three-up>li:nth-child(3n+1) {clear: left;} */
 
   .block-grid.four-up { margin: 0 -10px; }
   .block-grid.four-up>li { width: 25%; padding: 0 10px 10px; }
-  /* 	.block-grid.four-up>li:nth-child(4n+1) {clear: left;} */
+  /*  .block-grid.four-up>li:nth-child(4n+1) {clear: left;} */
 
   .block-grid.five-up { margin: 0 -8px; }
   .block-grid.five-up>li { width: 20%; padding: 0 8px 8px; }
-  /* 	.block-grid.five-up>li:nth-child(5n+1) {clear: left;} */
+  /*  .block-grid.five-up>li:nth-child(5n+1) {clear: left;} */
 
 
 
   /* Mobile */
 
-	@media #{$media-small} {
-		.block-grid.mobile { margin-left: 0; }
-		.block-grid.mobile > li { float: none; width: 100%; margin-left: 0; }
-	}
-
+  @media #{$media-small} {
+    .block-grid.mobile { margin-left: 0; }
+    .block-grid.mobile > li { float: none; width: 100%; margin-left: 0; }
+  }
