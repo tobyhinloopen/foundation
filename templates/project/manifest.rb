@@ -1,6 +1,7 @@
 description 'ZURBfoundation Compass Gem'
 
 # Sass Files
+stylesheet 'sass/normalize.scss', :to => 'normalize.scss', :media => "screen, projector, print"
 stylesheet 'sass/foundation.scss', :to => 'foundation.scss', :media => "screen, projector, print"
 stylesheet 'sass/app.scss', :to => 'app.scss', :media => "screen, projector, print"
 stylesheet 'sass/ie.scss', :to => 'ie.scss', :condition => "IE lt 9"

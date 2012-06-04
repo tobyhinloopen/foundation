@@ -1,7 +1,6 @@
-// Shared
-@import "zurb-styles/shared";
-
 // Foundation parts
+@import "zurb-styles/shared/base";
+@import "zurb-styles/shared/mixins";
 @import "zurb-styles/globals";
 @import "zurb-styles/grid";
 @import "zurb-styles/typography";

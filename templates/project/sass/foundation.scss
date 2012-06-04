@@ -1,29 +1,31 @@
 // ZURB Foundation settings
-@import "settings";
+// @import "settings";
 
 // Importing all of Foundation
-@import "ZURB-foundation";
+@import "modular-scale";
+@import "ZURBfoundation";
+
 
 // Import Each Specific Piece for SCSS
-// @import "zurb/buttons";
-// @import "zurb/forms";
-// @import "zurb/globals";
-// @import "zurb/grid";
-// @import "zurb/mobile";
-// @import "zurb/orbit";
-// @import "zurb/reveal";
-// @import "zurb/typography";
-// @import "zurb/ui";
-// @import "zurb/shared";
+// @import "zurb-styles/buttons";
+// @import "zurb-styles/forms";
+// @import "zurb-styles/globals";
+// @import "zurb-styles/grid";
+// @import "zurb-styles/mobile";
+// @import "zurb-styles/orbit";
+// @import "zurb-styles/reveal";
+// @import "zurb-styles/typography";
+// @import "zurb-styles/ui";
+// @import "zurb-styles/shared";
 
 // Import Each Specific Piece for SASS
-// @import zurb/buttons
-// @import zurb/forms
-// @import zurb/globals
-// @import zurb/grid
-// @import zurb/mobile
-// @import zurb/orbit
-// @import zurb/reveal
-// @import zurb/typography
-// @import zurb/ui
-// @import zurb/shared
+// @import zurb-styles/buttons
+// @import zurb-styles/forms
+// @import zurb-styles/globals
+// @import zurb-styles/grid
+// @import zurb-styles/mobile
+// @import zurb-styles/orbit
+// @import zurb-styles/reveal
+// @import zurb-styles/typography
+// @import zurb-styles/ui
+// @import zurb-styles/shared

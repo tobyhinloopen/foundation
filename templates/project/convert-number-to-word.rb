@@ -3,7 +3,7 @@
 require 'linguistics'
 Linguistics::use( :en ) # extends Array, String, and Numeric
 
-## this is the linguistics gem, 
+## this is the linguistics gem,
 ## instructions on how to use, http://deveiate.org/projects/Linguistics/wiki/English
 ## 5.en.numwords would output 'five'
 
