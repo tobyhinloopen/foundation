@@ -23,7 +23,7 @@ file 'humans.txt'
 file 'robots.txt'
 file 'MIT-LICENSE.txt'
 file 'boxsizing.htc'
-file 'convert-number-to-word.rb'
+# file 'convert-number-to-word.rb'
 
 # Image Files
 image 'images/misc/custom-form-sprites.png', :to => 'misc/custom-form-sprites.png'
