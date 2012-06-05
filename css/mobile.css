@@ -2,8 +2,6 @@
 /* Foundation 3, artfully masterminded by ZURB Core mobile.css - Styles for mobile devices
  Requires: buttons.css forms.css grid.css tabs.css typography.css ui.css modernizr
 */
-/* Colors */
-/* Media Query Breaks */
 /* -------------------------------------------------- :: Typography -------------------------------------------------- */
 /* -------------------------------------------------- :: Visibility Affordances
 ---------------------------------------------------*/
@@ -62,7 +60,7 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   dl.tabs.mobile dd a.active { height: auto; margin: 0; border-width: 1px 0 0; }
   .tabs.mobile { border-bottom: solid 1px #ccc; height: auto; }
   .tabs.mobile dd a { padding: 18px 20px; border: none; border-left: none; border-right: none; border-top: 1px solid #ccc; background: #fff; }
-  .tabs.mobile dd a.active { border: none; background: #00a6fc; color: #fff; margin: 0; position: static; top: 0; height: auto; }
+  .tabs.mobile dd a.active { border: none; background: #0593dc; color: #fff; margin: 0; position: static; top: 0; height: auto; }
   .tabs.mobile dd:first-child a.active { margin: 0; }
   dl.contained.mobile, dl.nice.contained.mobile { margin-bottom: 0; }
   dl.contained.tabs.mobile dd a { padding: 18px 20px; }

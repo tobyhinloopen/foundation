@@ -2,8 +2,6 @@
 /* Foundation 3, artfully masterminded by ZURB Core grid.css - Twelve column responsive grid
  Requires: boxsizing.htc for IE7 support
 */
-/* Colors */
-/* Media Query Breaks */
 .row { width: 1000px; max-width: 100%; min-width: 768px; margin: 0 auto; }
 .row .row { width: auto; max-width: none; min-width: 0; margin: -15px; }
 

@@ -1,83 +1,49 @@
-/*
-  Foundation 3, artfully masterminded by ZURB
-  Core
-  tabs.css - Tab styles with preconfigured JS
-
-  Requires:
-    globals.css
-    app.js
-*/
-
+/*                                              */
+/* Requires:                                    */
+/*  -globals.css                                */
+/*  -app.js                                     */
+/*                                              */
   @import "base";
 
-  // Variables
-  $tabHeight: 43px;
-  $margin-btm-only: 0 0 20px 0;
+/* Tabs ---------------------- */
 
-  // Mixins
-  @mixin margin-only($position, $size) {
-    @if $position == top {
-      margin: $size 0 0 0;
-    }
-    @if $position == right {
-      margin: 0 $size 0 0;
-    }
-    @if $position == bottom {
-      margin: 0 0 $size 0;
-    }
-    @if $position == left {
-      margin: 0 0 0 $size;
-    }
-  }
+  // Tab Variables
+  $tabHeight: 40px;
 
+  dl.tabs { border-bottom: solid 1px darken($white, 10%); display: block; height: $tabHeight; padding: 0; margin-bottom: 20px;
+    &.contained { margin-bottom: 0; }
 
-/*--------------------------------------------------
-  Tabs
-  -------------------------------------------------- */
-
-  dl.tabs {
-    border-bottom: solid 1px #eee; display: block; height: $tabHeight; @include margin-only(bottom, $tabHeight); padding: 0;
-
-    dt { color: #999; cursor: default; display: block; float: left; @include font-size(11); height: $tabHeight; line-height: $tabHeight; padding: 0 9px 0 20px; width: auto; text-transform: uppercase;
-
+    dt { color: darken($white, 30%); cursor: default; display: block; float: left; font-size: ms(0) - 2px; height: $tabHeight; line-height: $tabHeight; padding: 0 9px 0 20px; width: auto; text-transform: uppercase;
       &:first-child { padding: 0 9px 0 0; }
     }
 
-    dd { display: block; float: left; height: $tabHeight; padding: 0; margin-left: 0; width: auto;
-
-      a { background: none; border: none; color: #555; display: block; @include font-size(15); height: $tabHeight - 1px; line-height: $tabHeight; margin: 0 10px; padding: 7px 18px 9px; position: relative; top: -5px; width: auto;
-
-        &.active { background: #fff; border-left: 1px solid #eee; border-right: 1px solid #eee; border-top: 3px solid $mainColor;color: #333; font-weight: bold; height: $tabHeight; }
+    dd { display: block; float: left; padding: 0; margin: 0;
+      a { color: lighten($txtColor, 30%); display: block; font-size: ms(0); height: $tabHeight; line-height: $tabHeight; padding: 0px ms(1) * 1.4;
+        &.active { color: lighten($txtColor, 10%); background: #fff; border-left: 1px solid darken($white, 10%); border-right: 1px solid darken($white, 10%); font-weight: bold; }
       }
-
-      &:first-child a.active { margin-left: 0; }
+      &.active { border-top: 3px solid $mainColor; margin-top: -3px; }
+      &:first-child { margin-left: 0; }
     }
 
-    &.vertical { height: auto; border-bottom: solid 1px #eee;
-
+    &.vertical { height: auto; border-bottom: 1px solid darken($white, 10%);
       dt, dd { float: none; height: auto; }
-      dd a { background: #fff; border: none; border-left: 1px solid #eee; border-right: 1px solid #eee; border-top: 1px solid #eee; color: #555; display: block; @include font-size(15); height: auto;
-        line-height: 1; margin: 0; padding: 15px 20px; width: auto;
 
-        &.active { background: $mainColor; border: none; color: #fff; height: auto; margin: 0; position: static; top: 0; }
+      dd { border-left: 3px solid darken($white, 20%);
+        a { background: darken($white, 5%); border: none; border: 1px solid darken($white, 10%); border-width: 1px 1px 0 0; color: #555; display: block; font-size: ms(0); height: auto; line-height: 1; padding: 15px 20px; @include box-shadow(0 1px 0 $shinyEdge inset);
+          &.active { background: lighten($black, 30%); border: none; color: #fff; height: auto; margin: 0; position: static; top: 0; @include box-shadow(0 0 0); }
+        }
+        &.active { border-top: none; border-left: 4px solid lighten($black, 10%); }
+        &:first-child a.active { margin: 0; }
       }
-      dd:first-child a.active { margin: 0; }
     }
-
-    &.contained { margin-bottom: 0; }
-    &.contained dd a { padding: 7px 18px 9px; }
   }
 
-  ul.tabs-content {
-    display: block; margin: 0; padding: 0;
-
+  ul.tabs-content { display: block; margin: 0 0 20px; padding: 0;
     &>li { display: none;
-
       &.active { display: block; }
     }
-
     &.contained { padding: 0;
-      &>li { border: solid 0 #eee; border-width: 0 1px 1px 1px; padding: 20px; }
+      &>li { border: solid 0 darken($white, 10%); border-width: 0 1px 1px 1px; padding: 20px; }
       &.vertical>li { border-width: 1px 1px 1px 1px; }
     }
   }

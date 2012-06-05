@@ -13,8 +13,8 @@ jQuery(document).ready(function ($) {
     contentLocation = contentLocation.replace(/^.+#/, '#');
 
     //Make Tab Active
-    $activeTab.removeClass('active');
-    $tab.addClass('active');
+    $activeTab.removeClass('active').parent('dd').removeClass('active');
+    $tab.addClass('active').parent('dd').addClass('active');
 
     //Show Tab Content
     $(contentLocation).closest('.tabs-content').children('li').hide();

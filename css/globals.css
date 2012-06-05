@@ -2,8 +2,6 @@
 /* Foundation 3, artfully masterminded by ZURB Core mobile.css - Styles for mobile devices
  Requires: normalize.css
 */
-/* Colors */
-/* Media Query Breaks */
 /*  -------------------------------------------------- :: Global Reset & Standards -------------------------------------------------- */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; *behavior: url(/foundation/boxsizing.htc); }
 
@@ -12,11 +10,11 @@ html { font-size: 62.5%; }
 body { background: #fff; font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif; font-size: 14px; font-size: 1.4rem; line-height: 1; color: #555; position: relative; -webkit-font-smoothing: antialiased; }
 
 /*  -------------------------------------------------- :: Links -------------------------------------------------- */
-a { color: #00a6fc; text-decoration: none; line-height: inherit; }
+a { color: #0593dc; text-decoration: none; line-height: inherit; }
 
-a:hover { color: #0095e3; }
+a:hover { color: #0482c3; }
 
-a:focus { color: #00a6fc; outline: none; }
+a:focus { color: #0593dc; outline: none; }
 
 p a, p a:visited { line-height: inherit; }
 

@@ -1,8 +1,6 @@
 @charset "UTF-8";
 /* CSS for jQuery Orbit Plugin 1.4.0 Maintained for Foundation. foundation.zurb.com Free to use under the MIT license. http://www.opensource.org/licenses/mit-license.php
 */
-/* Colors */
-/* Media Query Breaks */
 /* CONTAINER ================================================== */
 div.orbit-wrapper { width: 1px; height: 1px; position: relative; }
 
