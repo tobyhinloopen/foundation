@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
   s.has_rdoc = false
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.6}
-  s.add_dependency("compass", [">= 0.12.1"])
   s.add_dependency("sass", [">= 3.2.0.alpha.237"])
-  s.add_dependency("modular-scale")
+  s.add_dependency("modular-scale", [">= 0.0.5"])
+  s.add_dependency("compass", [">= 0.12.1"])
 end
