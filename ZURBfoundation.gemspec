@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   # Gem Details
   s.name = "ZURBfoundation"
   s.authors = ["ZURB"]
-  s.summary = %q{ZURB Foundation ported over to work with the power of Compass.}
+  s.summary = %q{ZURB Foundation on SASS/Compass.}
   s.description = %q{ZURB Foundation ported over to work with the power of Compass.}
   s.email = "foundation@zurb.com"
   s.homepage = "http://foundation.zurb.com"
@@ -24,5 +24,6 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.6}
   s.add_dependency("compass", [">= 0.12.1"])
+  s.add_dependency("sass", [">= 3.2.0.alpha.237"])
   s.add_dependency("modular-scale")
 end
