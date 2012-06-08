@@ -43,22 +43,10 @@
       dt a, dd a { padding: 0px ms(1); text-align: center; overflow: hidden; }
     }
     
-    &.two-up { 
-      
-      dt, dd { width: 50%; }
-    }
-    &.three-up { 
-      
-      dt, dd { width: 33.33%; }
-    }
-    &.four-up { 
-      
-      dt, dd { width: 25%; }
-    }
-    &.five-up { 
-      
-      dt, dd { width: 20%; }
-    }
+    &.two-up dt, &.two-up dd      { width: 50%; }
+    &.three-up dt, &.three-up dd  { width: 33.33%; }
+    &.four-up dt, &.four-up dd    { width: 25%; }
+    &.five-up dt, &.five-up dd    { width: 20%; }
   }
 
   ul.tabs-content { display: block; margin: 0 0 20px; padding: 0;
