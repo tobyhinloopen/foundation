@@ -101,6 +101,9 @@ body.off-canvas {
   width: 500%;
   overflow: hidden;
   float: none;
+  position: relative;
+  left: 0;
+  -webkit-transition: all 0.15s ease-in;
 }
 .js .page-panel {
   min-height: 400px;

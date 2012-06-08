@@ -28,7 +28,8 @@
 
   /* Alerts */
 
-  div.alert-box { display: block; padding: 6px 7px; font-weight: bold; @include font-size(13); background: #eee; border: 1px solid rgba(0,0,0,0.1); margin-bottom: 12px; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; text-shadow: 0 1px rgba(255,255,255,0.9); position: relative;
+  div.alert-box { 
+    display: block; padding: 6px 7px; font-weight: bold; @include font-size(13); background: #eee; border: 1px solid rgba(0,0,0,0.1); margin-bottom: 12px; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; text-shadow: 0 1px rgba(255,255,255,0.9); position: relative;
 
     &.success { background-color: $successColor; color: #fff; text-shadow: 0 -1px rgba(0,0,0,0.3); }
     &.alert { background-color: $alertColor; color: #fff; text-shadow: 0 -1px rgba(0,0,0,0.3); }
@@ -42,7 +43,8 @@
 
   /* Labels */
 
-  .label { padding: 0 4px 2px; @include font-size(11); font-weight: bold; text-align: center; text-decoration: none; line-height: 1;  white-space: nowrap; display: inline; position: relative; bottom: 1px; color: #fff; background: $mainColor;
+  .label { 
+    padding: 0 4px 2px; @include font-size(11); font-weight: bold; text-align: center; text-decoration: none; line-height: 1;  white-space: nowrap; display: inline; position: relative; bottom: 1px; color: #fff; background: $mainColor;
 
     &.radius { @include border-radius(2px); }
     &.round { padding: 1px 7px 2px; @include border-radius(8px); }
@@ -57,9 +59,12 @@
 
   /* Pagination */
 
-  ul.pagination { display: block; height: 24px; margin-left: -5px;
+  ul.pagination { 
+    display: block; height: 24px; margin-left: -5px;
 
-    li { float: left; display: block; height: 24px; color: #999; @include font-size(15); margin-left: 5px;
+    li { 
+      float: left; display: block; height: 24px; color: #999; @include font-size(15); margin-left: 5px;
+      
       a { display: block; padding: 6px 7px 4px; color: #555; }
       &.current a, &:hover a, a:focus { border-bottom: solid 2px $mainColor; color: #141414; }
       &.unavailable a { cursor: default; color: #999; }
@@ -71,9 +76,12 @@
 
   /* Breadcrumbs */
 
-  ul.breadcrumbs { display: block; background: lighten(($secondaryColor), 5%); padding: 7px 10px; border: 1px solid $secondaryColor; border-radius: 2px; overflow: hidden;
+  ul.breadcrumbs { 
+    display: block; background: lighten(($secondaryColor), 5%); padding: 7px 10px; border: 1px solid $secondaryColor; border-radius: 2px; overflow: hidden;
 
-    li { margin: 0; padding: 0 12px 0 0; float: left; list-style: none;
+    li { 
+      margin: 0; padding: 0 12px 0 0; float: left; list-style: none;
+      
       a, span { text-transform: uppercase; @include font-size(11); padding-left: 12px; }
       &:first-child a, &:first-child span { padding-left: 0; }
     }
@@ -92,7 +100,9 @@
 
   /* Lists */
 
-  ul.nice, ol.nice { list-style: none; margin: 0;
+  ul.nice, ol.nice { 
+    list-style: none; margin: 0;
+    
     li { padding-left: 13px; position: relative;
       span.bullet, span.number { position: absolute; left: 0; top: 0; color: #ccc; }
     }
@@ -102,22 +112,14 @@
   /* Panels */
 
   div.panel {
-  	padding: 20px 20px 2px 20px;
-  	background: #efefef;
-  	background: -moz-linear-gradient(top, #FFFFFF 0%, #F4F4F4 100%);
-  	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#F4F4F4));
-  	background: -o-linear-gradient(top, #ffffff 0%,#f4f4f4 100%);
-  	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#F4F4F4',GradientType=0 );
-  	box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-  	-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-  	-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
-  	margin: 0 0 20px 0;
+  	padding: 20px 20px 2px 20px; @include background(linear-gradient(white, #f4f4f4), #eee); @include box-shadow(rgba(0,0,0,0.15) 0 2px 5px); margin: 0 0 20px 0;
   }
 
 
   /* Sub Navs http://www.zurb.com/article/292/how-to-create-simple-and-effective-sub-na */
 
-  dl.sub-nav { display: block; width: auto; overflow: hidden; margin: -4px 0 18px -9px; padding-top: 4px;
+  dl.sub-nav { 
+    display: block; width: auto; overflow: hidden; margin: -4px 0 18px -9px; padding-top: 4px;
 
     dt, dd { float: left; display: inline; margin-left: 9px; margin-bottom: 4px; }
     dt { color: #999; font-weight: normal; }
