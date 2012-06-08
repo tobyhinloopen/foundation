@@ -156,7 +156,7 @@ ul.orbit-bullets {
   list-style: none;
   bottom: -40px;
   left: 50%;
-	margin-left: -50px;
+  margin-left: -50px;
   padding: 0; }
 
 ul.orbit-bullets li {
@@ -199,7 +199,7 @@ ul.orbit-bullets {
   list-style: none;
   bottom: -50px;
   left: 50%;
-	margin-left: -50px;
+  margin-left: -50px;
   padding: 0; }
 
 ul.orbit-bullets li {
@@ -228,5 +228,5 @@ ul.orbit-bullets li.active.has-thumb {
 
 
 /* Correct timer in IE */
-	.timer { display: none !important; }
-	div.caption { background:transparent; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);zoom: 1; }
+  .timer { display: none !important; }
+  div.caption { background:transparent; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);zoom: 1; }
