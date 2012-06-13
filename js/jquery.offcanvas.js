@@ -8,7 +8,7 @@ $(function() {
   // Watch for clicks to show the sidebar
   $selector2 = $('#sidebarButton');
   if ($selector2.length > 0) {
-    $('#sidebarButton').live('click', function(e){
+    $('#sidebarButton').on('click', function(e){
       e.preventDefault();
       $('body').toggleClass('active');
     });
@@ -17,7 +17,7 @@ $(function() {
   // Watch for clicks to show the menu for slide-menu pages
   $selector3 = $('#menuButton');
   if ($selector3.length > 0)  {
-    $('#menuButton').live('click', function(e){
+    $('#menuButton').on('click', function(e){
       e.preventDefault();
       $('body').toggleClass('active-menu');
     });
@@ -35,7 +35,7 @@ $(function() {
   // Switch panels for the paneled nav on mobile
   $selector5 = $('#switchPanels');
   if ($selector5.length > 0)  {
-    $('#switchPanels dd').live('click', function(e){
+    $('#switchPanels dd').on('click', function(e){
       e.preventDefault();
       var switchToPanel = $(this).children('a').attr('href'),
           switchToIndex = $(switchToPanel).index();
@@ -44,9 +44,10 @@ $(function() {
     });
   }
 
-  $('#nav li a').live('click', function(e) {
+  $('#nav li a').on('click', function(e) {
     e.preventDefault();
-    $target = $($(this).attr('href'));
-    $(window).scrollTop($target.offset().top);
+    var href = $(this).attr('href'),
+      $target = $(href);
+    $('html, body').animate({scrollTop : $target.offset().top}, 300);
   });
 });
