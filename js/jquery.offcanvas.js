@@ -35,7 +35,7 @@ $(function() {
   // Switch panels for the paneled nav on mobile
   $selector5 = $('#switchPanels');
   if ($selector5.length > 0)  {
-    $('#switchPanels dd').on('click', function(e){
+    $('#switchPanels dd').on('click', function(e) {
       e.preventDefault();
       var switchToPanel = $(this).children('a').attr('href'),
           switchToIndex = $(switchToPanel).index();
