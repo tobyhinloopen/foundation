@@ -2,7 +2,7 @@
 
 /* Global Reset & Standards ---------------------- */
 
-  * { @include box-sizing(border-box); }
+  * { @include box-sizing(border-box); *behavior: url(boxsizing.htc); }
   html { font-size: 62.5%; }
   body { background: $white; font-family: $bodyFontFamily; font-size: ms(0); line-height: 1; color: $bodyFontColor; position: relative; -webkit-font-smoothing: antialiased; }
 
