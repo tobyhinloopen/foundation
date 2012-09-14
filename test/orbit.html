@@ -79,6 +79,20 @@
           </div>
         </div>
       </div>
+
+      <div class="row">
+        <div class="four columns">
+          <h4>Custom Bullets</h4>
+          <p>This is an orbit slider that has custom bullets.</p>
+        </div>
+        <div class="eight columns">
+          <div id="featuredBullets">
+            <img src="http://placehold.it/800x450/FFF2B8/ffffff&text=slide+one" data-thumb="100x75/7A6666/EFEFEF&text=one" />
+            <img src="http://placehold.it/800x450/5F7C82/ffffff&text=slide+two" data-thumb="100x75/E87775/EFEFEF&text=two" />
+            <img src="http://placehold.it/800x450/F9DF82/ffffff&text=slide+three" data-thumb="100x75/FCB483/EFEFEF&text=three" />
+          </div>
+        </div>
+      </div>
   	</div>
   </div>
 	
@@ -100,6 +114,23 @@
     $(window).load(function(){
       $("#featured").orbit();
       $('#featuredContent').orbit({ fluid: '2x1' });
+      $('#featuredBullets').orbit({
+        animation: 'horizontal-slide',                  // fade, horizontal-slide, vertical-slide, horizontal-push
+        animationSpeed: 800,                // how fast animtions are
+        timer: false,       // true or false to have the timer
+        advanceSpeed: 4000,     // if timer is enabled, time between transitions 
+        pauseOnHover: false,      // if you hover pauses the slider
+        startClockOnMouseOut: false,    // if clock should start on MouseOut
+        startClockOnMouseOutAfter: 1000,    // how long after MouseOut should the timer start again
+        directionalNav: false,      // manual advancing directional navs
+        captions: true,       // do you want captions?
+        captionAnimation: 'fade',     // fade, slideOpen, none
+        captionAnimationSpeed: 800,   // if so how quickly should they animate in
+        bullets: true,       // true or false to activate the bullet navigation
+        bulletThumbs: true,    // thumbnails for the bullets
+        bulletThumbLocation: 'http://placehold.it/',    // location from this file where thumbs will be
+        afterSlideChange: $.noop    // empty function 
+      });
     });
   </script>	
 </body>
