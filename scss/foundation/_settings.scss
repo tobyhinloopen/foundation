@@ -113,12 +113,12 @@ $topBarHeight: 45px !default;
 $topBarBtmMargin: 30px !default;
 $topBarTitleWeight: bold !default;
 $topBarTitleSize: ms(1) !default;
-$topBarLinkColor: $white !default;
+$topBarLinkColor: #fff !default;
 $topBarLinkWeight: bold !default;
 $topBarLinkSize: ms(0) - 1 !default;
 $topBarDropToggleSize: 5px !default;
 $topBarSearchWidth: 200px !default;
-$topBarBreakPoint: 1000px !default; // Change to 9999px for always mobile layout
+$topBarBreakPoint: 1200px !default; // Change to 9999px for always mobile layout
 $topBarNavToggleSize: 8px !default;
 
 // Media Queries

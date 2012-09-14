@@ -32,6 +32,9 @@
           if (!settings.height) {
             methods.largestUL();
           }
+          // $('*').on('click', function(e) {
+          //   console.log($(this).html());
+          // });
 
           $('.top-bar .toggle-nav').live('click.fndtn', function (e) {
             e.preventDefault();
@@ -43,9 +46,9 @@
           });
 
           // Show the Dropdown Levels on Click
-          $('.top-bar .has-dropdown>a').live('touchstart touchend', function (e) {
-            e.preventDefault();
-          });
+          // $('.top-bar .has-dropdown>a').live('touchstart touchend', function (e) {
+          //   e.preventDefault();
+          // });
           $('.top-bar .has-dropdown>a').live('click.fndtn', function (e) {
             e.preventDefault();
 
